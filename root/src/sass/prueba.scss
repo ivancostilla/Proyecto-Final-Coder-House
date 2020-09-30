@@ -1,0 +1,22 @@
+@import "decor";
+
+/* variables */
+
+$colordelosbotones: #943294;
+body {
+    background: #111;
+    header {
+        background: red;
+        nav {
+            background: pink;
+            ul {
+                li {
+                    a {
+                        text-decoration: none;
+                        color: $colordelosbotones;
+                    }
+                }
+            }
+        }
+    }
+}

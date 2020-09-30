@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Like Quijote | Hostel | Bariloche | Home</title>
+
+    <!-- viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- inicio header -->
+    <header class="home" id="home">
+        <!-- Imagen Background y logo -->
+        <div class="img-hero txt-center">
+            <img src="images/Logo-Title.png" alt="logo de la empresa">
+        </div>
+
+
+        <!-- Contacto por Whatsapp: link para abrir la app de whatsapp -->
+        <div class="whatsapp whatsapp-index">
+            <a href="https://api.whatsapp.com/send?phone=5492944246553" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40px" height="40px"><path fill="#f2faff" d="M4.221,29.298l-0.104-0.181c-1.608-2.786-2.459-5.969-2.458-9.205 C1.663,9.76,9.926,1.5,20.078,1.5c4.926,0.002,9.553,1.919,13.03,5.399c3.477,3.48,5.392,8.107,5.392,13.028 c-0.005,10.153-8.268,18.414-18.42,18.414c-3.082-0.002-6.126-0.776-8.811-2.24l-0.174-0.096l-9.385,2.46L4.221,29.298z"/><path fill="#4a9550" d="M20.078,2L20.078,2c4.791,0.001,9.293,1.867,12.676,5.253C36.137,10.639,38,15.14,38,19.927 c-0.005,9.878-8.043,17.914-17.927,17.914c-2.991-0.001-5.952-0.755-8.564-2.18l-0.349-0.19l-0.384,0.101l-8.354,2.19 l2.226-8.131l0.11-0.403L4.55,28.867c-1.566-2.711-2.393-5.808-2.391-8.955C2.163,10.036,10.202,2,20.078,2 M20.078,1 C9.651,1,1.163,9.485,1.158,19.912c-0.002,3.333,0.869,6.588,2.525,9.455L1,39.169l10.03-2.63c2.763,1.507,5.875,2.3,9.042,2.302 h0.008c10.427,0,18.915-8.485,18.92-18.914c0-5.054-1.966-9.807-5.538-13.382C29.89,2.971,25.14,1.002,20.078,1L20.078,1z"/><path fill="#4a9550" d="M19.995,35c-2.504-0.001-4.982-0.632-7.166-1.823l-1.433-0.782l-1.579,0.414l-3.241,0.85l0.83-3.03	l0.453-1.656L7,27.485c-1.309-2.267-2.001-4.858-2-7.492C5.004,11.726,11.732,5.001,19.998,5c4.011,0.001,7.779,1.563,10.61,4.397	C33.441,12.231,35,15.999,35,20.005C34.996,28.273,28.268,35,19.995,35z"/><path fill="#fff" d="M28.28,23.688c-0.45-0.224-2.66-1.313-3.071-1.462c-0.413-0.151-0.712-0.224-1.012,0.224	c-0.3,0.45-1.161,1.462-1.423,1.761c-0.262,0.3-0.524,0.337-0.974,0.113c-0.45-0.224-1.899-0.7-3.615-2.231	c-1.337-1.191-2.239-2.663-2.501-3.113c-0.262-0.45-0.029-0.693,0.197-0.917c0.202-0.202,0.45-0.525,0.674-0.787	c0.224-0.262,0.3-0.45,0.45-0.75c0.151-0.3,0.075-0.563-0.038-0.787c-0.113-0.224-1.012-2.437-1.387-3.336	c-0.364-0.876-0.736-0.757-1.012-0.771c-0.262-0.014-0.562-0.015-0.861-0.015c-0.3,0-0.787,0.113-1.198,0.563	c-0.411,0.45-1.573,1.537-1.573,3.749s1.611,4.35,1.835,4.649c0.224,0.3,3.169,4.839,7.68,6.786	c1.072,0.462,1.911,0.739,2.562,0.947c1.076,0.342,2.057,0.294,2.832,0.178c0.864-0.129,2.66-1.087,3.034-2.136	c0.375-1.049,0.375-1.95,0.262-2.136C29.03,24.025,28.731,23.912,28.28,23.688z"/></svg>
+            </a>
+        </div>
+        <!-- fin contacto por Whatsapp -->
+    </header>
+    <!-- fin header -->
+
+    <div class="position-relative-home">
+        <!-- la unica solución que encontré fue encerrar el nav y el main dentro de un div, para que pueda moverse el nav con una position sticky.. no se si es semanticamente correcto esto je -->
+        <!-- Comienzo del nav -->
+        <nav class="nav sticky-nav-home">
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul class="nav-links txt-decoration list-style">
+                <li>
+                    <a href="#home" target="_self" title="Home"><img src="images/logo-nav.png" alt="logo de la empresa en home"></a>
+                </li>
+                <li>
+                    <div class="link-div">
+                        <a href="pages/booking.html" target="_blank"> Reservar</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="pages/rooms.html" target="_blank"> Habitaciones</a>
+                </li>
+                <li>
+                    <a href="pages/services.html" target="_blank"> Servicios</a>
+                </li>
+                <li>
+                    <a href="pages/about-us.html" target="_blank"> Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="pages/find-us.html" target="_blank"> Como Llegar</a>
+                </li>
+                <li>
+                    <a href="https://www.workaway.info/en/host/211131141727" target="_blank"> Trabaja con Nosotros</a>
+                </li>
+                <li>
+                    <a href="#contact-us"> Contactanos</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- Fin del nav -->
+
+        <!-- inicio cuerpo(main) -->
+        <main class="position-relative-home">
+
+            <!-- Seccion reserva de la landing page -->
+            <section class="booking txt-white container blue" id="booking">
+                <article class="">
+                    <h1 class="h-center h1">Bienvenido</h1>
+                    <p class="txt-center txt-slogan">"Algunos clichés son ciertos: No hay lugar como el hogar pero solo hay uno Like Quijote."</p>
+                </article>
+                <article>
+                    <form class="form-check-reserva" action="#" method="post">
+                        <input type="text" id="in" onfocus="(this.type='date')" placeholder="Check-In" name="check-in">
+                        <input type="text" id="out" onfocus="(this.type='date')" placeholder="Check-Out">
+                        <input class="boton submit" type="submit" value="Checkear Disponibilidad">
+                    </form>
+                    <div class="a-check-reserva">
+                        <a class="boton" href="pages/booking.html" target="_blank">Ir a Reservas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                    </div>
+                </article>
+            </section>
+            <!-- fin seccion reserva -->
+
+            <!-- Seccion dormitorios -->
+            <section class=" rooms-lp txt-center txt-color grey" id="rooms">
+                <article class="">
+                    <h2 class="h-center h1">Habitaciones</h2>
+                    <div class="container">
+                        <!-- tengo que solucionar los chevron que no son responsive todavia jaja -->
+                        <a class="previus" role="button"><i class="boton"><img src="images/chevron-izquierda-redondo.svg" alt=""></i></a>
+                        <div class="container-rooms">
+                            <div class="clip box1">
+                                <div class="content-room">
+                                    <h3>Habitación doble c/ baño compartido</h3>
+                                    <p>Esta habitación doble cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama</p>
+                                </div>
+                            </div>
+                            <div class="clip box2">
+                                <div class="content-room">
+                                    <h3>Habitación doble c/ baño compartido</h3>
+                                    <div class="icon">
+                                        <img src="../images/cabana.svg" alt="vista a La ciudad" title="vista a la ciudad">
+                                        <img src="../images/jardin.svg" alt="patio" title="patio">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clip box3 bgz-cover">
+                                <div class="content-room">
+                                    <h3 class="h-center">Equipamiento de la habitación:</h3>
+                                    <ol>
+                                        <li>Acceso a pisos superiores solo por escalera</li>
+                                        <li>Ropa de cama</li>
+                                        <li>Juegos de mesa/rompecabezas</li>
+                                        <li>Tetera/Cafetera</li>
+                                        <li>Calefacción</li>
+                                        <li>Cocina</li>
+                                        <li>Heladera</li>
+                                        <li>Cafetera</li>
+                                        <li>Zona de comedor</li>
+                                        <li>Zona de comedor exterior</li>
+                                        <li>Enchufe cerca de la cama</li>
+                                        <li>Perchero de barral</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="next" role="button"><i class="boton"><img class=""src="images/chevron-derecha-redondo.svg" alt=""></i></a>
+                    </div>
+                    <a class="boton" href="pages/rooms.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                </article>
+            </section>
+            <!-- fin seccion dormitorios -->
+
+            <!-- seccion servicios -->
+            <section class="txt-white container blue txt-center" id="services">
+                <article>
+                    <h2 class="h-center h1">Servicios</h2>
+                    <div class="services-icons">
+                        <!-- Las clases services-icons y box-icon son clases creadas para el services.html, pero las reutilzio aqui tmb -->
+                        <div class="box-icon">
+                            <div>
+                                <img src="images/24h.svg" alt="jardin">
+                            </div>
+                            <div>
+                                <p>Recepción las 24 horas.</p>
+                            </div>
+                        </div>
+                        <div class="box-icon">
+                            <div>
+                                <img src="images/router-inalambrico.svg" alt="wi fi">
+                            </div>
+                            <div>
+                                <p>Wi Fi libre en toda la casa.</p>
+                            </div>
+                        </div>
+                        <div class="box-icon">
+                            <div>
+                                <img src="images/lockers.svg" alt="lockers en dormitorios">
+                            </div>
+                            <div>
+                                <p>Lockers seguros en cada dormitorio.</p>
+                            </div>
+                        </div>
+                        <div class="box-icon">
+                            <div>
+                                <img src="images/lavadora.svg" alt="lavadora">
+                            </div>
+                            <div>
+                                <p>Servicio de lavanderia, tu ropa limpia en pocas horas!!</p>
+                            </div>
+                        </div>
+                        <div class="box-icon">
+                            <div>
+                                <img src="images/bano.svg" alt="baño compartido en habitaciones unisex">
+                            </div>
+                            <div>
+                                <p>Baño compartido en habitaciones unisex.</p>
+                            </div>
+                        </div>
+                        <div class="box-icon">
+                            <div>
+                                <img src="images/horno.svg" alt="cocina">
+                            </div>
+                            <div>
+                                <p class="p6">Contamos con cocina compartida, equipada, abierta 24/7.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a class="boton " href="pages/services.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                </article>
+            </section>
+            <!-- fin seccion servicios -->
+
+            <!-- seccion sobre nosotros -->
+            <section class=" txt-color container grey txt-center " id="about-us ">
+                <article>
+                    <h2 class="h-center h1">Sobre Nosotros</h2>
+                    <p class="padding-p ">
+                        Nos encantó crear Like Quijote y nos divertimos mucho pensando en pequeños detalles que nuestros huéspedes disfrutarán, encontrarán útiles y, con suerte, harán sonreír. Nos apasiona Bariloche y es todo lo que queremos compartirles. Ciertos dorms o habitaciones
+                        cuentan con vistas al jardín o la ciudad. Cada habitación tiene un baño privado o varios son compartidos</p>
+                    <a class="boton " href="pages/about-us.html " target="_blank ">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                </article>
+            </section>
+            <!-- fin seccion nosotros -->
+
+            <!-- seccion como llegar -->
+            <section class="find-us txt-white container blue txt-center" id="find-us">
+                <div>
+                    <h2 class="h-center h1">Como Llegar</h2>
+                    <div class="map">
+                        <!-- trabajá con la api mejor -->
+                        <!-- el primer iframe me ocupa espacio en el dom, por eso le puse esa clase, a futuro voy a ir tratando de implementar la api de google maps si
+                         es necesario -->
+                        <iframe class="dspl-none" src="" frameborder="0"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.3639348466975!2d-71.31326023365885!3d-41.14046625252464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1483c6a1ff%3A0x9d50f27ac13b6f2!2sHostel%20Like%20Quijote!5e0!3m2!1ses-419!2sar!4v1597419383616!5m2!1ses-419!2sar "
+                            width="650" height="450" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+                    <a class="boton" href="pages/find-us.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                </div>
+            </section>
+            <!-- fin seccion como llegar -->
+
+            <!-- seccion testimonios -->
+            <section class="grey txt-center txt-color">
+                <article>
+                    <h2 class="h-center h1">Reseñas</h2>
+                    <div class="testimonials txt-white">
+                        <div class="card">
+                            <div class="bg-gradient"></div>
+                            <div class="content">
+                                <p>"El hostel es muy acogedor, la habitación excelente, la cocina limpia y hermosa. "</p>
+                                <div class="img-box">
+                                    <img src="images/valeria.jpg" alt="valeria suarez">
+                                </div>
+                                <h3>Valeria Suarez<br><span>Booking.com</span></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="bg-gradient"></div>
+                            <div class="content">
+                                <p>"La gente que trabaja allí siempre te da respuesta a las consultas que les realices."</p>
+                                <div class="img-box">
+                                    <img src="images/florencia.jpg" alt="florencia rodriguez">
+                                </div>
+                                <h3>Florencia Rodriguez<br><span>Booking.com</span></h3>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="bg-gradient"></div>
+                            <div class="content">
+                                <p>"Excelente y un buen precio, el desayuno perfecto, personal super amable."</p>
+                                <div class="img-box">
+                                    <img src="images/agustin.jpg" alt="Agustin Rios ">
+                                </div>
+                                <h3>Agustín Rios<br><span>Booking.com</span></h3>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <!-- fin seccion testimonios -->
+
+            <!-- seccion galeria -->
+            <section class="galeria grey">
+                <img src="images/desayuno.jpg" alt="desayuno">
+                <img src="images/comedor.jpg" alt="comedor del hostel">
+                <img src="images/Sala-de-estar.jpg" alt="sala de estar">
+                <img src="images/cocina.jpg" alt="cocina">
+                <img src="images/recepcion.jpg" alt="recepcion del hostel">
+                <img src="images/recepcion-desk.jpg" alt="recepcion, escritorio del hostel">
+            </section>
+            <!-- fin seccion galeria -->
+        </main>
+        <!-- fin del cuerpo(main) -->
+
+        <!-- aside trabaja con nosotros -->
+        <section>
+            <aside id="work-with-us " class="work-with-us txt-white txt-center ">
+                <article class="work-container">
+                    <img class="img-work chevron" src="images/doble-chevron-derecha.svg" alt="">
+                    <div class="work-box">
+                        <h2 class="h-center">Trabaja Con Nosotros</h2>
+                        <p>Estamos en busca de voluntarios, pero no cualquier voluntario! Para nosotros es muy importante que sean viajeros, abiertos al dialogo, responsables, creativos, resolutivos y por sobre todas las cosas con un buen corazón...</p>
+                        <a class="boton" href="https://www.workaway.info/en/host/211131141727 " target="_blank ">Ver Mas <i><img src="images/chevron-derecho.svg" class="chevron-work" alt=""></i></a>
+                    </div>
+                </article>
+            </aside>
+        </section>
+        <!-- fin del aside trabaja con nosotros -->
+
+        <footer class="contact-us position-relative-home txt-center blue txt-white " id="contact-us">
+            <h2 class="h-center h1">Contactanos</h2>
+            <div class="contact-container">
+                <!-- formulario de contacto -->
+                <form class="contact-form" action="#" class="" method="post">
+                    <!-- no se como aplicar correctamente los patterns xd -->
+                    <input class="contact-input" type="text" name="" placeholder="nombre" required>
+                    <input class="contact-input" type="text" name="" placeholder="apellido" required>
+                    <input class="contact-input" type="email" name="" placeholder="email" required>
+                    <input class="contact-input" type="tel" name="" placeholder="télefono" required>
+                    <textarea class="contact-input txt-area" name="message" id="" cols="30" rows="10" placeholder="escriba su mensaje"></textarea>
+                    <input class="contact-input" type="submit" name="" value="Enviar">
+                </form>
+            </div>
+            <div class="">
+                <address>
+                    <p>+54 294 446-4273</p>
+                    <p>likequijote@hotmail.com</p>
+                    <p>Pasaje Gutierrez 905.</p>
+                    <p>San Carlos de Bariloche, Argentina.</p>
+                </address>
+            </div>
+            <div class="dspl-block contact-icons">
+                <!--instagram-->
+                <a class="fb" href="https://instagram.com/likequijote?igshid=amh1mmrlxkan" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#fff;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#fff"><path d="M55.04,10.32c-24.65626,0 -44.72,20.06374 -44.72,44.72v61.92c0,24.65626 20.06374,44.72 44.72,44.72h61.92c24.65626,0 44.72,-20.06374 44.72,-44.72v-61.92c0,-24.65626 -20.06374,-44.72 -44.72,-44.72zM55.04,17.2h61.92c20.9375,0 37.84,16.9025 37.84,37.84v61.92c0,20.9375 -16.9025,37.84 -37.84,37.84h-61.92c-20.9375,0 -37.84,-16.9025 -37.84,-37.84v-61.92c0,-20.9375 16.9025,-37.84 37.84,-37.84zM127.28,37.84c-3.79972,0 -6.88,3.08028 -6.88,6.88c0,3.79972 3.08028,6.88 6.88,6.88c3.79972,0 6.88,-3.08028 6.88,-6.88c0,-3.79972 -3.08028,-6.88 -6.88,-6.88zM86,48.16c-20.85771,0 -37.84,16.98229 -37.84,37.84c0,20.85771 16.98229,37.84 37.84,37.84c20.85771,0 37.84,-16.98229 37.84,-37.84c0,-20.85771 -16.98229,-37.84 -37.84,-37.84zM86,55.04c17.13948,0 30.96,13.82052 30.96,30.96c0,17.13948 -13.82052,30.96 -30.96,30.96c-17.13948,0 -30.96,-13.82052 -30.96,-30.96c0,-17.13948 13.82052,-30.96 30.96,-30.96z"></path></g></g></svg></a>
+
+                <!--facebook-->
+                <a class="fb" href="https://es-la.facebook.com/HostelLikeQuijote/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#fff;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#fff"><path d="M86,10.32c-41.75623,0 -75.68,33.92377 -75.68,75.68c0,37.90582 27.95871,69.27594 64.37235,74.7461l3.95062,0.59797v-59.63563h-17.8786v-12.10719h17.8786v-16.07797c0,-9.9006 2.37582,-16.42129 6.3089,-20.51235c3.93309,-4.09105 9.74446,-6.15437 17.83156,-6.15437c6.46654,0 8.98224,0.39181 11.37485,0.68531v9.91016h-8.4186c-4.77673,0 -8.69574,2.66507 -10.72984,6.21484c-2.0341,3.54978 -2.66735,7.78817 -2.66735,12.10719v13.82047h21.06328l-1.87453,12.10719h-19.18875v59.73641l3.9036,-0.53078c36.93123,-5.00873 65.4339,-36.631 65.4339,-74.90735c0,-41.75623 -33.92377,-75.68 -75.68,-75.68zM86,17.2c38.03801,0 68.8,30.76199 68.8,68.8c0,33.47048 -23.95685,60.99738 -55.5775,67.19422v-44.6125h18.20781l3.99765,-25.86719h-22.20547v-6.94047c0,-3.56891 0.65299,-6.76666 1.7536,-8.68735c1.1006,-1.92069 2.16152,-2.75469 4.76359,-2.75469h15.2986v-23.01844l-2.98313,-0.40313c-2.06328,-0.27919 -6.77392,-0.9339 -15.27172,-0.9339c-9.29866,0 -17.28029,2.53306 -22.79,8.26406c-5.50971,5.731 -8.23047,14.26461 -8.23047,25.28265v9.19797h-17.8786v25.86719h17.8786v44.39078c-31.11251,-6.59066 -54.56297,-33.87112 -54.56297,-66.97922c0,-38.03801 30.76199,-68.8 68.8,-68.8z"></path></g></g></svg></a>
+
+                <!--twitter-->
+                <a class="twt" href="https://twitter.com/likequijote" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 172 172" style=" fill:#fff;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill=""></path><g fill="#fff"><path d="M117.7125,18.8125c-20.57281,0 -37.3025,16.72969 -37.3025,37.3025c0,1.23625 0.30906,2.44563 0.43,3.655c-25.43719,-2.43219 -47.93156,-14.68719 -63.21,-33.4325c-0.71219,-0.90031 -1.81406,-1.38406 -2.96969,-1.30344c-1.14219,0.08062 -2.16344,0.73906 -2.72781,1.73344c-3.21156,5.52281 -5.0525,11.87875 -5.0525,18.705c0,8.26406 2.95625,15.82938 7.525,22.0375c-0.88687,-0.38969 -1.85437,-0.60469 -2.6875,-1.075c-1.06156,-0.56437 -2.33812,-0.5375 -3.37281,0.08063c-1.03469,0.61812 -1.66625,1.73344 -1.67969,2.92937v0.43c0,12.67156 6.5575,23.67688 16.2325,30.4225c-0.1075,-0.01344 -0.215,0.02688 -0.3225,0c-1.1825,-0.20156 -2.37844,0.215 -3.17125,1.11531c-0.79281,0.90031 -1.04812,2.15 -0.69875,3.29219c3.84313,11.94594 13.6525,21.07 25.8,24.4025c-9.675,5.75125 -20.89531,9.1375 -33.0025,9.1375c-2.62031,0 -5.13312,-0.13437 -7.6325,-0.43c-1.6125,-0.215 -3.15781,0.72563 -3.69531,2.2575c-0.55094,1.53188 0.05375,3.23844 1.43781,4.085c15.52031,9.95719 33.94313,15.8025 53.75,15.8025c32.10219,0 57.28406,-13.41062 74.175,-32.5725c16.89094,-19.16187 25.6925,-44.04812 25.6925,-67.295c0,-0.98094 -0.08062,-1.935 -0.1075,-2.9025c6.30219,-4.82406 11.9325,-10.48125 16.34,-17.0925c0.87344,-1.27656 0.77938,-2.98312 -0.22844,-4.16562c-0.99438,-1.1825 -2.67406,-1.54531 -4.07156,-0.88688c-1.77375,0.79281 -3.84312,0.87344 -5.6975,1.505c2.44563,-3.26531 4.54188,-6.78594 5.805,-10.75c0.43,-1.35719 -0.04031,-2.84875 -1.15562,-3.73562c-1.11531,-0.87344 -2.67406,-0.98094 -3.89688,-0.24188c-5.87219,3.48031 -12.37594,5.92594 -19.2425,7.4175c-6.665,-6.235 -15.43969,-10.4275 -25.2625,-10.4275zM117.7125,25.6925c8.77469,0 16.70281,3.74906 22.2525,9.675c0.83313,0.86 2.05594,1.22281 3.225,0.9675c4.48813,-0.88687 8.74781,-2.19031 12.9,-3.87c-2.39187,3.225 -5.34812,5.97969 -8.815,8.0625c-1.57219,0.76594 -2.31125,2.58 -1.73344,4.23281c0.56437,1.63937 2.28437,2.59344 3.99094,2.21719c3.44,-0.41656 6.50375,-1.81406 9.7825,-2.6875c-2.94281,3.18469 -6.16781,6.06031 -9.675,8.6c-0.95406,0.69875 -1.47812,1.8275 -1.3975,3.01c0.05375,1.3975 0.1075,2.78156 0.1075,4.1925c0,21.5 -8.25062,44.84094 -23.9725,62.6725c-15.72187,17.83156 -38.8075,30.315 -69.015,30.315c-13.71969,0 -26.67344,-3.03687 -38.3775,-8.385c14.5125,-1.11531 27.89625,-6.24844 38.7,-14.7275c1.12875,-0.90031 1.57219,-2.40531 1.11531,-3.77594c-0.45688,-1.37063 -1.72,-2.31125 -3.15781,-2.35156c-11.34125,-0.20156 -20.84156,-6.79937 -25.9075,-16.125c0.18813,0 0.34938,0 0.5375,0c3.39969,0 6.75906,-0.43 9.89,-1.29c1.505,-0.44344 2.53969,-1.84094 2.48594,-3.41312c-0.05375,-1.57219 -1.16906,-2.91594 -2.70094,-3.25188c-12.24156,-2.4725 -21.41937,-12.44312 -23.5425,-24.8325c3.46688,1.19594 7.01438,2.13656 10.8575,2.2575c1.57219,0.09406 2.99656,-0.88687 3.48031,-2.37844c0.48375,-1.49156 -0.1075,-3.13094 -1.43781,-3.96406c-8.17,-5.46906 -13.545,-14.78125 -13.545,-25.37c0,-3.92375 1.02125,-7.525 2.365,-10.965c17.2,18.87969 41.28,31.41688 68.4775,32.7875c1.075,0.05375 2.12313,-0.38969 2.82188,-1.20937c0.69875,-0.83313 0.9675,-1.935 0.72562,-2.98313c-0.52406,-2.23062 -0.86,-4.59562 -0.86,-6.9875c0,-16.85062 13.57188,-30.4225 30.4225,-30.4225z"></path></g></g></svg></a>
+
+                <!-- whatsapp -->
+                <a class="wsp" href="https://api.whatsapp.com/send?phone=5492944246553" target="_blank"><svg fill="#fff" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2" d="M19.102,15.022c-0.479-1.137-0.966-0.983-1.329-1.001C17.429,14.005,17.036,14,16.642,14c-0.394,0-1.033,0.146-1.575,0.73S13,16.724,13,19.594s2.116,5.641,2.411,6.031c0.296,0.389,4.164,6.278,10.087,8.804c1.409,0.6,2.509,0.959,3.366,1.228c1.414,0.444,2.702,0.381,3.72,0.231c1.134-0.167,3.494-1.411,3.986-2.772c0.492-1.362,0.492-2.529,0.344-2.772c-0.148-0.243-0.542-0.389-1.132-0.681c-0.59-0.292-3.494-1.703-4.036-1.896c-0.542-0.195-0.935-0.292-1.329,0.292c-0.394,0.584-1.525,1.896-1.869,2.286c-0.344,0.389-0.689,0.438-1.279,0.146c-0.59-0.292-2.494-0.907-4.748-2.894c-1.756-1.546-2.941-3.455-3.285-4.039s-0.037-0.899,0.259-1.19c0.266-0.262,0.59-0.681,0.886-1.022c0.296-0.341,0.394-0.584,0.59-0.973s0.098-0.73-0.05-1.022C20.775,19.059,19.594,16.19,19.102,15.022z"/><path fill="none" stroke="#fff" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M25,3C12.85,3,3,12.85,3,25c0,4.072,1.111,7.884,3.04,11.155L3,47l11.274-2.793C17.448,45.983,21.104,47,25,47c12.15,0,22-9.85,22-22S37.15,3,25,3z"/></svg></a>
+            </div>
+            <div class="txt-center terms">
+                <a href="pages/booking.html#terms">Ver Terminos y Condiciones</a>
+                <p class=" ">Like Quijote Hostel&copy;. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

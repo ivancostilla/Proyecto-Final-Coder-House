@@ -1,0 +1,13 @@
+footer {
+  background: yellow; }
+
+/* variables */
+body {
+  background: #111; }
+  body header {
+    background: red; }
+    body header nav {
+      background: pink; }
+      body header nav ul li a {
+        text-decoration: none;
+        color: #943294; }
