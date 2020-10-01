@@ -617,7 +617,6 @@
     
     .hero-rooms {
         background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50% / cover;
-        background-attachment: ;
         flex-wrap: wrap;
         z-index: 10;
     }
