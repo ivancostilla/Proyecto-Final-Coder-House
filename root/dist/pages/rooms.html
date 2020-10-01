@@ -22,6 +22,9 @@
 
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
     <!-- scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 
@@ -32,9 +35,6 @@
     <!-- local -->
     <script src="../../bootstrap-4.5.2-dist/js/bootstrap.bundle.js"></script>
     <script src="../../bootstrap-4.5.2-dist/js/bootstrap.js"></script>
-
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -94,21 +94,20 @@
             <article>
                 <div class="hero-rooms txt-color">
                     <h1 class="h-center">Habitaciones</h1>
-                    <p class="">
-                        Las habitaciones de El Quijote Hostel presentan una decoración sencilla con muebles de madera y disponen de calefacción y baño privado o compartido. Algunas habitaciones tienen cojines en tonos joya y vistas al jardín. Están ubicadas en una casa típica
-                        de estilo alpino con zonas amplias.
-                    </p>
+                    <div class="head-section__p">
+                        <p class="txt-white">
+                            Las habitaciones de El Quijote Hostel presentan una decoración sencilla con muebles de madera y disponen de calefacción y baño privado o compartido. Algunas habitaciones tienen cojines en tonos joya y vistas al jardín. Están ubicadas en una casa típica
+                            de estilo alpino con zonas amplias.
+                        </p>
+                    </div>
                 </div>
             </article>
         </section>
         <!-- fin seccion cabecera -->
 
-        <!-- nota importante: lo ideal seria colocar las imagenes en un carrousel, pero todavia no se hacerlo XD -->
-
         <!-- Seccion habitacion N° 1 -->
-        <section class="contenedores txt-color grey txt-center">
-            <article>
-                <h2 class="h-center">Habitación doble con baño compartido</h2>
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab1" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -147,40 +146,39 @@
                         </div>
                     </div>
                 </div>
-                <!-- lista con botones que van a srvir para el carrousel, que va a mostrar las distintas
-                    fotos de cada habitacion: -->
-                <p>Esta habitación doble cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                <div class="carousel__contenedor-content">
+                    <h2 class="">Habitación doble con baño compartido</h2>
+                    <p class="h5">Esta habitación doble cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
                 </div>
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar.</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                <div class="carousel__contenedor-list">
+                    <h3 class="">Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 1 -->
 
         <!-- Seccion habitacion N° 2 -->
-        <section class="contenedores txt-white blue txt-center">
-            <article>
-                <h2 class="h-center">Habitación doble con baño privado</h2>
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab2" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -215,39 +213,41 @@
                         </div>
                     </div>
                 </div>
-                <p>Habitación con baño privado y calefacción.</p>
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                    <li>Baño privado</li>
-                </ol>
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                <div class="carousel__contenedor-content">
+                    <h2>Habitación doble con baño privado</h2>
+                    <p class="h5">Habitación con baño privado y calefacción.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
                 </div>
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar.</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                        <li>-Baño privado</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 2 -->
 
         <!-- Seccion habitacion N° 3 -->
-        <section class="contenedores txt-color grey txt-center">
-            <article>
-                <h2 class="h-center">Habitación doble estándar con baño compartido - 2 camas</h2>
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab3" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -274,37 +274,38 @@
                         </div>
                     </div>
                 </div>
-                <p>Esta habitación doble cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>Habitacion ubicada en planta baja</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-                <div class="icon">
-                    <img class="" src="../images/jardin.svg" alt="Patio" title="Patio">
+                <div class="carousel__contenedor-content">
+                    <h2>Habitación doble estándar con baño compartido - 2 camas</h2>
+                    <p>Esta habitación doble cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/jardin.svg" alt="Patio" title="Patio">
+                    </div>
                 </div>
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-Habitacion ubicada en planta baja</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 3 -->
 
         <!-- Seccion habitacion N° 4 -->
-        <section class="contenedores txt-white blue txt-center">
-            <article>
-                <h2 class="h-center">Cama individual en una Habitación Compartida de 4 camas con baño privado</h2>
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab4" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -339,41 +340,38 @@
                         </div>
                     </div>
                 </div>
-                <p>Esta habitación cuadruple cuenta con calefacción y baño privado. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3>Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                <div class="carousel__contenedor-content">
+                    <h2>Cama individual en una Habitación Compartida de 4 camas con baño privado</h2>
+                    <p>Esta habitación cuadruple cuenta con calefacción y baño privado. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
                 </div>
-
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 4 -->
 
         <!-- Seccion habitacion N° 5 -->
-        <section class="contenedores txt-color grey txt-center">
-            <article>
-                <h2 class="h-center">Cama en habitación mixta compartida de 6 camas</h2>
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab5" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -417,38 +415,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel__contenedor-content">
+                    <h2>Cama en habitación mixta compartida de 6 camas</h2>
+                    <p>Esta habitación sextuple cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
 
-                <p>Esta habitación sextuple cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                </ol>
-
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
                 </div>
-
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 5 -->
 
         <!-- Seccion habitacion N° 6 -->
-        <section class="contenedores txt-white blue txt-center">
-            <article>
-                <h2 class="h-center">Cama individual en habitación mixta compartida</h2>
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab6" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -483,42 +480,41 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel__contenedor-content">
+                    <h2>Cama individual en habitación mixta compartida</h2>
+                    <p>Esta habitación compartida cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
 
-                <p>Esta habitación compartida cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
                 </div>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
 
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 6 -->
 
         <!-- Seccion habitacion N° 7 -->
-        <section class="contenedores txt-color grey txt-center">
-            <article>
-                <h2 class="h-center">Habitación Cuádruple con baño privado</h2>
-
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab7" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -553,45 +549,44 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel__contenedor-content">
+                    <h2>Habitación Cuádruple con baño privado</h2>
+                    <p>Esta habitación cuadruple cuenta con calefacción y baño privado. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
 
-                <p>Esta habitación cuadruple cuenta con calefacción y baño privado. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>1 cama doble y 2 cuchetas</li>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Baño privado</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
                 </div>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-1 cama doble y 2 cuchetas</li>
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Baño privado</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
 
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 7 -->
 
         <!-- Seccion habitacion N° 8 -->
-        <section class="contenedores txt-white blue txt-center">
-            <article>
-                <h2 class="h-center">Habitación Familiar con baño privado</h2>
-
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab8" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -635,44 +630,43 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel__contenedor-content">
+                    <h2>Habitación Familiar con baño privado</h2>
+                    <p>Esta habitación cuenta con calefacción y baño privado. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
 
-                <p>Esta habitación cuenta con calefacción y baño privado. También se proporcionan toallas y ropa de cama.</p>
-
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>2 camas individuales y 4 cuchetas</li>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/bano.svg" alt="baño privado" title="baño privado">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
                 </div>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-2 camas individuales y 4 cuchetas</li>
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
 
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 8 -->
 
         <!-- Seccion habitacion N° 9 -->
-        <section class="contenedores txt-color grey txt-center">
-            <article>
-                <h2 class="h-center">Habitación Familiar con baño compartido</h2>
-
+        <section class="contenedores rooms blue txt-center">
+            <article class="carousel__contenedor container">
                 <div class="container d-flex mx-auto">
                     <div class="row mx-auto">
                         <div id="carouselIndicators-hab9" class="carousel slide carousel-fade mx-auto" data-ride="carousel">
@@ -707,35 +701,37 @@
                         </div>
                     </div>
                 </div>
+                <div class="carousel__contenedor-content">
+                    <h2>Habitación Familiar con baño compartido</h2>
+                    <p>Esta habitación Familiar cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
 
-                <p>Esta habitación Familiar cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama.</p>
+                    <div class="icon">
+                        <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                        <img class="" src="../images/bano.svg" alt="baño privado" title="baño Privado">
+                        <img class="" src="../images/jardin.svg" alt="patio" title="patio">
+                    </div>
 
-                <h3 class="h-center">Equipamiento de la habitación:</h3>
-                <ol>
-                    <li>1 cama doble matrimonial y 2 cuchetas</li>
-                    <li>Acceso a pisos superiores solo por escalera</li>
-                    <li>Ropa de cama</li>
-                    <li>Juegos de mesa/rompecabezas</li>
-                    <li>Tetera/Cafetera</li>
-                    <li>Calefacción</li>
-                    <li>Cocina</li>
-                    <li>Heladera</li>
-                    <li>Cafetera</li>
-                    <li>Zona de comedor</li>
-                    <li>Zona de comedor exterior</li>
-                    <li>Enchufe cerca de la cama</li>
-                    <li>Perchero de barral</li>
-                </ol>
-
-                <div class="icon">
-                    <img class="" src="../images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
-                    <img class="" src="../images/bano.svg" alt="baño privado" title="baño Privado">
-                    <img class="" src="../images/jardin.svg" alt="patio" title="patio">
                 </div>
+                <div class="carousel__contenedor-list">
+                    <h3>Equipamiento de la habitación:</h3>
+                    <ul class="list-style">
+                        <li>-1 cama doble matrimonial y 2 cuchetas</li>
+                        <li>-Acceso a pisos superiores solo por escalera</li>
+                        <li>-Ropa de cama</li>
+                        <li>-Juegos de mesa/rompecabezas</li>
+                        <li>-Tetera/Cafetera</li>
+                        <li>-Calefacción</li>
+                        <li>-Cocina</li>
+                        <li>-Heladera</li>
+                        <li>-Cafetera</li>
+                        <li>-Zona de comedor</li>
+                        <li>-Zona de comedor exterior</li>
+                        <li>-Enchufe cerca de la cama</li>
+                        <li>-Perchero de barral</li>
+                    </ul>
+                    <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
 
-                <h4 class="h-center">Política de fumadores:</h4>
-                <p class="padding-p">no está permitido fumar</p>
-                <a class="boton" href="booking.html">Reserva ahora <i><img src="../images/chevron-derecho.svg" alt=""></i></a>
+                </div>
             </article>
         </section>
         <!-- Fin seccion Habitacion N° 9 -->
@@ -759,7 +755,7 @@
     <!-- fin del cuerpo(main) -->
 
     <footer class="contact-us txt-white blue txt-center" id="contact-us">
-        <h2 class="h-center">Contactanos</h2>
+        <h2 class="h-center titulo-header">Contactanos</h2>
         <div class="contact-container">
             <!-- formulario de contacto -->
             <form class="contact-form" action="#" class="" method="post">
