@@ -54,26 +54,26 @@
                 </li>
                 <li>
                     <div class="link-div">
-                        <a href="pages/booking.html" target="_blank"> Reservar</a>
+                        <a href="pages/booking.html" target="_blank">Reservar</a>
                     </div>
                 </li>
                 <li>
-                    <a href="pages/rooms.html" target="_blank"> Habitaciones</a>
+                    <a href="pages/rooms.html" target="_blank">Habitaciones</a>
                 </li>
                 <li>
-                    <a href="pages/services.html" target="_blank"> Servicios</a>
+                    <a href="pages/services.html" target="_blank">Servicios</a>
                 </li>
                 <li>
-                    <a href="pages/about-us.html" target="_blank"> Sobre Nosotros</a>
+                    <a href="pages/about-us.html" target="_blank">Sobre Nosotros</a>
                 </li>
                 <li>
-                    <a href="pages/find-us.html" target="_blank"> Como Llegar</a>
+                    <a href="pages/find-us.html" target="_blank">Como Llegar</a>
                 </li>
                 <li>
                     <a href="https://www.workaway.info/en/host/211131141727" target="_blank"> Trabaja con Nosotros</a>
                 </li>
                 <li>
-                    <a href="#contact-us"> Contactanos</a>
+                    <a href="#contact-us" id="contact-menu-off">Contactanos</a>
                 </li>
             </ul>
         </nav>
@@ -106,8 +106,6 @@
                 <article class="">
                     <h2 class="h-center h1">Habitaciones</h2>
                     <div class="contenedores">
-                        <!-- tengo que solucionar los chevron que no son responsive todavia jaja -->
-                        <a class="previus" role="button"><i class="boton"><img src="images/chevron-izquierda-redondo.svg" alt=""></i></a>
                         <div class="container-rooms">
                             <div class="clip box1">
                                 <div class="content-room">
@@ -144,7 +142,6 @@
                                 </div>
                             </div>
                         </div>
-                        <a class="next" role="button"><i class="boton"><img class=""src="images/chevron-derecha-redondo.svg" alt=""></i></a>
                     </div>
                     <a class="boton" href="pages/rooms.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
                 </article>
@@ -206,19 +203,21 @@
                             </div>
                         </div>
                     </div>
-                    <a class="boton " href="pages/services.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                    <a class="boton" href="pages/services.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
                 </article>
             </section>
             <!-- fin seccion servicios -->
 
             <!-- seccion sobre nosotros -->
-            <section class=" txt-color contenedores grey txt-center " id="about-us ">
-                <article>
-                    <h2 class="h-center h1">Sobre Nosotros</h2>
-                    <p class="padding-p ">
-                        Nos encantó crear Like Quijote y nos divertimos mucho pensando en pequeños detalles que nuestros huéspedes disfrutarán, encontrarán útiles y, con suerte, harán sonreír. Nos apasiona Bariloche y es todo lo que queremos compartirles. Ciertos dorms o habitaciones
-                        cuentan con vistas al jardín o la ciudad. Cada habitación tiene un baño privado o varios son compartidos</p>
-                    <a class="boton " href="pages/about-us.html " target="_blank ">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+            <section class="txt-white txt-center home-about-us" id="about-us">
+                <article class="img-hero-about">
+                    <div class="border">
+                        <h2 class="h-center h1">Sobre Nosotros</h2>
+                        <p class="">
+                            Nos encantó crear Like Quijote y nos divertimos mucho pensando en pequeños detalles que nuestros huéspedes disfrutarán, encontrarán útiles y, con suerte, harán sonreír. Nos apasiona Bariloche y es todo lo que queremos compartirles. Ciertos dorms o habitaciones
+                            cuentan con vistas al jardín o la ciudad. Cada habitación tiene un baño privado o varios son compartidos</p>
+                        <a class="boton" href="pages/about-us.html" target="_blank">Ver Mas <i><img src="images/chevron-derecho.svg" alt=""></i></a>
+                    </div>
                 </article>
             </section>
             <!-- fin seccion nosotros -->
@@ -348,6 +347,9 @@
             </div>
         </footer>
     </div>
+
+    <!-- scripts -->
+    <script src="scripts/scripts.js"></script>
 
 </body>
 
