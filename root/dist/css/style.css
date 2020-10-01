@@ -1,5 +1,6 @@
     /* inicio estilos generales */
-    /* to do: agregar carousel y agregar el acordeon, luego aplicar BEM y pasar todo a sass*/
+    /* to do: hacer el carousel responsive y agregar el acordeon, 
+    hacer el navbar responsive luego aplicar BEM y pasar todo a sass*/
     
     * {
         box-sizing: border-box;
@@ -151,7 +152,7 @@
     /* fin de estilos del nav */
     /* estilos de los contenedores */
     
-    .container {
+    .contenedores {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
@@ -171,17 +172,6 @@
     
     .img-size img {
         height: 50%;
-        padding: 2rem;
-        width: 100%;
-    }
-    
-    .hero-rooms {
-        height: 100%;
-        width: 100%;
-    }
-    
-    .hero-rooms img {
-        height: 100%;
         padding: 2rem;
         width: 100%;
     }
@@ -230,6 +220,7 @@
         outline: none;
         padding: 1.25rem 0;
         width: 100%;
+        transition: all .5s;
     }
     
     .contact-container .contact-input::placeholder {
@@ -297,16 +288,19 @@
     
     .home .img-hero {
         background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/background-image.jpg) no-repeat 75% 75% / cover;
+        z-index: 20;
+    }
+    
+    .home .img-hero,
+    article .hero-rooms {
         background-attachment: fixed;
         height: 40.850rem;
-        /* no uso vh xq no queda centrado en dispositivo movil */
         display: flex;
         align-items: center;
         justify-content: center;
         overflow: hidden;
         position: relative;
         width: 100%;
-        z-index: 20;
     }
     /* fin estilos de la bg-image y el logo */
     /* estilos del contacto por wsp */
@@ -454,7 +448,6 @@
     .container .next {
         display: none;
     }
-    /* quito los chevron hasta que solucione como integrarlos en mobile, pero en desktop los dejo */
     /* fin estilos seccion rooms */
     /* estilos seccion services */
     /* fin estilos seccion services */
@@ -463,6 +456,7 @@
     .find-us .map iframe {
         margin: 2rem auto;
         width: 16.5625rem;
+        box-shadow: .0625rem .0625rem .3125rem 0 #000;
     }
     /* fin estilos seccion find-us */
     /* seccion work-with-us */
@@ -620,34 +614,41 @@
     /*fin estilos seccion gallery */
     /* fin estilos index(home) */
     /* inicio estilos rooms.html */
-    /* galeria de imagenes para el desafio 6 */
     
-    .rooms {
-        display: flex;
+    .hero-rooms {
+        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50% / cover;
+        background-attachment: ;
         flex-wrap: wrap;
-        justify-content: center;
-        align-content: center;
+        z-index: 10;
     }
     
-    .rooms img {
-        width: 40%;
+    .hero-rooms h1 {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+    
+    .hero-rooms p {
+        font-weight: 700;
+        font-style: italic;
+        font-size: 1.25rem;
+    }
+    
+    .carousel-item img {
+        /* max-width: 249px; */
+        min-width: 1100px;
+        width: 50%;
         flex-basis: fit-content;
         flex-grow: 1;
-        height: 400px;
-        margin: 0.5em;
+        height: 500px;
         object-fit: cover;
     }
     
-    .rooms:nth-child(5) {
+    .carousel {
         width: 100%;
     }
     
-    .padding-p {
-        padding-bottom: 3rem
-    }
-    
-    .rooms p {
-        padding: 2rem;
+    .carousel-inner {
+        border-radius: 20rem;
     }
     /* fin estilos rooms.html */
     /* inicio estilos booking.html */
@@ -773,6 +774,8 @@
         .boton:hover {
             filter: saturate(150%);
             background-position: 0 0;
+            color: #fff;
+            /* esto lo coloco porque si no en el rooms.html el bootstrap me pisa la clase */
         }
         .boton:hover i {
             padding-left: .180rem;
@@ -848,6 +851,10 @@
         }
         /*fin  estilos de la seccion reserva de la landing page */
         /*estilos seccion rooms */
+        .hero-rooms h1 {
+            margin: 10rem 0;
+            font-size: 3rem;
+        }
         .container-rooms {
             width: 34rem;
         }
@@ -894,6 +901,10 @@
         }
         /* fin estilos de la seccion reserva de la landing page */
         /* estilos seccion rooms */
+        .hero-rooms h1 {
+            margin: 10rem 0;
+            font-size: 5rem;
+        }
         .container-rooms {
             width: 43rem;
         }
@@ -977,7 +988,7 @@
         .fixed {
             position: fixed;
             top: 0;
-            z-index: 10;
+            z-index: 20;
         }
         /* fin posicionamiento para el nav de todas las paginas menos del home */
         /* posicionamiento para el nav del home */
@@ -1010,7 +1021,7 @@
             padding: 0 .5rem;
             margin-bottom: .3rem;
             border-left: .125rem solid #fff;
-            border-right: .125rem solid #fff;
+            border-right: .125rem solid rgb(255, 255, 255);
         }
         /* fin de parte a agregar al proyecto */
         /*fin estilos desktop del nav */

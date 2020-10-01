@@ -11,3 +11,98 @@ body {
       body header nav ul li a {
         text-decoration: none;
         color: #943294; }
+
+/* operadores condicionales y bucles */
+.box-uno {
+  width: 350px; }
+
+.box-dos {
+  width: 650px; }
+
+/* condicionales */
+/* cuando una condicion se cumpla hacer algo y cuando no.. no hacerlo */
+p {
+  color: red;
+  width: 233.33333px;
+  background: blue; }
+
+/* bucles */
+/* to no utiliza el ultimo valor osea el 3 */
+.casitodos-0 {
+  width: 0em; }
+
+.casitodos-1 {
+  width: 2em; }
+
+.casitodos-2 {
+  width: 4em; }
+
+/* through si utiiza el ultimo valor osea el 3 en este caso */
+/* 1ro nombe de la clase.. 2do interpolar(#){nombre de la variable}
+     {propiedad: valor(puede ser variable) operador valor}*/
+.casitodoss-0 {
+  width: 0em; }
+
+/* 1ro nombe de la clase.. 2do interpolar(#){nombre de la variable}
+     {propiedad: valor(puede ser variable) operador valor}*/
+.casitodoss-1 {
+  width: 2em; }
+
+/* 1ro nombe de la clase.. 2do interpolar(#){nombre de la variable}
+     {propiedad: valor(puede ser variable) operador valor}*/
+.casitodoss-2 {
+  width: 4em; }
+
+/* 1ro nombe de la clase.. 2do interpolar(#){nombre de la variable}
+     {propiedad: valor(puede ser variable) operador valor}*/
+.casitodoss-3 {
+  width: 6em; }
+
+/* practica */
+.alto-1 {
+  height: 3em; }
+
+.alto-2 {
+  height: 6em; }
+
+.alto-3 {
+  height: 9em;
+  width: 2em; }
+
+.alto-4 {
+  height: 12em; }
+
+/* each */
+.gato-icon {
+  background-image: url(../../dist/images/gato.jpg); }
+
+.perro-icon {
+  background-image: url(../../dist/images/perro.jpg); }
+
+.caballo-icon {
+  background-image: url(../../dist/images/caballo.jpg); }
+
+/* maps */
+/* son tipos de variables que se pueden guardar dos variables */
+.bton-twitter {
+  background-color: blue; }
+
+.bton-facebook {
+  background-color: red; }
+
+.bton-instagram {
+  background-color: yellow; }
+
+/* extends = herencia */
+.redsocial, .redsocial-facebook {
+  width: 500px;
+  height: 300px; }
+
+.redsocial-facebook {
+  background-color: red; }
+
+/* mixins */
+/*@mixin le ponemos un nombre */
+.boxx {
+  height: 500px;
+  width: 500px; }
