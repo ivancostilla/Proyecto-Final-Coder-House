@@ -781,6 +781,18 @@
     .form-reserva .a-reserva {
         margin-left: 1rem;
     }
+    
+    .politicas-del-alojamiento {
+        border: 2px solid #056674;
+        background-color: rgba(5, 102, 116, .5);
+        font-weight: 700;
+        font-size: 1.2rem;
+        box-shadow: .0625rem .0625rem .3125rem 0 #000;
+        transition: all 0.5s;
+        width: 90%;
+        margin: 0 auto;
+        padding: .625rem 0;
+    }
     /* fin estilos booking.html */
     /* inicio estilos services.html */
     /* estilos de la seccion cabecera */
@@ -820,6 +832,33 @@
         padding-bottom: 1rem;
     }
     /* fin estilos de la seccion cabecera */
+    /* estilos seccion mas servicios */
+    
+    .mas-servicios {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: .3125rem;
+        height: 900px;
+        text-align: center;
+    }
+    
+    .mas-servicios-box {
+        border: 1px solid #056674;
+        background-color: rgba(5, 102, 116, .7);
+        box-shadow: .0625rem .0625rem .3125rem 0 #000;
+        border-radius: .3125rem;
+        transition: all .5s ease;
+        font-size: 1.25rem;
+        height: 15.625rem;
+        padding: 1.25rem;
+        margin-top: 1.875rem;
+    }
+    
+    .mas-servicios-box h3 {
+        padding-bottom: 10px;
+        line-height: 1.5;
+    }
+    /* fin estilos seccion mas servicios */
     /* fin estilos services.html */
     /* inicio estilos about-us.html */
     
@@ -933,6 +972,18 @@
     }
     /* fin estilos about-us.html */
     /* inicio estilos find-us.html */
+    
+    .find-us address {
+        border: .125rem solid #056674;
+        background-color: rgba(5, 102, 116, .7);
+        display: inline-block;
+        padding: .625rem;
+        border-radius: .3125rem;
+        font-weight: 700;
+        font-size: 1.25rem;
+        margin: 10px 0;
+        box-shadow: .1125rem .3375rem .75rem -0.125rem rgba(0, 0, 0, .75);
+    }
     /* fin estilos find-us.html */
     /* Estilos Responsive */
     /* media querie 400px */
@@ -1072,6 +1123,11 @@
             max-width: 439px;
         }
         /* fin rooms.html */
+        /* booking.html */
+        .politicas-del-alojamiento:hover {
+            transform: translateY(-10px);
+        }
+        /* fin booking.html */
     }
     /* media querie 700px */
     
@@ -1107,7 +1163,7 @@
         /* fin estilos seccion rooms */
         /* estilos seccion find-us */
         .find-us .map iframe {
-            width: 42.6875rem;
+            width: 41.6875rem;
         }
         /* fin estilos seccion find-us */
         /* estilos seccion testimonials */
@@ -1156,6 +1212,19 @@
             margin: 0;
         }
         /* fin estilos seccion cabecera */
+        /* estilos seccion mas servicos */
+        .mas-servicios {
+            grid-template-columns: repeat(3, 1fr);
+            height: 400px;
+        }
+        .mas-servicios-box {
+            height: 300px;
+            margin: 30px 5px;
+        }
+        .mas-servicios-box:hover {
+            transform: translateY(-20px);
+        }
+        /* fin estilos seccion mas servicios */
         /* fin estilos services.html */
         /* rooms.html */
         .carousel-item img {
@@ -1254,7 +1323,7 @@
         /* fin estilos seccion rooms del index */
         /* estilos seccion find-us */
         .find-us .map iframe {
-            width: 62.5rem;
+            width: 60.5rem;
         }
         /* fin estilos seccion find-us */
         /* estilos seccion testimonials */
@@ -1389,6 +1458,11 @@
     /* media querie 1300px */
     
     @media screen and (min-width: 81.25rem) {
+        /* estilos seccion find-us */
+        .find-us .map iframe {
+            width: 70.5rem;
+        }
+        /* fin estilos seccion find-us */
         /* rooms.html */
         .carousel-item img {
             height: 500px;
