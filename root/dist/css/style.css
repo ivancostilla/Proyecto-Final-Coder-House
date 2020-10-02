@@ -1,5 +1,8 @@
     /* inicio estilos generales */
-    /* to do: agregar el acordeon, 
+    /* to do:terminar la seccion mas servicios del services.html,
+    en booking.html terminar la seccion del mapa y la seccion de politicas,
+    terminar el texto en find-us.html,
+    acomodar el codigo que está un desastre,
     luego aplicar BEM y pasar todo a sass*/
     
     * {
@@ -336,6 +339,32 @@
         font-weight: 700;
     }
     
+    .about-us-hero .img-about-us-hero-header {
+        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15% / cover;
+    }
+    
+    .about-us-hero .img-about-us-hero-body {
+        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15% / cover;
+    }
+    
+    .about-us-hero .img-about-us-hero-header,
+    .about-us-hero .img-about-us-hero-body {
+        flex-direction: column;
+        justify-content: space-between;
+        font-weight: 700;
+        font-size: 1.25rem;
+        z-index: 10;
+    }
+    
+    .about-us-hero .img-about-us-hero h1 {
+        font-size: 4rem;
+        font-weight: 800;
+    }
+    
+    .about-us-hero .img-about-us-hero p {
+        font-style: italic;
+    }
+    
     .home-about-us .img-hero-about div {
         border: .125rem solid #ff4b5c;
         border-radius: .3125rem;
@@ -351,7 +380,9 @@
     
     .home .img-hero,
     .home-about-us .img-hero-about,
-    article .hero-rooms {
+    article .hero-rooms,
+    .about-us-hero .img-about-us-hero-header,
+    .about-us-hero .img-about-us-hero-body {
         background-attachment: fixed;
         height: 40.850rem;
         display: flex;
@@ -675,7 +706,7 @@
     /* inicio estilos rooms.html */
     
     .hero-rooms {
-        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50% / cover;
+        background: linear-gradient(120deg, rgba(126, 91, 126, .6) 0%, rgba(153, 96, 104, 0.6) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50% / cover;
         flex-wrap: wrap;
         z-index: 10;
     }
@@ -689,12 +720,6 @@
         font-weight: 700;
         font-style: italic;
         font-size: 1.25rem;
-    }
-    
-    .head-section__p {
-        border: 2px solid #ff4b5c;
-        background-color: rgba(255, 75, 92, .6);
-        box-shadow: .0625rem .0625rem .3125rem 0 #000;
     }
     
     .carousel-item img {
@@ -798,6 +823,50 @@
     /* fin estilos services.html */
     /* inicio estilos about-us.html */
     
+    .acordeon__contenedor {
+        width: 800px;
+    }
+    
+    .acordeon__contenedor-box {
+        position: relative;
+        margin: 10px 20px;
+    }
+    
+    .acordeon__contenedor-box .label {
+        position: relative;
+        padding: 10px;
+        background: #056674;
+        cursor: pointer;
+    }
+    
+    .acordeon__contenedor-box .label::before {
+        content: '+';
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        font-size: 1.25rem;
+    }
+    
+    .acordeon__contenedor-box.active .label::before {
+        content: '-';
+    }
+    
+    .acordeon__contenedor-box .content-acordeon {
+        position: relative;
+        background: rgba(5, 102, 118, .7);
+        height: 0;
+        overflow: hidden;
+        overflow-y: auto;
+        transition: .5s;
+        font-weight: 700;
+    }
+    
+    .acordeon__contenedor-box.active .content-acordeon {
+        height: 200px;
+        padding: 10px;
+    }
+    
     .container-about {
         display: grid;
         grid-template-columns: 1fr;
@@ -809,7 +878,7 @@
         border: .0625rem solid #0696ac;
         border-radius: .3125rem;
         display: flex;
-        align-items: space-around;
+        align-items: space-evenly;
         justify-content: center;
         margin: 3.125rem auto 0;
         max-width: 75rem;
@@ -838,7 +907,6 @@
         height: 25rem;
         justify-content: center;
         position: absolute;
-        padding: 1.875rem;
     }
     
     .box-about .bg-about ul {
