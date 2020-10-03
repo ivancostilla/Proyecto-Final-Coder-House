@@ -67,21 +67,13 @@
        background-color: #056674;
        box-shadow: 0 2.1875rem 4.8125rem -1.0625rem rgba(0, 0, 0, .44);
        cursor: pointer;
-<<<<<<< HEAD
-=======
-       height: 23.75rem;
->>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
        display: flex;
        align-items: center;
        justify-content: center;
        flex-direction: column;
        overflow: hidden;
        position: relative;
-<<<<<<< HEAD
        @include tamaños(23.75rem, 100%);
-=======
-       width: 100%;
->>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
    }
    
    .box-about .bg-about {
