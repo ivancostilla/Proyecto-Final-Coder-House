@@ -13,8 +13,14 @@
 
 .line {
     background: #fff;
+<<<<<<< HEAD
     margin: 5px;
     @include tamaños(.1875rem, 1.875rem);
+=======
+    height: 3px;
+    margin: 5px;
+    width: 30px;
+>>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
 }
 
 .hamburger {
@@ -26,11 +32,22 @@
 }
 
 .nav-links {
+<<<<<<< HEAD
     background: $pink-bg-color;
     @include flex(flex, center, space-evenly);
     flex-direction: column;
     @include tamaños(100vh, 100%);
     margin-left: auto;
+=======
+    background: #ff4b5c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-evenly;
+    margin-left: auto;
+    width: 100%;
+>>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
     transition: all 1s ease;
     clip-path: circle(5.25rem at 90% -10%);
 }
@@ -65,7 +82,11 @@
 }
 
 .nav-links a {
+<<<<<<< HEAD
     color: $color-grey-element;
+=======
+    color: #f0efef;
+>>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
 }
 
 

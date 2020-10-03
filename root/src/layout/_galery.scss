@@ -10,8 +10,14 @@
   }
   
   .galeria img {
+<<<<<<< HEAD
       object-fit: cover;
       @include tamaños(100%, 100%);
+=======
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+>>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
       /* es para que no se distorsionen las imagenes */
   }
   /*fin estilos seccion gallery */

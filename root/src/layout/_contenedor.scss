@@ -1,17 +1,31 @@
 /* estilos de los contenedores */
 
 .contenedores {
+<<<<<<< HEAD
     @include flex(flex, center, space-evenly);
+=======
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+>>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
     flex-wrap: wrap;
     padding-bottom: 2rem;
 }
 
 .blue {
+<<<<<<< HEAD
     background: $blue-bg-color;
 }
 
 .grey {
     background: $grey-bg-color;
+=======
+    background: #056674;
+}
+
+.grey {
+    background: #e0ece4;
+>>>>>>> db1b77a6c3ccefbe24829bad7793eb7f6a624bb9
 }
 
 
