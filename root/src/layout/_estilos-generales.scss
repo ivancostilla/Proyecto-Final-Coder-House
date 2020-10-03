@@ -1,0 +1,89 @@
+ /* inicio estilos generales */
+ /* to do:acomodar el codigo que está un desastre,
+    luego aplicar BEM y continuar agregando mixins y variables scss y aplicar el anidamiento*/
+ 
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ html {
+     font-size: 16px;
+     scroll-behavior: smooth;
+ }
+ 
+ body {
+     cursor: default;
+     font-family: 'Sen', sans-serif;
+     font-weight: 400;
+     @include tamaños(100vh, 100%);
+ }
+ 
+ .dspl-none {
+     display: none;
+ }
+ 
+ .dspl-block {
+     display: block;
+ }
+ 
+ .titulo-header,
+ .h1 {
+     line-height: 3;
+     font-size: 2rem;
+ }
+ 
+ .h-center {
+     font-weight: 700;
+     text-align: center;
+     text-transform: uppercase;
+ }
+ 
+ .icon img,
+ .container-rooms .icon img {
+     /* le damos tamaño a los iconos */
+     @include tamaños(4rem, 4rem);
+ }
+ 
+ .list-style,
+ .list-style li {
+     list-style: none;
+ }
+ 
+ .m-top-4 {
+     margin-top: 3rem;
+ }
+ 
+ .txt-center {
+     text-align: center;
+ }
+ 
+ .txt-color {
+     color: $color-txt-pink;
+ }
+ 
+ .txt-decoration a {
+     text-decoration: none;
+ }
+ 
+ .txt-white {
+     color: $color-txt-grey;
+ }
+ /* tamaños provisorios para imagenes e iconos */
+ 
+ .img-size img {
+     padding: 2rem;
+     @include tamaños(50%, 100%);
+ }
+ /* fin de tamaños provisorios para imagenes e iconos */
+ /* fin estilos generales */
+ /* media querie 1000px */
+ 
+ @media screen and (min-width: 62.5rem) {
+     /* estilos generales */
+     .h1 {
+         font-size: 3rem;
+     }
+     /* fin estilos generales */
+ }

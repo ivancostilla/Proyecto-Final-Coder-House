@@ -1,0 +1,159 @@
+   /* inicio estilos about-us.html */
+   
+   .acordeon__contenedor {
+       width: 800px;
+   }
+   
+   .acordeon__contenedor-box {
+       position: relative;
+       margin: 10px 20px;
+   }
+   
+   .acordeon__contenedor-box .label {
+       position: relative;
+       padding: 10px;
+       background: #056674;
+       cursor: pointer;
+   }
+   
+   .acordeon__contenedor-box .label::before {
+       content: '+';
+       position: absolute;
+       top: 50%;
+       right: 20px;
+       transform: translateY(-50%);
+       font-size: 1.25rem;
+   }
+   
+   .acordeon__contenedor-box.active .label::before {
+       content: '-';
+   }
+   
+   .acordeon__contenedor-box .content-acordeon {
+       position: relative;
+       background: rgba(5, 102, 118, .7);
+       height: 0;
+       overflow: hidden;
+       overflow-y: auto;
+       transition: .5s;
+       font-weight: 700;
+   }
+   
+   .acordeon__contenedor-box.active .content-acordeon {
+       height: 200px;
+       padding: 10px;
+   }
+   
+   .container-about {
+       display: grid;
+       grid-template-columns: 1fr;
+       grid-gap: .3125rem;
+       padding-bottom: 3rem;
+   }
+   
+   .box-about {
+       border: .0625rem solid #0696ac;
+       border-radius: .3125rem;
+       display: flex;
+       align-items: space-evenly;
+       justify-content: center;
+       margin: 3.125rem auto 0;
+       max-width: 75rem;
+       transition: all .4s ease-out;
+       width: 90%;
+   }
+   
+   .box-about .about-img {
+       background-color: #056674;
+       box-shadow: 0 2.1875rem 4.8125rem -1.0625rem rgba(0, 0, 0, .44);
+       cursor: pointer;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       overflow: hidden;
+       position: relative;
+       @include tamaños(23.75rem, 100%);
+   }
+   
+   .box-about .bg-about {
+       display: grid;
+       align-content: space-evenly;
+       font-weight: 700;
+       height: 25rem;
+       justify-content: center;
+       position: absolute;
+   }
+   
+   .box-about .bg-about ul {
+       opacity: 0;
+       transform: translateY(1.25rem) translateZ(-25rem);
+       transition-delay: 0.2s;
+       transition: all 0.6s ease-in-out;
+   }
+   
+   .box-about:active {
+       border: none;
+       box-shadow: 0 2.1875rem 4.8125rem -1.0625rem rgba(0, 0, 0, .64);
+       transform: scale(1.1);
+       z-index: 2;
+   }
+   
+   .box-about:active .about-img {
+       filter: blur(.3125rem);
+   }
+   
+   .box-about:active ul {
+       transform: translateY(0) translateZ(0);
+       opacity: 1;
+   }
+   /* fin estilos about-us.html */
+   /* Estilos Responsive */
+   /* media querie 400px */
+   
+   @media screen and (min-width: 25rem) {
+       /*estilos about-us.html */
+       .box-about:hover {
+           border: none;
+           box-shadow: 0 2.1875rem 4.8125rem -1.0625rem rgba(0, 0, 0, .64);
+           transform: scale(1.1);
+           z-index: 2;
+       }
+       .box-about:hover .about-img {
+           filter: blur(.3125rem);
+       }
+       .box-about:hover ul {
+           transform: translateY(0) translateZ(0);
+           opacity: 1;
+       }
+       /* fin estilos about-us.html */
+   }
+   /* media querie 700px */
+   
+   @media screen and (min-width: 43.75rem) {
+       /* estilos about.us.html */
+       .container-about {
+           grid-template-columns: repeat(2, 1fr);
+       }
+       /*fin estilos about.us.html */
+   }
+   /* media querie 1000px */
+   
+   @media screen and (min-width: 62.5rem) {
+       /* estilos about.us.html */
+       .container-about {
+           grid-template-columns: repeat(3, 1fr);
+       }
+       .box-about:nth-child(1) .ul-about ul,
+       .box-about:nth-child(3) .ul-about ul {
+           margin: 7rem;
+       }
+       .box-about:nth-child(2) .ul-about ul {
+           margin: 5rem;
+       }
+       .box-about:nth-child(4) .ul-about ul,
+       .box-about:nth-child(5) .ul-about ul {
+           margin: 9rem;
+       }
+       /* fin estilos about-us.html */
+   }

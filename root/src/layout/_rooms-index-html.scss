@@ -1,0 +1,141 @@
+   /* estilos seccion rooms */
+   
+   .rooms-lp {
+       height: 49rem;
+       width: 100%;
+   }
+   
+   .container-rooms {
+       background: url(../images/hab-seis-dos.jpg);
+       /* esta img la repito tmb en el .box1 porq si no la coloco, al hacer hover quedan desfasadas las img, y tengo que buscar la solucion para que el bg-size no se repita tanto */
+       background-size: cover;
+       border: 1px solid #50949e;
+       border-radius: 1%;
+       box-shadow: .3125rem .4375rem .75rem -0.125rem rgba(0, 0, 0, .75);
+       height: 31.25rem;
+       margin: 3rem;
+       position: relative;
+       width: 15rem;
+   }
+   
+   .clip {
+       position: absolute;
+       height: 100%;
+       left: 0;
+       top: 0;
+       transition: .5s;
+       width: 100%;
+   }
+   
+   .box1 {
+       background: url(../images/hab-seis-dos.jpg);
+       background-size: cover;
+       clip-path: polygon(100% 47%, 0 29%, 0 0, 100% 0);
+   }
+   
+   .box2 {
+       background: url(../images/hab-seis.jpg);
+       background-size: cover;
+       clip-path: polygon(100% 80%, 0 63%, 0 29%, 100% 46%);
+   }
+   
+   .box3 {
+       background: url(../images/hab-seis-cuatro.jpg);
+       background-size: cover;
+       clip-path: polygon(100% 100%, 0 100%, 0 61%, 100% 80%);
+   }
+   
+   .container-rooms:active .clip {
+       clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%);
+   }
+   
+   .container-rooms .clip:active {
+       clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+   }
+   
+   .content-room {
+       background-color: #ffffffb3;
+       bottom: -100%;
+       border-radius: .3125rem;
+       font-size: .9375rem;
+       left: 0;
+       margin: .1875rem;
+       opacity: 0;
+       padding: .9375rem;
+       position: absolute;
+       transition: .5s;
+       width: 70%;
+   }
+   
+   .container-rooms .clip:active .content-room {
+       bottom: 0;
+       opacity: 1;
+   }
+   
+   .container .previus,
+   .container .next {
+       display: none;
+   }
+   /* fin estilos seccion rooms */
+   /* media querie 400px */
+   
+   @media screen and (min-width: 25rem) {
+       /* estilos seccion rooms de la landing page */
+       .container-rooms {
+           width: 23rem;
+       }
+       /* fin estilos seccion rooms */
+   }
+   /* media querie 580px */
+   
+   @media screen and (min-width: 36.25rem) {
+       /*estilos seccion rooms del index */
+       .container-rooms {
+           width: 34rem;
+       }
+       /* fin estilos seccion rooms del index */
+       /* media querie 700px */
+       @media screen and (min-width: 43.75rem) {
+           /* estilos seccion rooms del index */
+           .container-rooms {
+               width: 43rem;
+           }
+           /* fin estilos seccion rooms del index */
+       }
+   }
+   /* media querie 1000px */
+   
+   @media screen and (min-width: 62.5rem) {
+       /* estilos seccion rooms del index */
+       .rooms-lp {
+           height: 51.5rem;
+       }
+       .container-rooms {
+           width: 50rem;
+           height: 31.25rem;
+       }
+       .box1 {
+           clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%);
+       }
+       .box2 {
+           clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+       }
+       .box3 {
+           clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+       }
+       .container-rooms:hover .clip {
+           clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+       }
+       .container-rooms .clip:hover {
+           clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+       }
+       .container-rooms .clip:hover .content-room {
+           bottom: 0;
+           opacity: 1;
+       }
+       .container .previus,
+       .container .next {
+           display: inline-block;
+       }
+       /* fin estilos seccion rooms del index */
+   }

@@ -1,0 +1,15 @@
+/*mixin-width-heigth */
+
+@mixin tamaños($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+
+/* extend para flex */
+
+@mixin flex($display, $align-items, $justify-content) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}

@@ -1,0 +1,18 @@
+/* estilos de los contenedores */
+
+.contenedores {
+    @include flex(flex, center, space-evenly);
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.blue {
+    background: $blue-bg-color;
+}
+
+.grey {
+    background: $grey-bg-color;
+}
+
+
+/* fin estilos de los contenedores */
