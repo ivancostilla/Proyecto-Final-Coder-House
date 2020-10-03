@@ -1,0 +1,165 @@
+      /* inicio estilos services.html */
+      /* estilos de la seccion cabecera del services.html*/
+      
+      .services-icons {
+          display: flex;
+          align-content: center;
+          flex-wrap: wrap;
+          font-size: .75rem;
+          justify-content: space-evenly;
+          margin-bottom: 3rem;
+      }
+      
+      .services-icons .box-icon {
+          border-bottom: .0625rem solid #50949e;
+          flex-basis: auto;
+          font-weight: 800;
+          height: 12.5rem;
+          margin: .125rem 0;
+          padding-top: 2rem;
+          padding-bottom: 12rem;
+          width: 100%;
+      }
+      
+      .services-icons .box-icon img {
+          height: 4.125rem;
+          width: 4.125rem;
+      }
+      
+      .services-icons .box-icon p {
+          margin: 0 auto;
+          padding: .625rem 0 .9375rem;
+          width: 33%;
+      }
+      
+      .services-icons .box-icon:active div img {
+          padding-bottom: 1rem;
+      }
+      /* fin estilos de la seccion cabecera services.html*/
+      /* estilos seccion mas servicios services.html*/
+      
+      .mas-servicios {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-gap: .3125rem;
+          height: 900px;
+          text-align: center;
+      }
+      
+      .mas-servicios-box {
+          border: 1px solid #056674;
+          background-color: rgba(5, 102, 116, .7);
+          box-shadow: .0625rem .0625rem .3125rem 0 #000;
+          border-radius: .3125rem;
+          transition: all .5s ease;
+          font-size: 1.25rem;
+          height: 15.625rem;
+          padding: 1.25rem;
+          margin-top: 1.875rem;
+      }
+      
+      .mas-servicios-box h3 {
+          padding-bottom: 10px;
+          line-height: 1.5;
+      }
+      /* fin estilos seccion mas servicios */
+      /* fin estilos services.html */
+      /* media querie 700px */
+      
+      @media screen and (min-width: 43.75rem) {
+          /* estilos services.html */
+          /* estilos seccion cabecera */
+          .services-icons .box-icon {
+              border-right: .0625rem solid #50949e;
+              padding-bottom: 13rem;
+              width: 50%;
+          }
+          .services-icons .box-icon:nth-child(1),
+          .services-icons .box-icon:nth-child(2) {
+              border-top: .0625rem solid #50949e;
+          }
+          .services-icons .box-icon {
+              margin: 0;
+          }
+          /* fin estilos seccion cabecera */
+          /* estilos seccion mas servicos */
+          .mas-servicios {
+              grid-template-columns: repeat(3, 1fr);
+              height: 400px;
+          }
+          .mas-servicios-box {
+              height: 300px;
+              margin: 30px 5px;
+          }
+          .mas-servicios-box:hover {
+              transform: translateY(-20px);
+          }
+          /* fin estilos seccion mas servicios */
+          /* fin estilos services.html */
+      }
+      /* media querie 1000px */
+      
+      @media screen and (min-width: 62.5rem) {
+          /* estilos services.html */
+          /* estilos de la seccion cabecera */
+          .services-icons .box-icon {
+              border-bottom: none;
+              border-right: none;
+              cursor: pointer;
+              padding-bottom: 12rem;
+              transition: all .5s;
+              width: 33%;
+          }
+          .height-services {
+              height: 56.25rem;
+          }
+          .services-icons .box-icon,
+          .services-icons .box-icon:nth-child(1),
+          .services-icons .box-icon:nth-child(2) {
+              border-top: none;
+          }
+          .services-icons .box-icon p {
+              height: 4.375rem;
+          }
+          .services-icons .box-icon div p {
+              border-bottom: .0625rem solid #50949e;
+          }
+          .box-icon:nth-child(1) p,
+          .services-icons .box-icon:nth-child(2) p,
+          .services-icons .box-icon:nth-child(3) p {
+              height: 4.525rem;
+          }
+          .services-icons .box-icon:nth-child(6) .p6 {
+              height: 6.25rem;
+          }
+          .services-icons .box-icon:nth-child(10) p,
+          .services-icons .box-icon:nth-child(11) p {
+              height: 6.50rem;
+          }
+          .services-icons .box-icon:nth-child(12) p {
+              height: 7.95rem;
+          }
+          .services-icons .box-icon:hover {
+              padding-top: 1rem;
+          }
+          /* fin estilos de la seccion cabecera */
+          /* fin estilos services.html */
+      }
+      /* media querie 1200px */
+      
+      @media screen and (min-width: 75rem) {
+          /* estilos de los iconos del services.html */
+          .services-icons .box-icon:nth-child(1) p,
+          .services-icons .box-icon:nth-child(2) p,
+          .services-icons .box-icon:nth-child(3) p {
+              height: 3.500rem;
+          }
+          .services-icons .box-icon:nth-child(10) p,
+          .services-icons .box-icon:nth-child(11) p,
+          .services-icons .box-icon:nth-child(6) .p6 {
+              height: 4.373rem;
+          }
+          .services-icons .box-icon:nth-child(12) p {
+              height: 6.25rem;
+          }
+      }

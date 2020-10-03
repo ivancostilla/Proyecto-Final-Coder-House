@@ -1,150 +1,17 @@
-@import "decor";
-
-/* variables */
-
-$colordelosbotones: #943294;
-body {
-    background: #111;
-    header {
-        background: red;
-        nav {
-            background: pink;
-            ul {
-                li {
-                    a {
-                        text-decoration: none;
-                        color: $colordelosbotones;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-/* operadores condicionales y bucles */
-
-$ancho:700px;
-$blue: #4285f4;
-.box-uno {
-    width: $ancho/2;
-}
-
-.box-dos {
-    width: $ancho - 50;
-}
-
-
-/* condicionales */
-
-
-/* cuando una condicion se cumpla hacer algo y cuando no.. no hacerlo */
-
-$animal: gato;
-$redsocial: facebook;
-p {
-    @if $animal==gato {
-        color: red;
-        width: $ancho/3;
-    }
-    @else if $animal==perro {
-        color: green;
-    }
-    @else {
-        color: black;
-    }
-    @if $redsocial==facebook {
-        background: blue;
-    }
-    @else if $redsocial==twitter {
-        background: red;
-    }
-}
-
-
-/* bucles */
-
-
-/* to no utiliza el ultimo valor osea el 3 */
-
-@for $var from 0 to 3 {
-    .casitodos-#{$var} {
-        width: 2em * $var;
-    }
-}
-
-
-/* through si utiiza el ultimo valor osea el 3 en este caso */
-
-@for $var1 from 0 through 3 {
-    /* 1ro nombe de la clase.. 2do interpolar(#){nombre de la variable}
-     {propiedad: valor(puede ser variable) operador valor}*/
-    .casitodoss-#{$var1} {
-        width: 2em * $var1;
-    }
-}
-
-
-/* practica */
-
-@for $alto from 1 to 5 {
-    .alto-#{$alto} {
-        height: $alto * 3em;
-        @if $alto==3 {
-            width: 2em;
-        }
-    }
-}
-
-
-/* each */
-
-@each $animal in gato,
-perro,
-caballo {
-    .#{$animal}-icon {
-        background-image: url(../../dist/images/#{$animal}.jpg);
-    }
-}
-
-
-/* maps */
-
-
-/* son tipos de variables que se pueden guardar dos variables */
-
-$redes:( twitter:blue, facebook:red, instagram:yellow);
-@each $red,
-$color in $redes {
-    .bton-#{$red} {
-        background-color: $color;
-    }
-}
-
-
-/* extends = herencia */
-
-.redsocial {
-    width: 500px;
-    height: 300px;
-}
-
-.redsocial-facebook {
-    @extend .redsocial;
-    background-color: red;
-}
-
-
-/* mixins */
-
-
-/*@mixin le ponemos un nombre */
-
-@mixin size($width, $height) {
-    height: $height;
-    width: $width;
-}
-
-.boxx {
-    @include size(500px, 500px)
-}
+@import"../layout/estilos-generales";
+@import"../components/botones";
+@import"../layout/navbar";
+@import"../layout/contenedor";
+@import"../layout/footer";
+@import"../views/img-hero-bground";
+@import"../components/wsp-boton";
+@import"../layout/reserva-en-index-html";
+@import"../layout/rooms-index-html";
+@import"../layout/find-us-html-y-seccion-del-index";
+@import"../views/aside-work-with-us";
+@import"../layout/testimonials";
+@import"../layout/galery";
+@import"../layout/rooms-html";
+@import"../layout/booking-html";
+@import"../layout/services-html-y-seccion-del-index-html";
+@import"../layout/about-us-html";

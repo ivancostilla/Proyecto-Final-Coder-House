@@ -1,0 +1,93 @@
+/* inicio estilos index(home) */
+
+
+/* estilos de la seccion reserva de la landing page */
+
+.txt-slogan {
+    font-size: 1.4rem;
+    font-style: italic;
+    margin-bottom: 3rem;
+}
+
+.form-check-reserva {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 4rem 0;
+    /* agrego el display flex aqui para que el boton "checkear disponibilidad quede centrado si pasa para abajo" */
+}
+
+.form-check-reserva input:nth-child(1),
+.form-check-reserva input:nth-child(2) {
+    font-size: 1.25rem;
+    height: 3rem;
+    margin: 1em 0 2em;
+    text-align: center;
+    width: 15rem;
+}
+
+.form-check-reserva input:nth-child(3) {
+    font-size: 15px;
+    height: 3rem;
+    margin: auto;
+    width: fit-content;
+}
+
+.booking .a-check-reserva {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* media querie 400px */
+
+@media screen and (min-width: 25rem) {
+    /* estilos seccion reserva de la landing page */
+    .form-check-reserva input:nth-child(1),
+    .form-check-reserva input:nth-child(2) {
+        margin: 1em 1rem 2em;
+    }
+    /* fin estilos seccion reserva de la lp */
+}
+
+
+/* media querie 450px */
+
+@media screen and (min-width: 28.125rem) {
+    /* estilos seccion reserva de la landing page */
+    .form-check-reserva input:nth-child(1),
+    .form-check-reserva input:nth-child(2) {
+        margin: 1em 6rem 2em;
+    }
+    /* fin estilos seccion reserva de la lp */
+}
+
+
+/* media querie 580px */
+
+@media screen and (min-width: 36.25rem) {
+    /* estilos de la seccion reserva de la landing page */
+    /* ests estilos los puse asi para que no se desalineen los input */
+    .form-check-reserva input:nth-child(2) {
+        margin: 1em 9rem 2em;
+    }
+    /*fin  estilos de la seccion reserva de la landing page */
+}
+
+
+/* media querie 700px */
+
+@media screen and (min-width: 43.75rem) {
+    /* estilos de la seccion reserva de la landing page */
+    /* estos estilos los puse asi para que no se desalineen los input */
+    .form-check-reserva input:nth-child(1),
+    .form-check-reserva input:nth-child(2) {
+        margin: 1rem 1rem;
+    }
+    .form-check-reserva input:nth-child(3) {
+        margin: 0 1.2rem;
+    }
+    /* fin estilos de la seccion reserva de la landing page */
+}

@@ -1,0 +1,92 @@
+ /* inicio estilos generales */
+ /* to do:acomodar el codigo que está un desastre,
+    luego aplicar BEM y pasar todo a sass*/
+ 
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ 
+ html {
+     font-size: 16px;
+     scroll-behavior: smooth;
+ }
+ 
+ body {
+     cursor: default;
+     font-family: 'Sen', sans-serif;
+     height: 100vh;
+     font-weight: 400;
+     width: 100%;
+ }
+ 
+ .dspl-none {
+     display: none;
+ }
+ 
+ .dspl-block {
+     display: block;
+ }
+ 
+ .titulo-header,
+ .h1 {
+     line-height: 3;
+     font-size: 2rem;
+ }
+ 
+ .h-center {
+     font-weight: 700;
+     text-align: center;
+     text-transform: uppercase;
+ }
+ 
+ .icon img,
+ .container-rooms .icon img {
+     /* le damos tamaño a los iconos */
+     height: 4rem;
+     width: 4rem;
+ }
+ 
+ .list-style,
+ .list-style li {
+     list-style: none;
+ }
+ 
+ .m-top-4 {
+     margin-top: 3rem;
+ }
+ 
+ .txt-center {
+     text-align: center;
+ }
+ 
+ .txt-color {
+     color: #ff4b5c;
+ }
+ 
+ .txt-decoration a {
+     text-decoration: none;
+ }
+ 
+ .txt-white {
+     color: #f0efef;
+ }
+ /* tamaños provisorios para imagenes e iconos */
+ 
+ .img-size img {
+     height: 50%;
+     padding: 2rem;
+     width: 100%;
+ }
+ /* fin de tamaños provisorios para imagenes e iconos */
+ /* fin estilos generales */
+ /* media querie 1000px */
+ 
+ @media screen and (min-width: 62.5rem) {
+     /* estilos generales */
+     .h1 {
+         font-size: 3rem;
+     }
+     /* fin estilos generales */
+ }

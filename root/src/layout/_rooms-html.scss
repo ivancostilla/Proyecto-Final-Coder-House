@@ -1,0 +1,110 @@
+    /* inicio estilos rooms.html */
+    
+    .carousel-item img {
+        min-width: 249px;
+        max-width: 249px;
+        flex-basis: fit-content;
+        flex-grow: 1;
+        height: 500px;
+        min-height: 500px;
+        object-fit: cover;
+    }
+    
+    .carousel {
+        width: 100%;
+    }
+    
+    .carousel-inner {
+        border-radius: 5px;
+    }
+    
+    .carousel__contenedor {
+        background-color: rgba(240, 239, 239, .8);
+        color: #056674;
+        border: 2px solid #bbbbbb;
+        border-radius: 5px;
+        margin-top: 30px;
+        padding: 20px 0;
+        font-weight: 700;
+        box-shadow: .0625rem .0625rem .3125rem 0 #000;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    .contenedores.rooms {
+        border-bottom: .125rem solid #fff;
+    }
+    
+    .carousel__contenedor .icon,
+    .carousel__contenedor p {
+        margin: 1.25rem 0;
+    }
+    
+    .carousel__contenedor-content,
+    .carousel__contenedor-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .carousel__contenedor-list .boton {
+        max-height: 3rem;
+    }
+    /* fin estilos rooms.html */
+    /* media querie 400px */
+    
+    @media screen and (min-width: 25rem) {
+        /* rooms.html */
+        .carousel-item img {
+            min-width: 339px;
+            max-width: 339px;
+        }
+        /* fin rooms.html */
+    }
+    /* media querie 580px */
+    
+    @media screen and (min-width: 36.25rem) {
+        /* rooms.html */
+        .carousel-item img {
+            min-width: 439px;
+            max-width: 439px;
+        }
+        /* fin rooms.html */
+    }
+    /* media querie 1000px */
+    
+    @media screen and (min-width: 62.5rem) {
+        /* rooms.html */
+        .carousel__contenedor {
+            flex-direction: row;
+        }
+        .carousel__contenedor-content,
+        .carousel__contenedor-list {
+            flex-direction: row;
+        }
+        .contenedores:nth-child(odd) .carousel__contenedor {
+            flex-direction: row-reverse;
+        }
+        .contenedores:nth-child(odd) .carousel__contenedor-content,
+        .contenedores:nth-child(odd) .carousel__contenedor-list {
+            flex-direction: row-reverse;
+        }
+        .carousel-item img {
+            height: 700px;
+            min-height: 700px;
+        }
+        /* fin rooms.html */
+    }
+    /* media querie 1300px */
+    
+    @media screen and (min-width: 81.25rem) {
+        /* rooms.html */
+        .carousel-item img {
+            height: 500px;
+            min-height: 500px;
+        }
+        /* fin rooms.html */
+    }

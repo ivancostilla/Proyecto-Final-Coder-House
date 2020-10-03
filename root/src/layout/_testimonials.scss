@@ -1,0 +1,98 @@
+   /* estilos testimonials */
+   
+   .testimonials {
+       height: 80rem;
+       display: flex;
+       align-items: center;
+       justify-content: space-evenly;
+       flex-wrap: wrap;
+       width: 100%;
+   }
+   
+   .testimonials .card {
+       background: rgb(42, 42, 42);
+       border: .0625rem solid #fff;
+       border-radius: 1%;
+       box-shadow: .0625rem .0625rem .3125rem 0 #000;
+       height: 25rem;
+       font-size: 1.1rem;
+       overflow: hidden;
+       padding: 3.75rem 2.5rem;
+       position: relative;
+       width: calc(100% - 1rem);
+   }
+   
+   .testimonials .card .bg-gradient {
+       background: linear-gradient(#fb7482, #fa5a6f, #ff254e);
+       height: 100%;
+       position: absolute;
+       top: calc(100% - 2%);
+       left: 0;
+       transition: 0.5s;
+       width: 100%;
+       z-index: 10;
+   }
+   
+   .testimonials .card:active .bg-gradient {
+       top: 0;
+   }
+   
+   .testimonials .card .content {
+       position: relative;
+       z-index: 15;
+   }
+   
+   .testimonials .card .content p {
+       font-style: italic;
+       line-height: 1.5rem;
+       margin-bottom: 1.25rem;
+   }
+   
+   .testimonials .card .img-box {
+       border-radius: 50%;
+       border: .1875rem solid #fff;
+       box-shadow: 0 .625rem 1.25rem rgba(0, 0, 0, .2);
+       height: 6.25rem;
+       margin: 0 auto .625rem;
+       overflow: hidden;
+       width: 6.25rem;
+   }
+   
+   .testimonials .card .content h3 span {
+       color: #fa2c41;
+       font-size: .875rem;
+       transition: 0.5s;
+   }
+   
+   .testimonials .card:active .content h3 span {
+       color: #fff;
+   }
+   /* fin estilos testimonials */
+   /* media querie 700px */
+   
+   @media screen and (min-width: 43.75rem) {
+       /* estilos seccion testimonials */
+       .testimonials .card {
+           width: calc(45% - 1rem);
+           cursor: pointer;
+       }
+       .testimonials .card:hover .bg-gradient {
+           top: 0;
+       }
+       .testimonials .card:hover .content h3 span {
+           color: #fff;
+       }
+       /* fin estilos seccion testimonials */
+   }
+   /* media querie 1000px */
+   
+   @media screen and (min-width: 62.5rem) {
+       /* estilos seccion testimonials */
+       .testimonials {
+           height: 31.25rem;
+       }
+       .testimonials .card {
+           width: calc(33.33% - 1rem);
+       }
+       /* fin estilos seccion testimonials */
+   }

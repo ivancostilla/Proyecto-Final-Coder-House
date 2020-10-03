@@ -1,0 +1,61 @@
+/* para quitarle los bordes a los input submit: */
+
+.submit {
+    border: none;
+}
+
+
+/* estilos de los botones(a) */
+
+.boton {
+    background: linear-gradient(30deg, #ff4b5c 0%, #ff4b5c 57%, #ec6f50 85%);
+    box-shadow: .1125rem .3375rem .75rem -0.125rem rgba(0, 0, 0, .75);
+    border-radius: .5rem;
+    color: #fff;
+    cursor: pointer;
+    padding: .75rem .9375rem;
+    text-decoration: none;
+    font-weight: 700;
+    background-size: 200% 200%;
+    background-position-x: 100%;
+    background-position-y: 0;
+    transition: all .8s ease;
+}
+
+
+/* estlos para los chevron */
+
+.boton img {
+    height: 1.11rem;
+    width: 1.11rem;
+    vertical-align: sub;
+}
+
+.boton:active {
+    filter: saturate(150%);
+    background-position: 0 0;
+}
+
+
+/* efecto del chevron en active: */
+
+.boton:active i {
+    padding-left: .180rem;
+}
+
+
+/*fin estilos de los botones(a) */
+
+@media screen and (min-width: 25rem) {
+    /* estilos de los botones */
+    .boton:hover {
+        filter: saturate(150%);
+        background-position: 0 0;
+        color: #fff;
+        /* esto lo coloco porque si no en el rooms.html el bootstrap me pisa la clase */
+    }
+    .boton:hover i {
+        padding-left: .180rem;
+    }
+    /* fin estilos botones */
+}

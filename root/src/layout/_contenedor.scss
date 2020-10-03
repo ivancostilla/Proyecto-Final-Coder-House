@@ -1,0 +1,20 @@
+/* estilos de los contenedores */
+
+.contenedores {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+.blue {
+    background: #056674;
+}
+
+.grey {
+    background: #e0ece4;
+}
+
+
+/* fin estilos de los contenedores */
