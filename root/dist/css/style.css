@@ -380,11 +380,10 @@ body {
     @media screen and (min-width: 28.125rem) {
       .about-us-index .about-us-index__div {
         /* estilos seccion about-us  hero*/
+        font-size: 1.25rem;
         /* fin stilos seccion about-us  hero*/ }
-        .about-us-index .about-us-index__div {
-          font-size: 1.25rem; }
-          .about-us-index .about-us-index__div .boton {
-            font-size: 1rem; } }
+        .about-us-index .about-us-index__div .boton {
+          font-size: 1rem; } }
     .about-us-index .about-us-index__div .about-us-index__p {
       padding-bottom: 1.875rem; }
 
@@ -451,10 +450,7 @@ body {
         font-size: 3rem; } }
     @media screen and (min-width: 43.75rem) {
       .hero-rooms .hero-rooms__h1 {
-        /* estilos seccion rooms.html */
-        /* fin estilos seccion rooms.html*/ }
-        .hero-rooms .hero-rooms__h1 {
-          font-size: 5rem; } }
+        font-size: 5rem; } }
   .hero-rooms .hero-rooms__p {
     font-weight: 700;
     font-style: italic;

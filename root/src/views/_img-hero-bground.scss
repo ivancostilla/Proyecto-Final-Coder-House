@@ -23,11 +23,9 @@
             /* media querie 450px */
             @media screen and (min-width: 28.125rem) {
                 /* estilos seccion about-us  hero*/
-                & {
-                    font-size: 1.25rem;
-                    .boton {
-                        font-size: 1rem;
-                    }
+                font-size: 1.25rem;
+                .boton {
+                    font-size: 1rem;
                 }
                 /* fin stilos seccion about-us  hero*/
             }
@@ -115,18 +113,12 @@
             font-weight: 800;
             /* media querie 580px */
             @media screen and (min-width: 36.25rem) {
-                & {
-                    margin: 10rem 0;
-                    font-size: 3rem;
-                }
+                margin: 10rem 0;
+                font-size: 3rem;
             }
             /* media querie 700px */
             @media screen and (min-width: 43.75rem) {
-                /* estilos seccion rooms.html */
-                & {
-                    font-size: 5rem;
-                }
-                /* fin estilos seccion rooms.html*/
+                font-size: 5rem;
             }
         }
         .hero-rooms__p {
