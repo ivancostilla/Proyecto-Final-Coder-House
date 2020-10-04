@@ -1,6 +1,6 @@
 /* estilos de los contenedores */
 
-.contenedores {
+.contenedor-general {
     @include flex(flex, center, space-evenly);
     flex-wrap: wrap;
     padding-bottom: 2rem;

@@ -1,12 +1,8 @@
 /* inicio estilos booking.html */
 
-.form-reserva .a-reserva {
-    margin-left: 1rem;
-}
-
 .politicas-del-alojamiento {
-    border: 2px solid #056674;
-    background-color: rgba(5, 102, 116, 0.6);
+    border: .125rem solid #056674;
+    background-color: rgba(5, 102, 116, 0.7);
     font-weight: 700;
     font-size: 1.2rem;
     box-shadow: 0.0625rem 0.0625rem 0.3125rem 0 #000;
@@ -14,18 +10,14 @@
     width: 90%;
     margin: 0 auto;
     padding: 0.625rem 0;
+    @media screen and (min-width: 36.25rem) {
+        /* media querie 580px */
+        font-size: 1.21rem;
+        &:hover {
+            transform: translateY(-10px);
+        }
+    }
 }
 
 
 /* fin estilos booking.html */
-
-
-/* media querie 580px */
-
-@media screen and (min-width: 36.25rem) {
-    /* booking.html */
-    .politicas-del-alojamiento:hover {
-        transform: translateY(-10px);
-    }
-    /* fin booking.html */
-}
