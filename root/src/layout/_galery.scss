@@ -7,31 +7,18 @@
       grid-auto-rows: 21.875rem;
       /* hay que darle un height a la imagen para que funcione */
       padding: .125rem 0;
-  }
-  
-  .galeria img {
-      object-fit: cover;
-      @include tamaños(100%, 100%);
-      /* es para que no se distorsionen las imagenes */
-  }
-  /*fin estilos seccion gallery */
-  /* media querie 700px */
-  
-  @media screen and (min-width: 43.75rem) {
-      /* estilos de la seccion galeria de la landing page */
-      .galeria,
-      .container-about {
+      .galeria__img {
+          object-fit: cover;
+          @include tamaños(100%, 100%);
+          /* es para que no se distorsionen las imagenes */
+      }
+      @media screen and (min-width: 43.75rem) {
+          /* media querie 700px */
           grid-template-columns: repeat(2, 1fr);
       }
-      /* fin estilos seccion galeria landing page */
-  }
-  /* media querie 1000px */
-  
-  @media screen and (min-width: 62.5rem) {
-      /* estilos seccion galeria */
-      .galeria,
-      .container-about {
+      @media screen and (min-width: 62.5rem) {
+          /* media querie 1000px */
           grid-template-columns: repeat(3, 1fr);
       }
-      /* estilos seccion galeria */
   }
+  /*fin estilos seccion gallery */
