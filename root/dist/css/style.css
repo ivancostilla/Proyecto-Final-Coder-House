@@ -665,15 +665,37 @@ body {
     display: inline-block; }
   /* fin estilos seccion rooms del index */ }
 
-/* estilos seccion find-us */
-.find-us .map iframe {
+/* fin estilos seccion find-us del index y find-us.html */
+.find-us .find-us__map .find-us__iframe {
   margin: 2rem auto;
   width: 16.5625rem;
   box-shadow: .0625rem .0625rem .3125rem 0 #000; }
+  @media screen and (min-width: 25rem) {
+    .find-us .find-us__map .find-us__iframe {
+      /* media querie 400px */
+      width: 22.9375rem; } }
+  @media screen and (min-width: 28.125rem) {
+    .find-us .find-us__map .find-us__iframe {
+      /* media querie 450px */
+      width: 26.0625rem; } }
+  @media screen and (min-width: 36.25rem) {
+    .find-us .find-us__map .find-us__iframe {
+      /* media querie 580px */
+      width: 35.1875rem; } }
+  @media screen and (min-width: 43.75rem) {
+    .find-us .find-us__map .find-us__iframe {
+      /* media querie 700px */
+      width: 41.6875rem; } }
+  @media screen and (min-width: 62.5rem) {
+    .find-us .find-us__map .find-us__iframe {
+      /* media querie 1000px */
+      width: 60.5rem; } }
+  @media screen and (min-width: 81.25rem) {
+    .find-us .find-us__map .find-us__iframe {
+      /* media querie 1300px */
+      width: 70.5rem; } }
 
-/* fin estilos seccion find-us */
-/* inicio estilos find-us.html */
-.find-us address {
+.find-us .find-us__address {
   border: .125rem solid #056674;
   background-color: rgba(5, 102, 116, 0.7);
   display: inline-block;
@@ -684,49 +706,7 @@ body {
   margin: 10px 0;
   box-shadow: 0.1125rem 0.3375rem 0.75rem -0.125rem rgba(0, 0, 0, 0.75); }
 
-/* fin estilos find-us.html */
-/* media querie 400px */
-@media screen and (min-width: 25rem) {
-  /* estilos seccion find-us */
-  .find-us .map iframe {
-    width: 22.9375rem; }
-  /* fin estilos seccion find-us */ }
-
-/* media querie 450px */
-@media screen and (min-width: 28.125rem) {
-  /* estilos seccion find-us */
-  .find-us .map iframe {
-    width: 26.0625rem; }
-  /* fin estilos seccion find-us */ }
-
-/* media querie 580px */
-@media screen and (min-width: 36.25rem) {
-  /* estilos seccion find-us */
-  .find-us .map iframe {
-    width: 35.1875rem; }
-  /* fin estilos seccion find-us */ }
-
-/* media querie 700px */
-@media screen and (min-width: 43.75rem) {
-  /* estilos seccion find-us */
-  .find-us .map iframe {
-    width: 41.6875rem; }
-  /* fin estilos seccion find-us */ }
-
-/* media querie 1000px */
-@media screen and (min-width: 62.5rem) {
-  /* estilos seccion find-us */
-  .find-us .map iframe {
-    width: 60.5rem; }
-  /* fin estilos seccion find-us */ }
-
-/* media querie 1300px */
-@media screen and (min-width: 81.25rem) {
-  /* estilos seccion find-us */
-  .find-us .map iframe {
-    width: 70.5rem; }
-  /* fin estilos seccion find-us */ }
-
+/* fin estilos seccion find-us del index y find-us.html */
 /* seccion work-with-us */
 .work-with-us {
   background: #ff4b5c;
