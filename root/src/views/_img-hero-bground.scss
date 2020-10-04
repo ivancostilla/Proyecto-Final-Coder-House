@@ -1,115 +1,151 @@
     /* estilos para las imagenes hero que estan en background attachment fixed */
+    /* img hero del header */
     
-    .home .img-hero {
+    .img-hero-header-index {
         background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/background-image.jpg) no-repeat 75% 75% / cover;
         z-index: 20;
+        @extend .hero-general;
     }
+    /* img hero de la seccion about-us del index.html */
     
-    .home-about-us .img-hero-about {
-        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hostel-recep-tres.jpg) no-repeat 15% 15% / cover;
-        flex-direction: column;
-        font-weight: 700;
+    .about-us-index {
+        .about-us-index__img-hero {
+            background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hostel-recep-tres.jpg) no-repeat 15% 15% / cover;
+            flex-direction: column;
+            font-weight: 700;
+            @extend .hero-general;
+            .about-us-index__img-hero--div {
+                border: .125rem solid #ff4b5c;
+                border-radius: .3125rem;
+                background-color: rgba(255, 75, 92, .5);
+                box-shadow: 0 2.1875rem 3.8125rem -1.0625rem rgba(0, 0, 0, .64);
+                width: 70%;
+                padding: 2rem 0 4rem;
+                /* media querie 450px */
+                @media screen and (min-width: 28.125rem) {
+                    /* estilos seccion about-us  hero*/
+                    & {
+                        font-size: 1.25rem;
+                        .boton {
+                            font-size: 1rem;
+                        }
+                    }
+                    /* fin stilos seccion about-us  hero*/
+                }
+                .about-us-index__img-hero--div--p {
+                    padding-bottom: 30px;
+                }
+            }
+        }
     }
+    /* img hero del header de about-us.html */
     
-    .about-us-hero .img-about-us-hero-header {
-        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15% / cover;
-    }
-    
-    .about-us-hero .img-about-us-hero-body {
-        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15% / cover;
-    }
-    
-    .about-us-hero .img-about-us-hero-header,
-    .about-us-hero .img-about-us-hero-body {
+    .img-hero-about-us {
         flex-direction: column;
         justify-content: space-between;
         font-weight: 700;
         font-size: 1.25rem;
         z-index: 10;
+        @extend .hero-general;
     }
     
-    .about-us-hero .img-about-us-hero h1 {
-        font-size: 4rem;
-        font-weight: 800;
+    .about-us-html {
+        .about-us-html__img-hero-header {
+            background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15% / cover;
+            @extend .img-hero-about-us;
+            .about-us-html__img-hero-header--h1 {
+                font-size: 2rem;
+                font-weight: 800;
+                /* media querie 580px */
+                @media screen and (min-width: 36.25rem) {
+                    & {
+                        font-size: 3rem;
+                    }
+                }
+                /* media querie 700px */
+                @media screen and (min-width: 62.5rem) {
+                    & {
+                        font-size: 5rem;
+                    }
+                }
+            }
+            .about-us-html__img-hero-header--p {
+                font-style: italic;
+                font-size: .9rem;
+                /* media querie 400px */
+                @media screen and (min-width: 25rem) {
+                    & {
+                        font-size: 1rem;
+                    }
+                }
+                /* media querie 580px */
+                @media screen and (min-width: 36.25rem) {
+                    & {
+                        font-size: 1.25rem;
+                    }
+                }
+                /* media querie 700px */
+                @media screen and (min-width: 62.5rem) {
+                    & {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+        /* img hero de la 2da seccion de about-us.html*/
+        .about-us-html__img-hero-body {
+            background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15% / cover;
+            @extend .img-hero-about-us;
+            font-style: italic;
+            font-size: 1rem;
+            @media screen and (min-width: 400px) {
+                & {
+                    font-size: 1.25rem;
+                }
+            }
+        }
     }
-    
-    .about-us-hero .img-about-us-hero p {
-        font-style: italic;
-    }
-    
-    .home-about-us .img-hero-about div {
-        border: .125rem solid #ff4b5c;
-        border-radius: .3125rem;
-        background-color: rgba(255, 75, 92, .5);
-        box-shadow: 0 2.1875rem 3.8125rem -1.0625rem rgba(0, 0, 0, .64);
-        width: 70%;
-        padding: 2rem 0 4rem;
-    }
-    
-    .home-about-us .img-hero-about div p {
-        padding-bottom: 30px;
-    }
-    
-    .home .img-hero,
-    .home-about-us .img-hero-about,
-    article .hero-rooms,
-    .about-us-hero .img-about-us-hero-header,
-    .about-us-hero .img-about-us-hero-body {
-        background-attachment: fixed;
-        height: 40.850rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-    }
-    /* estilos para las imagenes hero que estan en background attachment fixed */
+    /* fin imgs hero de about-us.html */
     /* hero de rooms.html */
     
     .hero-rooms {
         background: linear-gradient(120deg, rgba(126, 91, 126, .6) 0%, rgba(153, 96, 104, 0.6) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50% / cover;
         flex-wrap: wrap;
         z-index: 10;
-    }
-    
-    .hero-rooms h1 {
-        font-size: 2rem;
-        font-weight: 800;
-    }
-    
-    .hero-rooms p {
-        font-weight: 700;
-        font-style: italic;
-        font-size: 1.25rem;
-    }
-    /* fin hero de rooms.html */
-    /* media querie 450px */
-    
-    @media screen and (min-width: 28.125rem) {
-        /* estilos seccion about-us  hero*/
-        .home .img-hero-about div {
+        @extend .hero-general;
+        .hero-rooms__h1 {
+            font-size: 2rem;
+            font-weight: 800;
+            /* media querie 580px */
+            @media screen and (min-width: 36.25rem) {
+                & {
+                    margin: 10rem 0;
+                    font-size: 3rem;
+                }
+            }
+            /* media querie 700px */
+            @media screen and (min-width: 43.75rem) {
+                /* estilos seccion rooms.html */
+                & {
+                    font-size: 5rem;
+                }
+                /* fin estilos seccion rooms.html*/
+            }
+        }
+        .hero-rooms__p {
+            font-weight: 700;
+            font-style: italic;
             font-size: 1.25rem;
         }
-        /* fin stilos seccion about-us  hero*/
     }
-    /* media querie 580px */
+    /* fin hero de rooms.html */
+    /* estilos generales para todos los hero */
     
-    @media screen and (min-width: 36.25rem) {
-        /* estilo para el hero del rooms.html */
-        .hero-rooms h1 {
-            margin: 10rem 0;
-            font-size: 3rem;
-        }
-        /* estilo para el hero del rooms.html */
+    .hero-general {
+        background-attachment: fixed;
+        @include tamaños(40.850rem, 100%);
+        @include flex(flex, center, center);
+        overflow: hidden;
+        position: relative;
     }
-    /* media querie 700px */
-    
-    @media screen and (min-width: 43.75rem) {
-        /* estilos seccion rooms.html */
-        .hero-rooms h1 {
-            margin: 10rem 0;
-            font-size: 5rem;
-        }
-        /* fin estilos seccion rooms.html*/
-    }
+    /* estilos para las imagenes hero que estan en background attachment fixed */
