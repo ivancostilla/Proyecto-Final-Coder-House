@@ -1,6 +1,6 @@
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
+const hamburger = document.querySelector(".navbar__hamburger");
+const navLinks = document.querySelector(".navbar__nav-links");
+const links = document.querySelectorAll(".navbar__nav-links li");
 const contactOff = document.getElementById('contact-menu-off');
 const acordeon = document.getElementsByClassName('acordeon__contenedor-box');
 

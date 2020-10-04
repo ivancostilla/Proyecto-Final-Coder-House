@@ -42,38 +42,36 @@
     <div class="position-relative-home">
         <!-- la unica solución que encontré fue encerrar el nav y el main dentro de un div, para que pueda moverse el nav con una position sticky.. no se si es semanticamente correcto esto je -->
         <!-- Comienzo del nav -->
-        <nav class="nav sticky-nav-home">
-            <div class="hamburger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+        <nav class="navbar sticky-navbar-home">
+            <div class="navbar__hamburger">
+                <div class="navbar__hamburger--line"></div>
+                <div class="navbar__hamburger--line"></div>
+                <div class="navbar__hamburger--line"></div>
             </div>
-            <ul class="nav-links txt-decoration list-style">
-                <li>
-                    <a href="#home" target="_self" title="Home"><img src="images/logo-nav.png" alt="logo de la empresa en home"></a>
+            <ul class="navbar__nav-links txt-decoration list-style">
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="#home" target="_self" title="Home"><img src="images/logo-nav.png" alt="logo de la empresa en home"></a>
                 </li>
-                <li>
-                    <div class="link-div">
-                        <a href="pages/booking.html" target="_blank">Reservar</a>
-                    </div>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="pages/booking.html" target="_blank">Reservar</a>
                 </li>
-                <li>
-                    <a href="pages/rooms.html" target="_blank">Habitaciones</a>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="pages/rooms.html" target="_blank">Habitaciones</a>
                 </li>
-                <li>
-                    <a href="pages/services.html" target="_blank">Servicios</a>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="pages/services.html" target="_blank">Servicios</a>
                 </li>
-                <li>
-                    <a href="pages/about-us.html" target="_blank">Sobre Nosotros</a>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="pages/about-us.html" target="_blank">Sobre Nosotros</a>
                 </li>
-                <li>
-                    <a href="pages/find-us.html" target="_blank">Como Llegar</a>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="pages/find-us.html" target="_blank">Como Llegar</a>
                 </li>
-                <li>
-                    <a href="https://www.workaway.info/en/host/211131141727" target="_blank"> Trabaja con Nosotros</a>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="https://www.workaway.info/en/host/211131141727" target="_blank"> Trabaja con Nosotros</a>
                 </li>
-                <li>
-                    <a href="#contact-us" id="contact-menu-off">Contactanos</a>
+                <li class="navbar__nav-links--li">
+                    <a class="navbar__nav-links--li--a" href="#contact-us" id="contact-menu-off">Contactanos</a>
                 </li>
             </ul>
         </nav>
