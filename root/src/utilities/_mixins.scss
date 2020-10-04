@@ -6,7 +6,7 @@
 }
 
 
-/* extend para flex */
+/* mixin para flex */
 
 @mixin flex($display, $align-items, $justify-content) {
     display: $display;
