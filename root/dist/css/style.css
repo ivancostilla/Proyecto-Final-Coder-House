@@ -82,7 +82,7 @@ body {
   /* fin estilos generales */ }
 
 /* para quitarle los bordes a los input submit: */
-.submit {
+.boton--submit {
   border: none; }
 
 /* estilos de los botones(a) */
@@ -98,21 +98,18 @@ body {
   background-size: 200% 200%;
   background-position-x: 100%;
   background-position-y: 0;
-  transition: all .8s ease; }
-
-/* estlos para los chevron */
-.boton img {
-  height: 1.11rem;
-  width: 1.11rem;
-  vertical-align: sub; }
-
-.boton:active {
-  filter: saturate(150%);
-  background-position: 0 0; }
-
-/* efecto del chevron en active: */
-.boton:active i {
-  padding-left: .180rem; }
+  transition: all .8s ease;
+  /* estlos para los chevron */
+  /* efecto del chevron en active: */ }
+  .boton:active {
+    filter: saturate(150%);
+    background-position: 0 0; }
+  .boton:active .boton__i {
+    padding-left: .180rem; }
+  .boton .boton__img {
+    height: 1.11rem;
+    width: 1.11rem;
+    vertical-align: sub; }
 
 /*fin estilos de los botones(a) */
 @media screen and (min-width: 25rem) {
@@ -122,7 +119,7 @@ body {
     background-position: 0 0;
     color: #fff;
     /* esto lo coloco porque si no en el rooms.html el bootstrap me pisa la clase */ }
-  .boton:hover i {
+  .boton:hover .boton__i {
     padding-left: .180rem; }
   /* fin estilos botones */ }
 
@@ -135,14 +132,17 @@ body {
   height: 3.75rem;
   width: 100%;
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  /* media querie 580px */
+  /* media querie 1000px */
+  /* media querie 1200px */ }
   .navbar .navbar__hamburger {
     position: absolute;
     cursor: pointer;
     right: 5%;
     top: 25%;
     z-index: 5; }
-    .navbar .navbar__hamburger .navbar__hamburger--line {
+    .navbar .navbar__hamburger .navbar__line {
       background: #fff;
       margin: 5px;
       height: 0.1875rem;
@@ -161,59 +161,55 @@ body {
     .navbar .navbar__nav-links.open {
       clip-path: circle(70.5rem at 90% -10%);
       -webkit-clip-path: circle(70.5rem at 90% -10%); }
-    .navbar .navbar__nav-links .navbar__nav-links--li {
+    .navbar .navbar__nav-links .navbar__li {
       opacity: 0;
-      transition: all 0.5s ease-in 0.2s; }
-      .navbar .navbar__nav-links .navbar__nav-links--li.fade {
+      transition: all 0.5s ease-in 0.2s;
+      /* media querie 580px */ }
+      .navbar .navbar__nav-links .navbar__li.fade {
         opacity: 1; }
-      .navbar .navbar__nav-links .navbar__nav-links--li .navbar__nav-links--li--a:active {
-        filter: brightness(150%); }
-      .navbar .navbar__nav-links .navbar__nav-links--li .navbar__nav-links--li--a {
+      .navbar .navbar__nav-links .navbar__li .navbar__a {
         color: #f0efef; }
-    .navbar .navbar__nav-links .navbar__nav-links--li:not(:first-of-type) {
+      .navbar .navbar__nav-links .navbar__li .navbar__a:active {
+        filter: brightness(150%); }
+      @media screen and (min-width: 36.25rem) {
+        .navbar .navbar__nav-links .navbar__li .navbar__a:hover {
+          filter: brightness(150%); } }
+    .navbar .navbar__nav-links .navbar__li:not(:first-of-type) {
       transition: all .2s ease; }
-    .navbar .navbar__nav-links .navbar__nav-links--li:active:not(:first-of-type) {
+    .navbar .navbar__nav-links .navbar__li:active:not(:first-of-type) {
       padding: 0 .5rem;
       margin-bottom: .3rem;
       border-left: .125rem solid #fff;
       border-right: 0.125rem solid white; }
-
-/* fin de estilos del nav */
-/* media querie 580px */
-@media screen and (min-width: 36.25rem) {
-  /* estilos del nav */
-  .navbar .navbar__nav-links .navbar__nav-links--li .navbar__nav-links--li--a:hover {
-    filter: brightness(150%); }
-  .navbar .navbar__nav-links .navbar__nav-links--li:hover:not(:first-of-type) {
-    padding: 0 .5rem;
-    margin-bottom: .3rem;
-    border-left: .125rem solid #fff;
-    border-right: .125rem solid #fff; }
-  /* fin estilos del nav */ }
+  @media screen and (min-width: 36.25rem) {
+    .navbar .navbar__li:hover:not(:first-of-type) {
+      padding: 0 .5rem;
+      margin-bottom: .3rem;
+      border-left: .125rem solid #fff;
+      border-right: .125rem solid #fff; } }
+  @media screen and (min-width: 62.5rem) {
+    .navbar {
+      /* estilos desktop del nav */
+      font-size: 1rem;
+      /*fin estilos desktop del nav */ }
+      .navbar .navbar__hamburger {
+        display: none; }
+      .navbar .navbar__nav-links {
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        clip-path: none; }
+        .navbar .navbar__nav-links.open {
+          clip-path: none;
+          -webkit-clip-path: none; }
+        .navbar .navbar__nav-links .navbar__li {
+          opacity: 1; } }
+  @media screen and (min-width: 75rem) {
+    .navbar {
+      font-size: 1.25rem; } }
 
 /* media querie 1000px */
 @media screen and (min-width: 62.5rem) {
-  /* estilos desktop del nav */
-  .navbar {
-    font-size: 1rem; }
-    .navbar .navbar__hamburger {
-      display: none; }
-    .navbar .navbar__nav-links {
-      align-items: center;
-      flex-direction: row;
-      height: 100%;
-      clip-path: none; }
-      .navbar .navbar__nav-links.open {
-        clip-path: none;
-        -webkit-clip-path: none; }
-      .navbar .navbar__nav-links .navbar__nav-links--li {
-        opacity: 1; }
-  /* posicionamiento para el nav de todas las paginas menos del home */
-  .fixed {
-    position: fixed;
-    top: 0;
-    z-index: 20; }
-  /* fin posicionamiento para el nav de todas las paginas menos del home */
   /* posicionamiento para el nav del home */
   .sticky-navbar-home {
     position: sticky;
@@ -222,16 +218,9 @@ body {
   .position-relative-home {
     position: relative;
     z-index: -20; }
-  /*fin  posisionamiento para el nav del home */
-  /*fin estilos desktop del nav */ }
+  /*fin  posisionamiento para el nav del home */ }
 
-/* media querie 1200px */
-@media screen and (min-width: 75rem) {
-  /* estilo del nav */
-  .navbar {
-    font-size: 1.25rem; } }
-
-/* fin estilos del navbar */
+/* fin de estilos del nav */
 /* estilos de los contenedores */
 .contenedores {
   display: flex;
