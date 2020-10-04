@@ -365,11 +365,11 @@ body {
   z-index: 20; }
 
 /* img hero de la seccion about-us del index.html */
-.about-us-index .about-us-index__img-hero {
+.about-us-index {
   background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/hostel-recep-tres.jpg) no-repeat 15% 15%/cover;
   flex-direction: column;
   font-weight: 700; }
-  .about-us-index .about-us-index__img-hero .about-us-index__img-hero--div {
+  .about-us-index .about-us-index__div {
     border: .125rem solid #ff4b5c;
     border-radius: .3125rem;
     background-color: rgba(255, 75, 92, 0.5);
@@ -378,61 +378,61 @@ body {
     padding: 2rem 0 4rem;
     /* media querie 450px */ }
     @media screen and (min-width: 28.125rem) {
-      .about-us-index .about-us-index__img-hero .about-us-index__img-hero--div {
+      .about-us-index .about-us-index__div {
         /* estilos seccion about-us  hero*/
         /* fin stilos seccion about-us  hero*/ }
-        .about-us-index .about-us-index__img-hero .about-us-index__img-hero--div {
+        .about-us-index .about-us-index__div {
           font-size: 1.25rem; }
-          .about-us-index .about-us-index__img-hero .about-us-index__img-hero--div .boton {
+          .about-us-index .about-us-index__div .boton {
             font-size: 1rem; } }
-    .about-us-index .about-us-index__img-hero .about-us-index__img-hero--div .about-us-index__img-hero--div--p {
-      padding-bottom: 30px; }
+    .about-us-index .about-us-index__div .about-us-index__p {
+      padding-bottom: 1.875rem; }
 
 /* img hero del header de about-us.html */
-.img-hero-about-us, .about-us-html .about-us-html__img-hero-header, .about-us-html .about-us-html__img-hero-body {
+.img-hero-about-us, .about-us-html-header, .about-us-html-body {
   flex-direction: column;
   justify-content: space-between;
   font-weight: 700;
   font-size: 1.25rem;
   z-index: 10; }
 
-.about-us-html {
-  /* img hero de la 2da seccion de about-us.html*/ }
-  .about-us-html .about-us-html__img-hero-header {
-    background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15%/cover; }
-    .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--h1 {
-      font-size: 2rem;
-      font-weight: 800;
-      /* media querie 580px */
-      /* media querie 700px */ }
-      @media screen and (min-width: 36.25rem) {
-        .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--h1 {
-          font-size: 3rem; } }
-      @media screen and (min-width: 62.5rem) {
-        .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--h1 {
-          font-size: 5rem; } }
-    .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--p {
-      font-style: italic;
-      font-size: .9rem;
-      /* media querie 400px */
-      /* media querie 580px */
-      /* media querie 700px */ }
-      @media screen and (min-width: 25rem) {
-        .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--p {
-          font-size: 1rem; } }
-      @media screen and (min-width: 36.25rem) {
-        .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--p {
-          font-size: 1.25rem; } }
-      @media screen and (min-width: 62.5rem) {
-        .about-us-html .about-us-html__img-hero-header .about-us-html__img-hero-header--p {
-          font-size: 1.5rem; } }
-  .about-us-html .about-us-html__img-hero-body {
-    background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15%/cover;
+.about-us-html-header {
+  background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15%/cover; }
+  .about-us-html-header .about-us-html-header__h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    /* media querie 580px */
+    /* media querie 700px */ }
+    @media screen and (min-width: 36.25rem) {
+      .about-us-html-header .about-us-html-header__h1 {
+        font-size: 3rem; } }
+    @media screen and (min-width: 62.5rem) {
+      .about-us-html-header .about-us-html-header__h1 {
+        font-size: 5rem; } }
+  .about-us-html-header .about-us-html-header__p {
     font-style: italic;
-    font-size: 1rem; }
-    @media screen and (min-width: 400px) {
-      .about-us-html .about-us-html__img-hero-body {
+    font-size: .9rem;
+    /* media querie 400px */
+    /* media querie 580px */
+    /* media querie 700px */ }
+    @media screen and (min-width: 25rem) {
+      .about-us-html-header .about-us-html-header__p {
+        font-size: 1rem; } }
+    @media screen and (min-width: 36.25rem) {
+      .about-us-html-header .about-us-html-header__p {
         font-size: 1.25rem; } }
+    @media screen and (min-width: 62.5rem) {
+      .about-us-html-header .about-us-html-header__p {
+        font-size: 1.5rem; } }
+
+/* img hero de la 2da seccion de about-us.html*/
+.about-us-html-body {
+  background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15%/cover;
+  font-style: italic;
+  font-size: 1rem; }
+  @media screen and (min-width: 400px) {
+    .about-us-html-body {
+      font-size: 1.25rem; } }
 
 /* fin imgs hero de about-us.html */
 /* hero de rooms.html */
@@ -462,7 +462,7 @@ body {
 
 /* fin hero de rooms.html */
 /* estilos generales para todos los hero */
-.hero-general, .img-hero-header-index, .about-us-index .about-us-index__img-hero, .img-hero-about-us, .about-us-html .about-us-html__img-hero-header, .about-us-html .about-us-html__img-hero-body, .hero-rooms {
+.hero-general, .img-hero-header-index, .about-us-index, .img-hero-about-us, .about-us-html-header, .about-us-html-body, .hero-rooms {
   background-attachment: fixed;
   height: 40.85rem;
   width: 100%;
