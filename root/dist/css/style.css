@@ -31,18 +31,20 @@ body {
 .dspl-block {
   display: block; }
 
-.titulo-header,
-.h1 {
+.titulos {
   line-height: 3;
   font-size: 2rem; }
+  @media screen and (min-width: 62.5rem) {
+    .titulos {
+      /* media querie 1000px */
+      font-size: 3rem; } }
 
 .h-center {
   font-weight: 700;
   text-align: center;
   text-transform: uppercase; }
 
-.icon img,
-.container-rooms .icon img {
+.icon-img {
   /* le damos tamaño a los iconos */
   height: 4rem;
   width: 4rem; }
@@ -51,7 +53,7 @@ body {
 .list-style li {
   list-style: none; }
 
-.m-top-4 {
+.m-top-3 {
   margin-top: 3rem; }
 
 .txt-center {
@@ -66,21 +68,7 @@ body {
 .txt-white {
   color: #f0efef; }
 
-/* tamaños provisorios para imagenes e iconos */
-.img-size img {
-  padding: 2rem;
-  height: 50%;
-  width: 100%; }
-
-/* fin de tamaños provisorios para imagenes e iconos */
 /* fin estilos generales */
-/* media querie 1000px */
-@media screen and (min-width: 62.5rem) {
-  /* estilos generales */
-  .h1 {
-    font-size: 3rem; }
-  /* fin estilos generales */ }
-
 /* para quitarle los bordes a los input submit: */
 .boton--submit {
   border: none; }
@@ -970,7 +958,7 @@ body {
   flex-direction: column;
   width: 90%; }
 
-.contenedores.rooms {
+.contenedor-general.rooms {
   border-bottom: .125rem solid #fff; }
 
 .carousel__contenedor .icon,

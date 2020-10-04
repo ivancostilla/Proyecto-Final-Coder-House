@@ -29,10 +29,13 @@
      display: block;
  }
  
- .titulo-header,
- .h1 {
+ .titulos {
      line-height: 3;
      font-size: 2rem;
+     @media screen and (min-width: 62.5rem) {
+         /* media querie 1000px */
+         font-size: 3rem;
+     }
  }
  
  .h-center {
@@ -41,8 +44,7 @@
      text-transform: uppercase;
  }
  
- .icon img,
- .container-rooms .icon img {
+ .icon-img {
      /* le damos tamaño a los iconos */
      @include tamaños(4rem, 4rem);
  }
@@ -52,7 +54,7 @@
      list-style: none;
  }
  
- .m-top-4 {
+ .m-top-3 {
      margin-top: 3rem;
  }
  
@@ -71,20 +73,4 @@
  .txt-white {
      color: $color-txt-grey;
  }
- /* tamaños provisorios para imagenes e iconos */
- 
- .img-size img {
-     padding: 2rem;
-     @include tamaños(50%, 100%);
- }
- /* fin de tamaños provisorios para imagenes e iconos */
  /* fin estilos generales */
- /* media querie 1000px */
- 
- @media screen and (min-width: 62.5rem) {
-     /* estilos generales */
-     .h1 {
-         font-size: 3rem;
-     }
-     /* fin estilos generales */
- }
