@@ -1,139 +1,118 @@
 /* estilos del footer */
 
-.contact-us address {
-    display: inline-block;
-    border: 1px solid #fff;
-    border-radius: .3125rem;
-    padding: 1rem;
-    line-height: 1.5;
-    margin-bottom: 2rem;
-}
-
-.contact-container {
-    width: 90%;
-    max-width: 62.5rem;
-    overflow: hidden;
-    margin: auto;
-    padding-bottom: 5rem;
-    font-weight: 700;
-}
-
-.contact-form {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact-form .txt-area {
-    width: 100%;
-    max-height: 30rem;
-    min-height: 12.5rem;
-    min-width: 90%;
-}
-
-.contact-input {
-    background: transparent;
-    border: .0625rem solid #fff;
-    border-radius: .3125rem;
-    color: #fff;
-    font-size: 1.25rem;
-    font-family: "Sen";
-    margin: .625rem 0;
-    outline: none;
-    padding: 1.25rem 0;
-    width: 100%;
-    transition: all .5s;
-}
-
-.contact-container .contact-input::placeholder {
-    color: #fff;
-    text-align: center;
-    text-transform: capitalize;
-}
-
-.contact-container .contact-input:active {
-    background: rgba(255, 255, 255, .05);
-}
-
-.contact-container .contact-input[type=submit] {
-    margin: .625rem auto 0;
-    padding: .875rem 2rem;
-    text-align: center;
-    width: 7.5rem;
-}
-
-.contact-container .contact-input[type=text] {
-    text-transform: capitalize;
-}
-
-.contact-container .contact-input[type=submit]:active {
-    background: #fff;
-    color: $color-txt-blue;
-    cursor: pointer;
-}
-
-.contact-us .contact-icons svg {
-    cursor: pointer;
-    margin: 0 1rem 1rem;
-}
-
-.contact-us .contact-icons .wsp:hover path,
-.contact-us .contact-icons .wsp:active path {
-    stroke: $color-txt-pink;
-}
-
-.contact-us .contact-icons .fb:hover g,
-.contact-us .contact-icons .fb:active g {
-    fill: $color-txt-pink;
-}
-
-.contact-us .contact-icons .twt:hover svg g g,
-.contact-us .contact-icons .twt:active svg g g {
-    fill: $color-txt-pink;
-}
-
-.terms a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 2;
-}
-
-.terms p {
-    margin-bottom: 0;
-}
-
-.terms a:hover,
-.terms a:active {
-    border-bottom: .125rem solid $color-txt-pink;
-    color: $color-txt-pink;
+.contact-us {
+    .contact-us__address {
+        display: inline-block;
+        border: 1px solid #fff;
+        border-radius: .3125rem;
+        padding: 1rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+    }
+    .contact-us__form-contenedor {
+        width: 90%;
+        max-width: 62.5rem;
+        overflow: hidden;
+        margin: auto;
+        padding-bottom: 5rem;
+        font-weight: 700;
+        .contact-us__form {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            .cantact-us__txt-area {
+                max-height: 30rem;
+                min-height: 12.5rem;
+                width: 100%;
+                min-width: 100%;
+            }
+            .contact-us__input {
+                background: transparent;
+                border: .0625rem solid #fff;
+                border-radius: .3125rem;
+                color: $color-txt-white;
+                font-size: 1.25rem;
+                font-family: "Sen";
+                margin: .625rem 0;
+                outline: none;
+                padding: 1.23rem 0;
+                width: 100%;
+                transition: all .5s;
+                &::placeholder {
+                    color: $color-txt-white;
+                    text-align: center;
+                    text-transform: capitalize;
+                }
+                &:active {
+                    background: rgba(255, 255, 255, .05);
+                }
+                &[type=submit] {
+                    margin: .625rem auto 0;
+                    padding: .875rem 2rem;
+                    text-align: center;
+                    width: 7.5rem;
+                }
+                &[type=text] {
+                    text-transform: capitalize;
+                }
+                &[type=submit]:active {
+                    background: $white-bg-color;
+                    color: $color-txt-blue;
+                    cursor: pointer;
+                }
+                @media screen and (min-width: 36.25rem) {
+                    /* media querie 580px */
+                    width: 45%;
+                }
+                @media screen and (min-width: 43.75rem) {
+                    /* media querie 700px */
+                    padding: 1.25rem 0;
+                    &:hover {
+                        background: rgba(255, 255, 255, .05);
+                    }
+                    &[type=submit]:hover {
+                        background: #fff;
+                        color: $color-txt-blue;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+    .contact-icons svg {
+        /* los estilos del svg no los puedo anidar ni colocar bem
+        la especificidad no me deja */
+        cursor: pointer;
+        margin: 0 1rem 1rem;
+    }
+    .contact-icons .wsp:hover path,
+    .contact-icons .wsp:active path {
+        stroke: $color-txt-pink;
+    }
+    .contact-icons .fb:hover g,
+    .contact-icons .fb:active g {
+        fill: $color-txt-pink;
+    }
+    .contact-icons .twt:hover svg g g,
+    .contact-icons .twt:active svg g g {
+        fill: $color-txt-pink;
+    }
+    .contact-us__terms {
+        .contact-us__terms-a {
+            text-decoration: none;
+            color: #fff;
+            line-height: 2;
+        }
+        .contact-us__terms-p {
+            margin-bottom: 0;
+        }
+        .contact-us__terms-a:hover,
+        .contact-us__terms-a:active {
+            border-bottom: .125rem solid $color-txt-pink;
+            color: $color-txt-pink;
+        }
+    }
 }
 
 
 /* fin de estilos del footer */
-
-
-/* media querie 580px */
-
-@media screen and (min-width: 36.25rem) {
-    /* estilos del footer */
-    .contact-input {
-        width: 45%;
-    }
-    /* fin estilos del footer */
-}
-
-
-/* media querie 700px */
-
-@media screen and (min-width: 43.75rem) {
-    /* estilos del footer */
-    .contact-container .contact-input:hover {
-        background: rgba(255, 255, 255, .05);
-    }
-    .contact-container .contact-input[type=submit]:hover {
-        background: #fff;
-        color: $color-txt-blue;
-        cursor: pointer;
-    }
-    /* fin estilos del footer */
-}

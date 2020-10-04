@@ -225,7 +225,7 @@ body {
 
 /* fin estilos de los contenedores */
 /* estilos del footer */
-.contact-us address {
+.contact-us .contact-us__address {
   display: inline-block;
   border: 1px solid #fff;
   border-radius: .3125rem;
@@ -233,61 +233,69 @@ body {
   line-height: 1.5;
   margin-bottom: 2rem; }
 
-.contact-container {
+.contact-us .contact-us__form-contenedor {
   width: 90%;
   max-width: 62.5rem;
   overflow: hidden;
   margin: auto;
   padding-bottom: 5rem;
   font-weight: 700; }
-
-.contact-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; }
-
-.contact-form .txt-area {
-  width: 100%;
-  max-height: 30rem;
-  min-height: 12.5rem;
-  min-width: 90%; }
-
-.contact-input {
-  background: transparent;
-  border: .0625rem solid #fff;
-  border-radius: .3125rem;
-  color: #fff;
-  font-size: 1.25rem;
-  font-family: "Sen";
-  margin: .625rem 0;
-  outline: none;
-  padding: 1.25rem 0;
-  width: 100%;
-  transition: all .5s; }
-
-.contact-container .contact-input::placeholder {
-  color: #fff;
-  text-align: center;
-  text-transform: capitalize; }
-
-.contact-container .contact-input:active {
-  background: rgba(255, 255, 255, 0.05); }
-
-.contact-container .contact-input[type=submit] {
-  margin: .625rem auto 0;
-  padding: .875rem 2rem;
-  text-align: center;
-  width: 7.5rem; }
-
-.contact-container .contact-input[type=text] {
-  text-transform: capitalize; }
-
-.contact-container .contact-input[type=submit]:active {
-  background: #fff;
-  color: #056674;
-  cursor: pointer; }
+  .contact-us .contact-us__form-contenedor .contact-us__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .contact-us .contact-us__form-contenedor .contact-us__form .cantact-us__txt-area {
+      max-height: 30rem;
+      min-height: 12.5rem;
+      width: 100%;
+      min-width: 100%; }
+    .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input {
+      background: transparent;
+      border: .0625rem solid #fff;
+      border-radius: .3125rem;
+      color: #fff;
+      font-size: 1.25rem;
+      font-family: "Sen";
+      margin: .625rem 0;
+      outline: none;
+      padding: 1.23rem 0;
+      width: 100%;
+      transition: all .5s; }
+      .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input::placeholder {
+        color: #fff;
+        text-align: center;
+        text-transform: capitalize; }
+      .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input:active {
+        background: rgba(255, 255, 255, 0.05); }
+      .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input[type=submit] {
+        margin: .625rem auto 0;
+        padding: .875rem 2rem;
+        text-align: center;
+        width: 7.5rem; }
+      .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input[type=text] {
+        text-transform: capitalize; }
+      .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input[type=submit]:active {
+        background: #fff;
+        color: #056674;
+        cursor: pointer; }
+      @media screen and (min-width: 36.25rem) {
+        .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input {
+          /* media querie 580px */
+          width: 45%; } }
+      @media screen and (min-width: 43.75rem) {
+        .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input {
+          /* media querie 700px */
+          padding: 1.25rem 0; }
+          .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input:hover {
+            background: rgba(255, 255, 255, 0.05); }
+          .contact-us .contact-us__form-contenedor .contact-us__form .contact-us__input[type=submit]:hover {
+            background: #fff;
+            color: #056674;
+            cursor: pointer; } }
 
 .contact-us .contact-icons svg {
+  /* los estilos del svg no los puedo anidar ni colocar bem
+        la especificidad no me deja */
   cursor: pointer;
   margin: 0 1rem 1rem; }
 
@@ -303,38 +311,20 @@ body {
 .contact-us .contact-icons .twt:active svg g g {
   fill: #ff4b5c; }
 
-.terms a {
+.contact-us .contact-us__terms .contact-us__terms-a {
   text-decoration: none;
   color: #fff;
   line-height: 2; }
 
-.terms p {
+.contact-us .contact-us__terms .contact-us__terms-p {
   margin-bottom: 0; }
 
-.terms a:hover,
-.terms a:active {
+.contact-us .contact-us__terms .contact-us__terms-a:hover,
+.contact-us .contact-us__terms .contact-us__terms-a:active {
   border-bottom: 0.125rem solid #ff4b5c;
   color: #ff4b5c; }
 
 /* fin de estilos del footer */
-/* media querie 580px */
-@media screen and (min-width: 36.25rem) {
-  /* estilos del footer */
-  .contact-input {
-    width: 45%; }
-  /* fin estilos del footer */ }
-
-/* media querie 700px */
-@media screen and (min-width: 43.75rem) {
-  /* estilos del footer */
-  .contact-container .contact-input:hover {
-    background: rgba(255, 255, 255, 0.05); }
-  .contact-container .contact-input[type=submit]:hover {
-    background: #fff;
-    color: #056674;
-    cursor: pointer; }
-  /* fin estilos del footer */ }
-
 /* estilos para las imagenes hero que estan en background attachment fixed */
 /* img hero del header */
 .img-hero-header-index {
