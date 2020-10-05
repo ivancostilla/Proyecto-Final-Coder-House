@@ -201,7 +201,7 @@ body {
   /* posicionamiento para el nav del home */
   .sticky-navbar-home {
     position: sticky;
-    top: 0;
+    top: -1;
     z-index: 5; }
   .position-relative-home {
     position: relative;
@@ -542,9 +542,9 @@ body {
     border: 1px solid #50949e;
     border-radius: 1%;
     box-shadow: 0.3125rem 0.4375rem 0.75rem -0.125rem rgba(0, 0, 0, 0.75);
-    height: 31.25rem;
     margin: 3rem;
     position: relative;
+    height: 31.25rem;
     width: 15rem;
     cursor: pointer;
     /* media querie 400px */
@@ -553,10 +553,10 @@ body {
     /* media querie 1000px */ }
     .rooms-lp .rooms-lp__container .rooms-lp__clip {
       position: absolute;
-      height: 100%;
       left: 0;
       top: 0;
       transition: .5s;
+      height: 100%;
       width: 100%; }
     .rooms-lp .rooms-lp__container .rooms-lp__box1 {
       background: url(../images/hab-seis-dos.jpg);

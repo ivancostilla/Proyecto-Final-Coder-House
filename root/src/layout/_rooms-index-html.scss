@@ -1,8 +1,7 @@
 /* estilos seccion rooms */
 
 .rooms-lp {
-    height: 49rem;
-    width: 100%;
+    @include tamaños(49rem, 100%);
     .rooms-lp__container {
         background: url(../images/hab-seis-dos.jpg);
         /* esta img la repito tmb en el .box1 porq si no la coloco, al hacer hover quedan desfasadas las img, y tengo que buscar la solucion para que el bg-size no se repita tanto */
@@ -10,18 +9,16 @@
         border: 1px solid #50949e;
         border-radius: 1%;
         box-shadow: .3125rem .4375rem .75rem -0.125rem rgba(0, 0, 0, .75);
-        height: 31.25rem;
         margin: 3rem;
         position: relative;
-        width: 15rem;
+        @include tamaños(31.25rem, 15rem);
         cursor: pointer;
         .rooms-lp__clip {
             position: absolute;
-            height: 100%;
             left: 0;
             top: 0;
             transition: .5s;
-            width: 100%;
+            @include tamaños(100%, 100%);
         }
         .rooms-lp__box1 {
             background: url(../images/hab-seis-dos.jpg);
