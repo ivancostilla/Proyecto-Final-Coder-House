@@ -71,14 +71,14 @@
     <!-- inicio del cuerpo(main) -->
     <main>
         <!-- seccion formulario reserva -->
-        <section class="txt-white contenedor-general blue txt-center m-top-3" id="booking">
+        <section class="booking txt-white contenedor-general blue txt-center m-top-3" id="booking">
             <article>
                 <h1 class="h-center titulos">Reservas</h1>
                 <!-- formulario para reservar en el hostel -->
-                <form class="form-reserva form-check-reserva" action="#" method="post">
-                    <input type="text" id="in" onfocus="(this.type='date')" placeholder="check-in" name="check-in" aria-label="Use the arrows keys to pick a date">
-                    <input type="text" id="out" onfocus="(this.type='date')" placeholder="check-out">
-                    <div class="">
+                <form class="form-reserva booking__form-reserva" action="#" method="post">
+                    <input class="booking__input" type="text" id="in" onfocus="(this.type='date')" placeholder="check-in" name="check-in" aria-label="Use the arrows keys to pick a date">
+                    <input class="booking__input" type="text" id="out" onfocus="(this.type='date')" placeholder="check-out">
+                    <div class="form-reserva__select">
                         <label for="adultos">Adultos:</label>
                         <select name="adultos" id="">
                             <option value="1">1 adulto</option>
@@ -113,7 +113,7 @@
                             <option value="30">30 adultos</option>
                         </select>
                         <label for="ninos">Niños:</label>
-                        <select name="ninos" id="">
+                        <select class="" name="ninos" id="">
                             <option value="0">0 niños</option>
                             <option value="1">1 niño</option>
                             <option value="2">2 niños</option>
@@ -125,9 +125,9 @@
                             <option value="8">8 niños</option>
                             <option value="9">9 niños</option>
                             <option value="10">10 niños</option>
-                        </select>
+                            </select>
                     </div>
-                    <input class="boton boton--submit form-reserva__a" type="submit" value="Reservar">
+                    <input class="boton boton--submit form-reserva__a booking__input" type="submit" value="Reservar">
                 </form>
             </article>
         </section>

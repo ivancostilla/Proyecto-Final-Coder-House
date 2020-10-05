@@ -120,10 +120,7 @@ body {
   height: 3.75rem;
   width: 100%;
   top: 0;
-  z-index: 100;
-  /* media querie 580px */
-  /* media querie 1000px */
-  /* media querie 1200px */ }
+  z-index: 100; }
   .navbar .navbar__hamburger {
     position: absolute;
     cursor: pointer;
@@ -170,13 +167,16 @@ body {
       border-left: .125rem solid #fff;
       border-right: 0.125rem solid white; }
   @media screen and (min-width: 36.25rem) {
-    .navbar .navbar__li:hover:not(:first-of-type) {
-      padding: 0 .5rem;
-      margin-bottom: .3rem;
-      border-left: .125rem solid #fff;
-      border-right: .125rem solid #fff; } }
+    .navbar {
+      /* media querie 580px */ }
+      .navbar .navbar__li:hover:not(:first-of-type) {
+        padding: 0 .5rem;
+        margin-bottom: .3rem;
+        border-left: .125rem solid #fff;
+        border-right: .125rem solid #fff; } }
   @media screen and (min-width: 62.5rem) {
     .navbar {
+      /* media querie 1000px */
       /* estilos desktop del nav */
       font-size: 1rem;
       /*fin estilos desktop del nav */ }
@@ -194,10 +194,11 @@ body {
           opacity: 1; } }
   @media screen and (min-width: 75rem) {
     .navbar {
+      /* media querie 1200px */
       font-size: 1.25rem; } }
 
-/* media querie 1000px */
 @media screen and (min-width: 62.5rem) {
+  /* media querie 1000px */
   /* posicionamiento para el nav del home */
   .sticky-navbar-home {
     position: sticky;
@@ -469,77 +470,71 @@ body {
 
 /* inicio estilos index(home) */
 /* estilos de la seccion reserva de la landing page */
-.txt-slogan {
+.booking .booking__txt-slogan {
   font-size: 1.4rem;
   font-style: italic;
   margin-bottom: 3rem; }
 
-.form-check-reserva {
+.booking .booking__form-reserva {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 4rem 0;
   /* agrego el display flex aqui para que el boton "checkear disponibilidad quede centrado si pasa para abajo" */ }
+  .booking .booking__form-reserva .booking__input:nth-child(1),
+  .booking .booking__form-reserva .booking__input:nth-child(2) {
+    font-size: 1.25rem;
+    height: 3rem;
+    margin: 1em 0 2em;
+    text-align: center;
+    width: 15rem; }
+  .booking .booking__form-reserva .booking__input:nth-child(3) {
+    font-size: 15px;
+    height: 3rem;
+    margin: auto;
+    width: fit-content; }
+  @media screen and (min-width: 25rem) {
+    .booking .booking__form-reserva {
+      /* media querie 400px */ }
+      .booking .booking__form-reserva .booking__input:nth-child(1),
+      .booking .booking__form-reserva .booking__input:nth-child(2) {
+        margin: 1em 1rem 2em; } }
+  @media screen and (min-width: 28.125rem) {
+    .booking .booking__form-reserva {
+      /* media querie 450px */ }
+      .booking .booking__form-reserva .booking__input:nth-child(1),
+      .booking .booking__form-reserva .booking__input:nth-child(2) {
+        margin: 1em 6rem 2em; } }
+  @media screen and (min-width: 36.25rem) {
+    .booking .booking__form-reserva {
+      /* media querie 580px */
+      /* ests estilos los puse asi para que no se desalineen los input */ }
+      .booking .booking__form-reserva .booking__input:nth-child(2) {
+        margin: 1em 9rem 2em; } }
+  @media screen and (min-width: 43.75rem) {
+    .booking .booking__form-reserva {
+      /* media querie 700px */ }
+      .booking .booking__form-reserva .booking__input:nth-child(1),
+      .booking .booking__form-reserva .booking__input:nth-child(2) {
+        margin: 1rem 1rem; }
+      .booking .booking__form-reserva .booking__input:nth-child(3) {
+        margin: 0 1.2rem; } }
 
-.form-check-reserva input:nth-child(1),
-.form-check-reserva input:nth-child(2) {
-  font-size: 1.25rem;
-  height: 3rem;
-  margin: 1em 0 2em;
-  text-align: center;
-  width: 15rem; }
-
-.form-check-reserva input:nth-child(3) {
-  font-size: 15px;
-  height: 3rem;
-  margin: auto;
-  width: fit-content; }
-
-.booking .a-check-reserva {
+.booking .booking__a-box {
   display: flex;
   align-items: center;
   justify-content: center; }
 
 /* estilo para el form de booking.html */
 .form-reserva .form-reserva__a {
-  margin-left: 1rem; }
+  margin-left: 1rem;
+  margin-top: 1.875rem; }
+  @media screen and (min-width: 375px) {
+    .form-reserva .form-reserva__a {
+      margin-top: 0; } }
 
-/* media querie 400px */
-@media screen and (min-width: 25rem) {
-  /* estilos seccion reserva de la landing page */
-  .form-check-reserva input:nth-child(1),
-  .form-check-reserva input:nth-child(2) {
-    margin: 1em 1rem 2em; }
-  /* fin estilos seccion reserva de la lp */ }
-
-/* media querie 450px */
-@media screen and (min-width: 28.125rem) {
-  /* estilos seccion reserva de la landing page */
-  .form-check-reserva input:nth-child(1),
-  .form-check-reserva input:nth-child(2) {
-    margin: 1em 6rem 2em; }
-  /* fin estilos seccion reserva de la lp */ }
-
-/* media querie 580px */
-@media screen and (min-width: 36.25rem) {
-  /* estilos de la seccion reserva de la landing page */
-  /* ests estilos los puse asi para que no se desalineen los input */
-  .form-check-reserva input:nth-child(2) {
-    margin: 1em 9rem 2em; }
-  /*fin  estilos de la seccion reserva de la landing page */ }
-
-/* media querie 700px */
-@media screen and (min-width: 43.75rem) {
-  /* estilos de la seccion reserva de la landing page */
-  /* estos estilos los puse asi para que no se desalineen los input */
-  .form-check-reserva input:nth-child(1),
-  .form-check-reserva input:nth-child(2) {
-    margin: 1rem 1rem; }
-  .form-check-reserva input:nth-child(3) {
-    margin: 0 1.2rem; }
-  /* fin estilos de la seccion reserva de la landing page */ }
-
+/* fin estilos  booking html y seccion booking del index */
 /* estilos seccion rooms */
 .rooms-lp {
   height: 49rem;
