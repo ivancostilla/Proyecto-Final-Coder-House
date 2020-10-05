@@ -61,8 +61,8 @@
             border-right: .125rem solid rgb(255, 255, 255);
         }
     }
+    /* media querie 580px */
     @media screen and (min-width: 36.25rem) {
-        /* media querie 580px */
         .navbar__li:hover:not(:first-of-type) {
             padding: 0 .5rem;
             margin-bottom: .3rem;

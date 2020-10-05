@@ -30,29 +30,29 @@
             margin: auto;
             width: fit-content;
         }
+        /* media querie 400px */
         @media screen and (min-width: 25rem) {
-            /* media querie 400px */
             .booking__input:nth-child(1),
             .booking__input:nth-child(2) {
                 margin: 1em 1rem 2em;
             }
         }
+        /* media querie 450px */
         @media screen and (min-width: 28.125rem) {
-            /* media querie 450px */
             .booking__input:nth-child(1),
             .booking__input:nth-child(2) {
                 margin: 1em 6rem 2em;
             }
         }
+        /* media querie 580px */
         @media screen and (min-width: 36.25rem) {
-            /* media querie 580px */
-            /* ests estilos los puse asi para que no se desalineen los input */
             .booking__input:nth-child(2) {
+                /* ests estilos los puse asi para que no se desalineen los input */
                 margin: 1em 9rem 2em;
             }
         }
+        /* media querie 700px */
         @media screen and (min-width: 43.75rem) {
-            /* media querie 700px */
             .booking__input:nth-child(1),
             .booking__input:nth-child(2) {
                 margin: 1rem 1rem;
