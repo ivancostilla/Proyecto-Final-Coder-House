@@ -43,6 +43,7 @@
                   margin: 0;
               }
           }
+          /* mediaquerie 1000px */
           @media screen and (min-width: 62.5rem) {
               .services-icons__box {
                   border-bottom: none;
@@ -80,12 +81,9 @@
               .services-icons__box:hover {
                   padding-top: 1rem;
               }
-              /* fin estilos de la seccion cabecera */
-              /* fin estilos services.html */
           }
           /* media querie 1200px */
           @media screen and (min-width: 75rem) {
-              /* estilos de los iconos del services.html */
               .services-icons__box:nth-child(1) .services-icons__p,
               .services-icons__box:nth-child(2) .services-icons__p,
               .services-icons__box:nth-child(3) .services-icons__p {

@@ -6,9 +6,7 @@
 /*mixin-width-heigth */
 /* mixin para flex */
 /* inicio estilos generales */
-/* to do:acomodar el codigo que está un desastre,
-    luego aplicar BEM y continuar agregando mixins y variables scss y aplicar el anidamiento
-    sigo acomodando codigo: _navbar.scss terminado*/
+/* los comentarios de arriba son de los mixins y variables scss XD*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -954,6 +952,7 @@ body {
   margin-bottom: 3rem;
   cursor: pointer;
   /* media querie 700px */
+  /* mediaquerie 1000px */
   /* media querie 1200px */ }
   .services-icons .services-icons__box {
     border-bottom: .0625rem solid #50949e;
@@ -985,49 +984,44 @@ body {
     .services-icons .services-icons__box {
       margin: 0; } }
   @media screen and (min-width: 62.5rem) {
-    .services-icons {
-      /* fin estilos de la seccion cabecera */
-      /* fin estilos services.html */ }
-      .services-icons .services-icons__box {
-        border-bottom: none;
-        border-right: none;
-        padding-bottom: 12rem;
-        transition: all .5s;
-        width: 33%; }
-      .services-icons .services-icons__box,
-      .services-icons .services-icons__box:nth-child(1),
-      .services-icons .services-icons__box:nth-child(2) {
-        border-top: none; }
-      .services-icons .services-icons__box .services-icons__p {
-        height: 4.375rem; }
-      .services-icons .services-icons__box .services-icons__p {
-        border-bottom: .0625rem solid #50949e; }
-      .services-icons .services-icons__box:nth-child(1) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(2) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(3) .services-icons__p {
-        height: 4.525rem; }
-      .services-icons .services-icons__box:nth-child(6) .services-icons__p6 {
-        height: 6.25rem; }
-      .services-icons .services-icons__box:nth-child(10) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(11) .services-icons__p {
-        height: 6.50rem; }
-      .services-icons .services-icons__box:nth-child(12) .services-icons__p {
-        height: 7.95rem; }
-      .services-icons .services-icons__box:hover {
-        padding-top: 1rem; } }
+    .services-icons .services-icons__box {
+      border-bottom: none;
+      border-right: none;
+      padding-bottom: 12rem;
+      transition: all .5s;
+      width: 33%; }
+    .services-icons .services-icons__box,
+    .services-icons .services-icons__box:nth-child(1),
+    .services-icons .services-icons__box:nth-child(2) {
+      border-top: none; }
+    .services-icons .services-icons__box .services-icons__p {
+      height: 4.375rem; }
+    .services-icons .services-icons__box .services-icons__p {
+      border-bottom: .0625rem solid #50949e; }
+    .services-icons .services-icons__box:nth-child(1) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(2) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(3) .services-icons__p {
+      height: 4.525rem; }
+    .services-icons .services-icons__box:nth-child(6) .services-icons__p6 {
+      height: 6.25rem; }
+    .services-icons .services-icons__box:nth-child(10) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(11) .services-icons__p {
+      height: 6.50rem; }
+    .services-icons .services-icons__box:nth-child(12) .services-icons__p {
+      height: 7.95rem; }
+    .services-icons .services-icons__box:hover {
+      padding-top: 1rem; } }
   @media screen and (min-width: 75rem) {
-    .services-icons {
-      /* estilos de los iconos del services.html */ }
-      .services-icons .services-icons__box:nth-child(1) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(2) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(3) .services-icons__p {
-        height: 3.500rem; }
-      .services-icons .services-icons__box:nth-child(10) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(11) .services-icons__p,
-      .services-icons .services-icons__box:nth-child(6) .services-icons__p6 {
-        height: 4.373rem; }
-      .services-icons .services-icons__box:nth-child(12) .services-icons__p {
-        height: 6.25rem; } }
+    .services-icons .services-icons__box:nth-child(1) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(2) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(3) .services-icons__p {
+      height: 3.500rem; }
+    .services-icons .services-icons__box:nth-child(10) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(11) .services-icons__p,
+    .services-icons .services-icons__box:nth-child(6) .services-icons__p6 {
+      height: 4.373rem; }
+    .services-icons .services-icons__box:nth-child(12) .services-icons__p {
+      height: 6.25rem; } }
 
 /* estilos seccion mas servicios services.html*/
 .mas-servicios {
