@@ -2,10 +2,13 @@
 <html lang="es">
 
 <head>
+    <!-- to do: hacer el sitemap una ves este subida la pagina -->
+    <!-- etiquetas meta -->
     <meta charset="utf-8">
-
-    <title>Like Quijote | Hostel | Bariloche | Home</title>
-
+    <!-- los keywords son las palabras claves separadas por , -->
+    <meta name="keywords" content="hostel, hostal, albergues juveniles, alojamiento, albergue, hospedaje, alojamiento albergue, viajes, turismo, alquiler de vacaciones">
+    <!-- las descrption son unicas por cada pagina -->
+    <meta name="description" content="Bienvenido a Like Quijote Hostel">
     <!-- viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -15,11 +18,20 @@
     <!-- Estilos -->
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Scripts -->
+    <script src="scripts/scrollreveal.js"></script>
+
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+
+    <title>Like Quijote | Hostel | Bariloche | Home</title>
+
 </head>
 
-<body>
+<!-- por alguna razon si no agrego esta clase el scrollreveal me tapa las nimaciones de esta pagina en particular,
+en el reto funciona bien -->
+
+<body class="position-absolute">
 
     <!-- inicio header -->
     <header class="home" id="home">
@@ -50,7 +62,7 @@
             </div>
             <ul class="navbar__nav-links txt-decoration list-style">
                 <li class="navbar__li">
-                    <a class="navbar__a" href="#home" target="_self" title="Home"><img src="images/logo-nav.png" alt="logo de la empresa en home"></a>
+                    <a class="navbar__a" href="#home" target="_self" title="Home"><img loading="lazy" src="images/logo-nav.png" alt="logo de la empresa en home"></a>
                 </li>
                 <li class="navbar__li">
                     <a class="navbar__a" href="pages/booking.html" target="_blank">Reservar</a>
@@ -83,7 +95,7 @@
             <!-- Seccion reserva de la landing page -->
             <section class="booking txt-white contenedor-general blue" id="booking">
                 <article class="">
-                    <h1 class="h-center titulos">Bienvenido</h1>
+                    <h1 class="h-center titulos">Bienvenido a nuestro hostel</h1>
                     <p class="txt-center booking__txt-slogan">"Algunos clichés son ciertos: No hay lugar como el hogar pero solo hay uno Like Quijote."</p>
                 </article>
                 <article>
@@ -349,7 +361,7 @@
     </div>
 
     <!-- scripts -->
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/index.js"></script>
 
 </body>
 

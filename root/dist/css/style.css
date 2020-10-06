@@ -194,6 +194,13 @@ body {
       /* media querie 1200px */
       font-size: 1.25rem; } }
 
+/* clase para posicionar los .navbar__nav-links, porque si no el bootstrap lo
+descoloca*/
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 @media screen and (min-width: 62.5rem) {
   /* media querie 1000px */
   /* posicionamiento para el nav del home */
@@ -443,7 +450,7 @@ body {
   bottom: 0;
   right: 0;
   z-index: 30;
-  -webkit-animation: wsp-animation 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite backwards;
+  -webkit-animation: wsp-animation 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite backwards;
   animation: wsp-animation 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite backwards; }
 
 .whatsapp-index {
@@ -911,6 +918,9 @@ body {
 
 .contenedor-general.rooms {
   border-bottom: .125rem solid #fff; }
+
+.carousel-indicators {
+  z-index: 2; }
 
 /* media querie 1000px */
 @media screen and (min-width: 62.5rem) {

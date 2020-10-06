@@ -98,6 +98,16 @@
     }
 }
 
+
+/* clase para posicionar los .navbar__nav-links, porque si no el bootstrap lo
+descoloca*/
+
+.position-absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @media screen and (min-width: 62.5rem) {
     /* media querie 1000px */
     /* posicionamiento para el nav del home */
