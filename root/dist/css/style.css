@@ -26,17 +26,6 @@ body {
 .dspl-none {
   display: none; }
 
-.dspl-block {
-  display: block; }
-
-.titulos {
-  line-height: 3;
-  font-size: 2rem; }
-  @media screen and (min-width: 62.5rem) {
-    .titulos {
-      /* media querie 1000px */
-      font-size: 3rem; } }
-
 .h-center {
   font-weight: 700;
   text-align: center;
@@ -54,6 +43,19 @@ body {
 .m-top-3 {
   margin-top: 3rem; }
 
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+.titulos {
+  line-height: 3;
+  font-size: 2rem; }
+  @media screen and (min-width: 62.5rem) {
+    .titulos {
+      /* media querie 1000px */
+      font-size: 3rem; } }
+
 .txt-center {
   text-align: center; }
 
@@ -68,6 +70,9 @@ body {
 
 .txt-white {
   color: #f0efef; }
+
+.spin {
+  display: inline-block; }
 
 /* fin estilos generales */
 /* para quitarle los bordes a los input submit: */
@@ -113,7 +118,8 @@ body {
   /* fin estilos botones */ }
 
 /*comienzo  estilos del navbar */
-.navbar {
+.navbar,
+.navbar-rooms {
   background: #ff4b5c;
   box-sizing: border-box;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.2);
@@ -123,18 +129,21 @@ body {
   top: 0;
   z-index: 100;
   /* media querie 580px */ }
-  .navbar .navbar__hamburger {
+  .navbar .navbar__hamburger,
+  .navbar-rooms .navbar__hamburger {
     position: absolute;
     cursor: pointer;
     right: 5%;
     top: 25%;
     z-index: 5; }
-    .navbar .navbar__hamburger .navbar__line {
+    .navbar .navbar__hamburger .navbar__line,
+    .navbar-rooms .navbar__hamburger .navbar__line {
       background: #fff;
       margin: 5px;
       height: 0.1875rem;
       width: 1.875rem; }
-  .navbar .navbar__nav-links {
+  .navbar .navbar__nav-links,
+  .navbar-rooms .navbar__nav-links {
     background: #ff4b5c;
     display: flex;
     align-items: center;
@@ -145,64 +154,72 @@ body {
     margin-left: auto;
     transition: all 1s ease;
     clip-path: circle(5.25rem at 90% -10%); }
-    .navbar .navbar__nav-links.open {
+    .navbar .navbar__nav-links.open,
+    .navbar-rooms .navbar__nav-links.open {
       clip-path: circle(70.5rem at 90% -10%);
       -webkit-clip-path: circle(70.5rem at 90% -10%); }
-    .navbar .navbar__nav-links .navbar__li {
+    .navbar .navbar__nav-links .navbar__li,
+    .navbar-rooms .navbar__nav-links .navbar__li {
       opacity: 0;
       transition: all 0.5s ease-in 0.2s;
       /* media querie 580px */ }
-      .navbar .navbar__nav-links .navbar__li.fade {
+      .navbar .navbar__nav-links .navbar__li.fade,
+      .navbar-rooms .navbar__nav-links .navbar__li.fade {
         opacity: 1; }
-      .navbar .navbar__nav-links .navbar__li .navbar__a {
+      .navbar .navbar__nav-links .navbar__li .navbar__a,
+      .navbar-rooms .navbar__nav-links .navbar__li .navbar__a {
         color: #f0efef; }
-      .navbar .navbar__nav-links .navbar__li .navbar__a:active {
+      .navbar .navbar__nav-links .navbar__li .navbar__a:active,
+      .navbar-rooms .navbar__nav-links .navbar__li .navbar__a:active {
         filter: brightness(150%); }
       @media screen and (min-width: 36.25rem) {
-        .navbar .navbar__nav-links .navbar__li .navbar__a:hover {
+        .navbar .navbar__nav-links .navbar__li .navbar__a:hover,
+        .navbar-rooms .navbar__nav-links .navbar__li .navbar__a:hover {
           filter: brightness(150%); } }
-    .navbar .navbar__nav-links .navbar__li:not(:first-of-type) {
+    .navbar .navbar__nav-links .navbar__li:not(:first-of-type),
+    .navbar-rooms .navbar__nav-links .navbar__li:not(:first-of-type) {
       transition: all .2s ease; }
-    .navbar .navbar__nav-links .navbar__li:active:not(:first-of-type) {
+    .navbar .navbar__nav-links .navbar__li:active:not(:first-of-type),
+    .navbar-rooms .navbar__nav-links .navbar__li:active:not(:first-of-type) {
       padding: 0 .5rem;
       margin-bottom: .3rem;
       border-left: .125rem solid #fff;
       border-right: 0.125rem solid white; }
   @media screen and (min-width: 36.25rem) {
-    .navbar .navbar__li:hover:not(:first-of-type) {
+    .navbar .navbar__li:hover:not(:first-of-type),
+    .navbar-rooms .navbar__li:hover:not(:first-of-type) {
       padding: 0 .5rem;
       margin-bottom: .3rem;
       border-left: .125rem solid #fff;
       border-right: .125rem solid #fff; } }
   @media screen and (min-width: 62.5rem) {
-    .navbar {
+    .navbar,
+    .navbar-rooms {
       /* media querie 1000px */
       /* estilos desktop del nav */
       font-size: 1rem;
       /*fin estilos desktop del nav */ }
-      .navbar .navbar__hamburger {
+      .navbar .navbar__hamburger,
+      .navbar-rooms .navbar__hamburger {
         display: none; }
-      .navbar .navbar__nav-links {
+      .navbar .navbar__nav-links,
+      .navbar-rooms .navbar__nav-links {
         align-items: center;
         flex-direction: row;
         height: 100%;
         clip-path: none; }
-        .navbar .navbar__nav-links.open {
+        .navbar .navbar__nav-links.open,
+        .navbar-rooms .navbar__nav-links.open {
           clip-path: none;
           -webkit-clip-path: none; }
-        .navbar .navbar__nav-links .navbar__li {
+        .navbar .navbar__nav-links .navbar__li,
+        .navbar-rooms .navbar__nav-links .navbar__li {
           opacity: 1; } }
   @media screen and (min-width: 75rem) {
-    .navbar {
+    .navbar,
+    .navbar-rooms {
       /* media querie 1200px */
       font-size: 1.25rem; } }
-
-/* clase para posicionar los .navbar__nav-links, porque si no el bootstrap lo
-descoloca*/
-.position-absolute {
-  position: absolute;
-  top: 0;
-  left: 0; }
 
 @media screen and (min-width: 62.5rem) {
   /* media querie 1000px */

@@ -27,7 +27,48 @@ for (i = 0; i < acordeon.length; i++) {
 };
 
 /* scrollreveal */
+window.sr = ScrollReveal();
 
-ScrollReveal().reveal('.nabvar', {
-    duration: 3000
+sr.reveal('.scroll-r-group', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '-50px',
+});
+
+sr.reveal('.sections-scroll-left-delay', {
+    duration: 2000,
+    delay: 2000,
+    origin: 'left',
+    distance: '500px',
+});
+sr.reveal('.sections-scroll-left', {
+    duration: 2000,
+    origin: 'left',
+    distance: '500px',
+});
+
+sr.reveal('.spin', {
+    delay: 100,
+    duration: 2000,
+    rotate: {
+        x: 1,
+        y: 180,
+    }
+});
+
+sr.reveal('.sections-scroll-bottom-1', {
+    duration: 1600,
+    origin: 'bottom',
+    distance: '500px',
+});
+
+sr.reveal('.sections-scroll-bottom-2', {
+    duration: 1800,
+    origin: 'bottom',
+    distance: '500px',
+});
+sr.reveal('.sections-scroll-bottom-3', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '500px',
 });
