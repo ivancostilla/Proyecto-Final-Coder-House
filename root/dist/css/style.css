@@ -60,6 +60,9 @@ body {
 .txt-color {
   color: #ff4b5c; }
 
+.txt-color-blue {
+  color: #056674; }
+
 .txt-decoration a {
   text-decoration: none; }
 
@@ -973,7 +976,10 @@ descoloca*/
     margin: .125rem 0;
     padding-top: 2rem;
     padding-bottom: 12rem;
+    transition: all .4s ease;
     /* fin estilos de la seccion cabecera services.html*/ }
+    .services-icons .services-icons__box:active, .services-icons .services-icons__box:hover {
+      color: #ff4b5c; }
     .services-icons .services-icons__box .services-icons__img {
       height: 4.125rem;
       width: 4.125rem; }
@@ -1038,12 +1044,15 @@ descoloca*/
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: .3125rem;
-  height: 900px;
+  height: 56.25rem;
   text-align: center;
+  /* @media screen and (min-width: 750px) {
+              grid-template-columns: repeat(2, 1fr);
+          } */
   /* media querie 700px */ }
   .mas-servicios .mas-servicios__box {
     border: 1px solid #056674;
-    background-color: rgba(5, 102, 116, 0.7);
+    background-color: rgba(5, 102, 116, 0.9);
     box-shadow: .0625rem .0625rem .3125rem 0 #000;
     border-radius: .3125rem;
     transition: all .5s ease;
@@ -1057,12 +1066,12 @@ descoloca*/
   @media screen and (min-width: 43.75rem) {
     .mas-servicios {
       grid-template-columns: repeat(3, 1fr);
-      height: 400px; }
+      height: 25rem; }
       .mas-servicios .mas-servicios__box {
-        height: 300px;
-        margin: 30px 5px; }
+        height: 20.75rem;
+        margin: 1.875rem .3125rem; }
       .mas-servicios .mas-servicios__box:hover {
-        transform: translateY(-20px); } }
+        transform: translateY(-1.25rem); } }
 
 /* fin estilos seccion mas servicios */
 /* fin estilos services.html */
