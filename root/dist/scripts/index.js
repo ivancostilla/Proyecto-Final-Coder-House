@@ -46,7 +46,11 @@ sr.reveal('.sections-scroll-left', {
     origin: 'left',
     distance: '500px',
 });
-
+sr.reveal('.sections-scroll-bottom', {
+    duration: 2000,
+    origin: 'bottom',
+    distance: '500px',
+});
 sr.reveal('.spin', {
     delay: 100,
     duration: 2000,
