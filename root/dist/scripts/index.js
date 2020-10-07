@@ -4,6 +4,7 @@ const links = document.querySelectorAll(".navbar__nav-links li");
 const contactOff = document.getElementById('contact-menu-off');
 const acordeon = document.getElementsByClassName('acordeon__box');
 
+/* menu responsive */
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
     links.forEach(link => {
@@ -18,8 +19,15 @@ contactOff.addEventListener("click", () => {
     });
 });
 
+/* acordeon */
 for (i = 0; i < acordeon.length; i++) {
     acordeon[i].addEventListener('click', function() {
         this.classList.toggle('active')
     })
 };
+
+/* scrollreveal */
+
+ScrollReveal().reveal('.nabvar', {
+    duration: 3000
+});
