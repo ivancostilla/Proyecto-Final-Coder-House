@@ -1,1 +1,3 @@
 node_modules
+root/.vscode
+root/dist/.vscode
