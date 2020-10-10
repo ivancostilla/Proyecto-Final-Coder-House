@@ -23,13 +23,10 @@
     <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
     <!-- Estilos -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="Glider.js/glider.css">
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Scripts -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="scripts/scrollreveal.js"></script>
 
     <!-- Fonts -->
@@ -46,7 +43,7 @@ en el reto funciona bien -->
     <header class="home" id="home">
         <!-- Imagen Background y logo -->
         <div class="img-hero-header-index txt-center">
-            <img class="scroll-r-group" src="images/Logo-Title.png" alt="logo de la empresa">
+            <img class="scroll-r-group" src="images/Logo-Title.png" alt="logo de la empresa" title="logo del hostel">
         </div>
 
 
@@ -59,9 +56,7 @@ en el reto funciona bien -->
         <!-- fin contacto por Whatsapp -->
     </header>
     <!-- fin header -->
-
-    <div class="position-relative-home">
-        <!-- la unica solución que encontré fue encerrar el nav y el main dentro de un div, para que pueda moverse el nav con una position sticky.. no se si es semanticamente correcto esto je -->
+    <div>
         <!-- Comienzo del nav -->
         <nav class="navbar sticky-navbar-home scroll-r-group">
             <div class="navbar__hamburger">
@@ -71,7 +66,7 @@ en el reto funciona bien -->
             </div>
             <ul class="navbar__nav-links txt-decoration list-style">
                 <li class="navbar__li">
-                    <a class="navbar__a" href="#home" target="_self" title="Home"><img loading="lazy" src="images/logo-nav.png" alt="logo de la empresa en home"></a>
+                    <a class="navbar__a" href="prueba.html" target="_self" title="Home"><img loading="lazy" src="images/logo-nav.png" alt="logo de la empresa en home" title="logo del hostel"></a>
                 </li>
                 <li class="navbar__li">
                     <a class="navbar__a" href="pages/booking.html" target="_blank">Reservar</a>
@@ -97,10 +92,8 @@ en el reto funciona bien -->
             </ul>
         </nav>
         <!-- Fin del nav -->
-
         <!-- inicio cuerpo(main) -->
-        <main class="position-relative-home">
-
+        <main>
             <!-- Seccion reserva de la landing page -->
             <section class="booking txt-white contenedor-general blue" id="booking">
                 <article class="">
@@ -114,55 +107,168 @@ en el reto funciona bien -->
                         <input class="boton boton--submit booking__input" type="submit" value="Checkear Disponibilidad">
                     </form>
                     <div class="booking__a-box">
-                        <a class="boton" href="pages/booking.html" target="_blank">Ir a Reservas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt=""></i></a>
+                        <a class="boton" href="pages/booking.html" target="_blank">Ir a Reservas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt="chevron-derecha" title="chevron-derecha"></i></a>
                     </div>
                 </article>
             </section>
             <!-- fin seccion reserva -->
 
             <!-- Seccion dormitorios -->
-            <section class=" rooms-lp txt-center txt-color grey">
+            <section class="rooms-lp txt-center txt-color grey">
                 <article class="">
                     <h2 class="h-center titulos scroll-r-group">Habitaciones</h2>
-                    <div class="contenedor-general sections-scroll-left">
-                        <div class="rooms-lp__container">
-                            <div class="rooms-lp__clip rooms-lp__box1">
-                                <div class="rooms-lp__content">
-                                    <h3>Habitación doble c/ baño compartido</h3>
-                                    <p>Esta habitación doble cuenta con calefacción y baño compartido. También se proporcionan toallas y ropa de cama</p>
+                    <div class="carrousel">
+                        <div class="carrousel__contenedor rooms-lp">
+                            <button aria-label="Anterior" class="boton carrousel__anterior">
+                                        <img class="boton__img" src="images/chevron-izquierda-redondo.svg" alt="chevron-izquierda-redondo" title="chevron-izquierda-redondo">
+                                    </button>
+                            <div class="carrousel__lista sections-scroll-left">
+                                <div class="carrousel__elemento">
+                                    <div class="contenedor-general">
+                                        <div class="rooms-lp__container rooms-lp__container-bg1">
+                                            <div class="rooms-lp__clip rooms-lp__box1">
+                                                <div class="rooms-lp__content">
+                                                    <h3>Habitación doble c/ baño compartido</h3>
+                                                    <div class="">
+                                                        <img class="icon-img" src="images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                                                        <img class="icon-img" src="images/jardin.svg" alt="patio" title="patio">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rooms-lp__clip rooms-lp__box2">
+                                                <div class="rooms-lp__content">
+                                                    <h3 class="h-center">Equipamiento de la habitación:</h3>
+                                                    <ol>
+                                                        <li>Acceso a pisos superiores solo por escalera</li>
+                                                        <li>Ropa de cama</li>
+                                                        <li>Juegos de mesa/rompecabezas</li>
+                                                        <li>Tetera/Cafetera</li>
+                                                        <li>Calefacción</li>
+                                                        <li>Cocina</li>
+                                                        <li>Heladera</li>
+                                                        <li>Cafetera</li>
+                                                        <li>Zona de comedor</li>
+                                                        <li>Zona de comedor exterior</li>
+                                                        <li>Enchufe cerca de la cama</li>
+                                                        <li>Perchero de barral</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="rooms-lp__clip rooms-lp__box2">
-                                <div class="rooms-lp__content">
-                                    <h3>Habitación doble c/ baño compartido</h3>
-                                    <div class="">
-                                        <img class="icon-img" src="images/cabana.svg" alt="vista a La ciudad" title="vista a la ciudad">
-                                        <img class="icon-img" src="images/jardin.svg" alt="patio" title="patio">
+                                <div class="carrousel__elemento">
+                                    <div class="contenedor-general">
+                                        <div class="rooms-lp__container rooms-lp__container-bg3">
+                                            <div class="rooms-lp__clip rooms-lp__box3">
+                                                <div class="rooms-lp__content">
+                                                    <h3>Habitación doble con baño privado</h3>
+                                                    <div class="">
+                                                        <img class="icon-img" src="images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                                                        <img class="icon-img" src="images/bano.svg" alt="baño" title=baño>
+                                                        <img class="icon-img" src="images/jardin.svg" alt="patio" title="patio">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rooms-lp__clip rooms-lp__box4">
+                                                <div class="rooms-lp__content">
+                                                    <h3 class="h-center">Equipamiento de la habitación:</h3>
+                                                    <ol>
+                                                        <li>Acceso a pisos superiores solo por escalera</li>
+                                                        <li>Ropa de cama</li>
+                                                        <li>Juegos de mesa/rompecabezas</li>
+                                                        <li>Tetera/Cafetera</li>
+                                                        <li>Calefacción</li>
+                                                        <li>Cocina</li>
+                                                        <li>Heladera</li>
+                                                        <li>Cafetera</li>
+                                                        <li>Zona de comedor</li>
+                                                        <li>Zona de comedor exterior</li>
+                                                        <li>Enchufe cerca de la cama</li>
+                                                        <li>Perchero de barral</li>
+                                                        <li>Baño Privado</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carrousel__elemento">
+                                    <div class="contenedor-general">
+                                        <div class="rooms-lp__container rooms-lp__container-bg5">
+                                            <div class="rooms-lp__clip rooms-lp__box5">
+                                                <div class="rooms-lp__content">
+                                                    <h3>Cama en habitación mixta compartida de 6 camas</h3>
+                                                    <div class="">
+                                                        <img class="icon-img" src="images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                                                        <img class="icon-img" src="images/jardin.svg" alt="patio" title="patio">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rooms-lp__clip rooms-lp__box6">
+                                                <div class="rooms-lp__content">
+                                                    <h3 class="h-center">Equipamiento de la habitación:</h3>
+                                                    <ol>
+                                                        <li>Acceso a pisos superiores solo por escalera</li>
+                                                        <li>Ropa de cama</li>
+                                                        <li>Juegos de mesa/rompecabezas</li>
+                                                        <li>Tetera/Cafetera</li>
+                                                        <li>Calefacción</li>
+                                                        <li>Cocina</li>
+                                                        <li>Heladera</li>
+                                                        <li>Cafetera</li>
+                                                        <li>Zona de comedor</li>
+                                                        <li>Zona de comedor exterior</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carrousel__elemento">
+                                    <div class="contenedor-general">
+                                        <div class="rooms-lp__container rooms-lp__container-bg7">
+                                            <div class="rooms-lp__clip rooms-lp__box7">
+                                                <div class="rooms-lp__content">
+                                                    <h3>Habitación Familiar con baño compartido</h3>
+                                                    <div class="">
+                                                        <img class="icon-img" src="images/cabana.svg" alt="vista a la ciudad" title="vista a la ciudad">
+                                                        <img class="icon-img" src="images/bano.svg" alt="baño" title="baño">
+                                                        <img class="icon-img" src="images/jardin.svg" alt="patio" title="patio">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="rooms-lp__clip rooms-lp__box8">
+                                                <div class="rooms-lp__content">
+                                                    <h3 class="h-center">Equipamiento de la habitación:</h3>
+                                                    <ol>
+                                                        <li>1 cama doble matrimonial y 2 cuchetas</li>
+                                                        <li>Acceso a pisos superiores solo por escalera</li>
+                                                        <li>Ropa de cama</li>
+                                                        <li>Juegos de mesa/rompecabezas</li>
+                                                        <li>Tetera/Cafetera</li>
+                                                        <li>Calefacción</li>
+                                                        <li>Cocina</li>
+                                                        <li>Heladera</li>
+                                                        <li>Cafetera</li>
+                                                        <li>Zona de comedor</li>
+                                                        <li>Zona de comedor exterior</li>
+                                                        <li>Enchufe cerca de la cama</li>
+                                                        <li>Perchero de barral</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="rooms-lp__clip rooms-lp__box3 bgz-cover">
-                                <div class="rooms-lp__content">
-                                    <h3 class="h-center">Equipamiento de la habitación:</h3>
-                                    <ol>
-                                        <li>Acceso a pisos superiores solo por escalera</li>
-                                        <li>Ropa de cama</li>
-                                        <li>Juegos de mesa/rompecabezas</li>
-                                        <li>Tetera/Cafetera</li>
-                                        <li>Calefacción</li>
-                                        <li>Cocina</li>
-                                        <li>Heladera</li>
-                                        <li>Cafetera</li>
-                                        <li>Zona de comedor</li>
-                                        <li>Zona de comedor exterior</li>
-                                        <li>Enchufe cerca de la cama</li>
-                                        <li>Perchero de barral</li>
-                                    </ol>
-                                </div>
-                            </div>
+                            <button aria-label="Siguiente" class="boton carrousel__siguiente">
+                                        <img class="boton__img" src="images/chevron-derecha-redondo.svg" alt="chevron-derecha-redondo" title="chevron-redondo-derecha">
+                                    </button>
+                            <div role="tablist" class="carrousel__indicadores"></div>
+                            <a class="boton" href="pages/rooms.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt="chevron-derecha" title="chevron-derecha"></i></a>
                         </div>
                     </div>
-                    <a class="boton" href="pages/rooms.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt=""></i></a>
                 </article>
             </section>
             <!-- fin seccion dormitorios -->
@@ -175,7 +281,7 @@ en el reto funciona bien -->
                         <!-- Las clases services-icons y services-icons__box son clases creadas para el services.html, pero las reutilzio aqui tmb -->
                         <div class="services-icons__box">
                             <div>
-                                <img class="services-icons__img" src="images/24h.svg" alt="jardin">
+                                <img class="services-icons__img" src="images/24h.svg" alt="jardin" title="jardín">
                             </div>
                             <div>
                                 <p class="services-icons__p">Recepción las 24 horas.
@@ -184,7 +290,7 @@ en el reto funciona bien -->
                         </div>
                         <div class="services-icons__box">
                             <div>
-                                <img class="services-icons__img" src="images/router-inalambrico.svg" alt="wi fi">
+                                <img class="services-icons__img" src="images/router-inalambrico.svg" alt="wi fi" title="router inalambrico">
                             </div>
                             <div>
                                 <p class="services-icons__p">Wi Fi libre en toda la casa.</p>
@@ -192,7 +298,7 @@ en el reto funciona bien -->
                         </div>
                         <div class="services-icons__box">
                             <div>
-                                <img class="services-icons__img" src="images/lockers.svg" alt="lockers en dormitorios">
+                                <img class="services-icons__img" src="images/lockers.svg" alt="lockers en dormitorios" title="lockers">
                             </div>
                             <div>
                                 <p class="services-icons__p">Lockers seguros en cada dormitorio.</p>
@@ -200,7 +306,7 @@ en el reto funciona bien -->
                         </div>
                         <div class="services-icons__box">
                             <div>
-                                <img class="services-icons__img" src="images/lavadora.svg" alt="lavadora">
+                                <img class="services-icons__img" src="images/lavadora.svg" alt="lavadora" title="lavanderia">
                             </div>
                             <div>
                                 <p class="services-icons__p">Servicio de lavanderia, tu ropa limpia en pocas horas!!</p>
@@ -208,7 +314,7 @@ en el reto funciona bien -->
                         </div>
                         <div class="services-icons__box">
                             <div>
-                                <img class="services-icons__img" src="images/bano.svg" alt="baño compartido en habitaciones unisex">
+                                <img class="services-icons__img" src="images/bano.svg" alt="baño compartido en habitaciones unisex" title="baño compartido">
                             </div>
                             <div>
                                 <p class="services-icons__p">Baño compartido en habitaciones unisex.</p>
@@ -216,14 +322,14 @@ en el reto funciona bien -->
                         </div>
                         <div class="services-icons__box">
                             <div>
-                                <img class="services-icons__img" src="images/horno.svg" alt="cocina">
+                                <img class="services-icons__img" src="images/horno.svg" alt="cocina" title="cocina">
                             </div>
                             <div>
                                 <p class="services-icons__p services-icons__p6">Contamos con cocina compartida, equipada, abierta 24/7.</p>
                             </div>
                         </div>
                     </div>
-                    <a class="boton" href="pages/services.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt=""></i></a>
+                    <a class="boton" href="pages/services.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt="chevron-derecha" title="chevron-derecha"></i></a>
                 </article>
             </section>
             <!-- fin seccion servicios -->
@@ -237,7 +343,7 @@ en el reto funciona bien -->
                             Nos encantó crear Like Quijote y nos divertimos mucho pensando en pequeños detalles que nuestros huéspedes disfrutarán, encontrarán útiles y, con suerte, harán sonreír. Nos apasiona Bariloche y es todo lo que queremos compartirles. Ciertos dorms o habitaciones
                             cuentan con vistas al jardín o la ciudad. Cada habitación tiene un baño privado o varios son compartidos
                         </p>
-                        <a class="boton" href="pages/about-us.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt=""></i></a>
+                        <a class="boton" href="pages/about-us.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt="chevron-derecha" title="chevron-derecha"></i></a>
                     </div>
                 </article>
             </section>
@@ -254,7 +360,7 @@ en el reto funciona bien -->
                         <iframe class="find-us__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1502.3639348466975!2d-71.31326023365885!3d-41.14046625252464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1483c6a1ff%3A0x9d50f27ac13b6f2!2sHostel%20Like%20Quijote!5e0!3m2!1ses-419!2sar!4v1597419383616!5m2!1ses-419!2sar "
                             width="650" height="450" frameborder="0" style="border:0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                     </div>
-                    <a class="boton" href="pages/find-us.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt=""></i></a>
+                    <a class="boton" href="pages/find-us.html" target="_blank">Ver Mas <i class="boton__i"><img class="boton__img" src="images/chevron-derecho.svg" alt="chevron-derecha" title="chevron-derecha"></i></a>
                 </div>
             </section>
             <!-- fin seccion como llegar -->
@@ -269,7 +375,7 @@ en el reto funciona bien -->
                             <div class="testimonials__content">
                                 <p>"El hostel es muy acogedor, la habitación excelente, la cocina limpia y hermosa. "</p>
                                 <div class="testimonials__img-box">
-                                    <img src="images/valeria.jpg" alt="valeria suarez">
+                                    <img src="images/valeria.jpg" alt="valeria suarez" title="testimonio de Valeria">
                                 </div>
                                 <h3 class="testimonials__h3">Valeria Suarez<br><span class="testimonials__span">Booking.com</span></h3>
                             </div>
@@ -279,7 +385,7 @@ en el reto funciona bien -->
                             <div class="testimonials__content">
                                 <p>"La gente que trabaja allí siempre te da respuesta a las consultas que les realices."</p>
                                 <div class="testimonials__img-box">
-                                    <img src="images/florencia.jpg" alt="florencia rodriguez">
+                                    <img src="images/florencia.jpg" alt="florencia rodriguez" title="testimonio de Florencia">
                                 </div>
                                 <h3 class="testimonials__h3">Florencia Rodriguez<br><span class="testimonials__span">Booking.com</span></h3>
                             </div>
@@ -289,7 +395,7 @@ en el reto funciona bien -->
                             <div class="testimonials__content">
                                 <p>"Excelente y un buen precio, el desayuno perfecto, personal super amable."</p>
                                 <div class="testimonials__img-box">
-                                    <img src="images/agustin.jpg" alt="Agustin Rios ">
+                                    <img src="images/agustin.jpg" alt="Agustin Rios" title="testimon¿io de Agustin">
                                 </div>
                                 <h3 class="testimonials__h3">Agustín Rios<br><span class="testimonials__span">Booking.com</span></h3>
                             </div>
@@ -301,12 +407,12 @@ en el reto funciona bien -->
 
             <!-- seccion galeria -->
             <section class="galeria grey">
-                <img class="galeria__img sections-scroll-left" src="images/desayuno.jpg" alt="desayuno">
-                <img class="galeria__img sections-scroll-left" src="images/comedor.jpg" alt="comedor del hostel">
-                <img class="galeria__img sections-scroll-left" src="images/Sala-de-estar.jpg" alt="sala de estar">
-                <img class="galeria__img sections-scroll-left" src="images/cocina.jpg" alt="cocina">
-                <img class="galeria__img sections-scroll-left" src="images/recepcion.jpg" alt="recepcion del hostel">
-                <img class="galeria__img sections-scroll-left" src="images/recepcion-desk.jpg" alt="recepcion, escritorio del hostel">
+                <img class="galeria__img sections-scroll-left" src="images/desayuno.jpg" alt="desayuno" title="desayuno">
+                <img class="galeria__img sections-scroll-left" src="images/comedor.jpg" alt="comedor del hostel" title="comedor del hostel">
+                <img class="galeria__img sections-scroll-left" src="images/Sala-de-estar.jpg" alt="sala de estar" title="sala de estar">
+                <img class="galeria__img sections-scroll-left" src="images/cocina.jpg" alt="cocina" title="cocina">
+                <img class="galeria__img sections-scroll-left" src="images/recepcion.jpg" alt="recepcion del hostel" title="recepcion del hostel">
+                <img class="galeria__img sections-scroll-left" src="images/recepcion-desk.jpg" alt="recepcion, escritorio del hostel" title="escritorio del hostel">
             </section>
             <!-- fin seccion galeria -->
         </main>
@@ -316,11 +422,11 @@ en el reto funciona bien -->
         <section>
             <aside id="work-with-us " class="txt-white txt-center ">
                 <article class="work-with-us">
-                    <img class="work-with-us__img" src="images/doble-chevron-derecha.svg" alt="">
+                    <img class="work-with-us__img" src="images/doble-chevron-derecha.svg" alt="chevron-doble-derecha" title="chevron-doble-derecha">
                     <div class="work-with-us__box">
                         <h2 class="h-center">Trabaja Con Nosotros</h2>
                         <p class="work-with-us__p">Estamos en busca de voluntarios, pero no cualquier voluntario! Para nosotros es muy importante que sean viajeros, abiertos al dialogo, responsables, creativos, resolutivos y por sobre todas las cosas con un buen corazón...</p>
-                        <a class="boton" href="https://www.workaway.info/en/host/211131141727 " target="_blank ">Ver Mas <i class="boton__i"><img src="images/chevron-derecho.svg" class="work-with-us__chevron" alt=""></i></a>
+                        <a class="boton" href="https://www.workaway.info/en/host/211131141727 " target="_blank ">Ver Mas <i class="boton__i"><img src="images/chevron-derecho.svg" class="work-with-us__chevron" alt="chevron-derecha" title="chevron-derecha"></i></a>
                     </div>
                 </article>
             </aside>
@@ -367,8 +473,8 @@ en el reto funciona bien -->
     </div>
 
     <!-- scripts -->
+    <script src="Glider.js/glider.min.js"></script>
     <script src="scripts/index.js"></script>
-
 </body>
 
 </html>

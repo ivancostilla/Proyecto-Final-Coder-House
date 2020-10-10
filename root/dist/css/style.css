@@ -228,9 +228,6 @@ body {
     position: sticky;
     top: -1;
     z-index: 5; }
-  .position-relative-home {
-    position: relative;
-    z-index: -20; }
   /*fin  posisionamiento para el nav del home */ }
 
 /* fin de estilos del nav */
@@ -560,8 +557,18 @@ body {
   height: 49rem;
   width: 100%;
   /* media querie 1000px */ }
+  .rooms-lp .rooms-lp__container-general {
+    background-size: cover;
+    border: 1px solid #50949e;
+    border-radius: 1%;
+    box-shadow: 0.3125rem 0.4375rem 0.75rem -0.125rem rgba(0, 0, 0, 0.75);
+    margin: 3rem;
+    position: relative;
+    height: 31.25rem;
+    width: 15rem;
+    min-width: 90%;
+    cursor: pointer; }
   .rooms-lp .rooms-lp__container {
-    background: url(../images/hab-seis-dos.jpg);
     /* esta img la repito tmb en el .box1 porq si no la coloco, al hacer hover quedan desfasadas las img, y tengo que buscar la solucion para que el bg-size no se repita tanto */
     background-size: cover;
     border: 1px solid #50949e;
@@ -571,7 +578,12 @@ body {
     position: relative;
     height: 31.25rem;
     width: 15rem;
+    min-width: 90%;
     cursor: pointer;
+    /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
+    /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
+    /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
+    /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
     /* media querie 400px */
     /* media querie 580px */
     /* mdiq querie 700px */
@@ -583,23 +595,63 @@ body {
       transition: .5s;
       height: 100%;
       width: 100%; }
+    .rooms-lp .rooms-lp__container.rooms-lp__container-bg1 {
+      background-image: url(../images/hab-seis.jpg);
+      background-position: 0 50%; }
+    .rooms-lp .rooms-lp__container.rooms-lp__container-bg3 {
+      background-image: url(../images/hab-cuatro-uno.jpg);
+      background-position: 0 50%; }
+    .rooms-lp .rooms-lp__container.rooms-lp__container-bg5 {
+      background-image: url(../images/sextuple-comp-uno.jpg);
+      background-position: 0 50%; }
+    .rooms-lp .rooms-lp__container.rooms-lp__container-bg7 {
+      background-image: url(../images/hab-fam-dos-min.jpg);
+      background-position: 0 50%; }
     .rooms-lp .rooms-lp__container .rooms-lp__box1 {
-      background: url(../images/hab-seis-dos.jpg);
+      background-image: url(../images/hab-seis.jpg);
       background-size: cover;
-      clip-path: polygon(100% 47%, 0 29%, 0 0, 100% 0); }
+      background-position: 0 50%;
+      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box2 {
-      background: url(../images/hab-seis.jpg);
+      background-image: url(../images/hab-seis-cuatro.jpg);
       background-size: cover;
-      clip-path: polygon(100% 80%, 0 63%, 0 29%, 100% 46%); }
+      background-position: 0 50%;
+      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box3 {
-      background: url(../images/hab-seis-cuatro.jpg);
+      background-image: url(../images/hab-cuatro-uno.jpg);
       background-size: cover;
-      clip-path: polygon(100% 100%, 0 100%, 0 61%, 100% 80%); }
+      background-position: 0 50%;
+      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+    .rooms-lp .rooms-lp__container .rooms-lp__box4 {
+      background-image: url(../images/hab-cuatro-seis-min.jpg);
+      background-size: cover;
+      background-position: 0 50%;
+      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
+    .rooms-lp .rooms-lp__container .rooms-lp__box5 {
+      background-image: url(../images/sextuple-comp-uno.jpg);
+      background-size: cover;
+      background-position: 0 50%;
+      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+    .rooms-lp .rooms-lp__container .rooms-lp__box6 {
+      background-image: url(../images/sextuple-comp-cuatro.jpg);
+      background-size: cover;
+      background-position: 0 50%;
+      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
+    .rooms-lp .rooms-lp__container .rooms-lp__box7 {
+      background-image: url(../images/hab-fam-dos-min.jpg);
+      background-size: cover;
+      background-position: 0 50%;
+      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+    .rooms-lp .rooms-lp__container .rooms-lp__box8 {
+      background-image: url(../images/hab-fam-tres-min.jpg);
+      background-size: cover;
+      background-position: 0 50%;
+      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__content {
       background-color: #ffffffb3;
       bottom: -100%;
       border-radius: .3125rem;
-      font-size: .9375rem;
+      font-size: .8rem;
       left: 0;
       margin: .1875rem;
       opacity: 0;
@@ -608,9 +660,9 @@ body {
       transition: .5s;
       width: 70%; }
     .rooms-lp .rooms-lp__container:active .rooms-lp__clip {
-      clip-path: polygon(100% 100%, 0 100%, 0 100%, 100% 100%); }
+      clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__clip:active {
-      clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0); }
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__clip:active .rooms-lp__content {
       bottom: 0;
       opacity: 1; }
@@ -623,19 +675,14 @@ body {
         /* media querie 700px */ } }
     @media screen and (min-width: 43.75rem) {
       .rooms-lp .rooms-lp__container {
-        width: 43rem; }
-        .rooms-lp .rooms-lp__container .rooms-lp__box1 {
-          clip-path: polygon(0 0, 55% 0, 20% 100%, 0 100%); }
-        .rooms-lp .rooms-lp__container .rooms-lp__box2 {
-          clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%); }
-        .rooms-lp .rooms-lp__container .rooms-lp__box3 {
-          clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%); }
+        width: 43rem;
+        max-width: 43rem; }
         .rooms-lp .rooms-lp__container:hover .rooms-lp__clip,
         .rooms-lp .rooms-lp__container:active .rooms-lp__clip {
-          clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%); }
+          clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%); }
         .rooms-lp .rooms-lp__container .rooms-lp__clip:hover,
         .rooms-lp .rooms-lp__container .rooms-lp__clip:active {
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
         .rooms-lp .rooms-lp__container .rooms-lp__clip:hover .rooms-lp__content,
         .rooms-lp .rooms-lp__container .rooms-lp__clip:active .rooms-lp__content {
           bottom: 0;
@@ -643,12 +690,107 @@ body {
     @media screen and (min-width: 62.5rem) {
       .rooms-lp .rooms-lp__container {
         width: 50rem;
+        min-width: 80%;
         height: 31.25rem; } }
   @media screen and (min-width: 62.5rem) {
     .rooms-lp {
       height: 51.5rem; } }
 
 /* fin estilos seccion rooms */
+/* --- --- CAROUSEL --- --- */
+.carrousel__contenedor {
+  position: absolute;
+  transform: translateY(-1.875rem); }
+  .carrousel__contenedor .boton.carrousel__anterior,
+  .carrousel__contenedor .boton.carrousel__siguiente {
+    background: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.2); }
+  .carrousel__contenedor .carrousel__anterior,
+  .carrousel__contenedor .carrousel__siguiente {
+    position: absolute;
+    display: block;
+    height: 31.1rem;
+    width: 1.5rem;
+    border: none;
+    top: calc(50% - 21.4375rem);
+    cursor: pointer; }
+    .carrousel__contenedor .carrousel__anterior:active,
+    .carrousel__contenedor .carrousel__siguiente:active {
+      background-color: rgba(0, 0, 0, 0.6); }
+    .carrousel__contenedor .carrousel__anterior .boton__img,
+    .carrousel__contenedor .carrousel__siguiente .boton__img {
+      transform: translate(-0.9375rem, -0.5625rem);
+      height: 1.875rem;
+      width: 1.875rem; }
+  .carrousel__contenedor .carrousel__anterior {
+    left: -1%;
+    z-index: 1;
+    border-radius: 5% 50% 50% 5%; }
+  .carrousel__contenedor .carrousel__siguiente {
+    right: -1%;
+    border-radius: 50% 5% 5% 50%; }
+  @media screen and (min-width: 18.75rem) {
+    .carrousel__contenedor .carrousel__anterior {
+      left: 5%; }
+    .carrousel__contenedor .carrousel__siguiente {
+      right: 5%; } }
+  @media screen and (min-width: 43.75rem) {
+    .carrousel__contenedor .boton.carrousel__anterior,
+    .carrousel__contenedor .boton.carrousel__siguiente {
+      background: linear-gradient(30deg, #ff4b5c 0%, #ff4b5c 57%, #ec6f50 85%);
+      box-shadow: 0.1125rem 0.3375rem 0.75rem -0.125rem rgba(0, 0, 0, 0.75); }
+    .carrousel__contenedor .carrousel__anterior,
+    .carrousel__contenedor .carrousel__siguiente {
+      height: 2rem;
+      width: 2rem;
+      top: calc(50% - 7.5625rem); }
+      .carrousel__contenedor .carrousel__anterior .boton__img,
+      .carrousel__contenedor .carrousel__siguiente .boton__img {
+        transform: translate(-0.75rem, -0.5625rem);
+        height: 1.5625rem;
+        width: 1.5625rem; }
+    .carrousel__contenedor .carrousel__anterior {
+      border-radius: .3125rem; }
+    .carrousel__contenedor .carrousel__siguiente {
+      border-radius: .3125rem; } }
+  @media screen and (min-width: 62.5rem) {
+    .carrousel__contenedor .carrousel__anterior,
+    .carrousel__contenedor .carrousel__siguiente {
+      height: 2.5rem;
+      width: 2.5rem;
+      top: calc(50% - 8.75rem); }
+      .carrousel__contenedor .carrousel__anterior .boton__img,
+      .carrousel__contenedor .carrousel__siguiente .boton__img {
+        transform: translate(-0.5rem, -0.29375rem); }
+    .carrousel__contenedor .carrousel__anterior {
+      left: 5%; }
+    .carrousel__contenedor .carrousel__siguiente {
+      right: 5%; } }
+  .carrousel__contenedor .carrousel__lista {
+    overflow: hidden; }
+  .carrousel__contenedor .carrousel__indicadores .glider-dot {
+    display: block;
+    height: .9375rem;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    background: linear-gradient(30deg, #ff4b5c 0%, #ff4b5c 57%, #ec6f50 85%);
+    transform: translateY(-3.75rem);
+    transition: all .2s ease;
+    margin: .625rem;
+    box-shadow: .0625rem .1875rem .5625rem 0 #000; }
+  .carrousel__contenedor .carrousel__indicador-general, .carrousel__contenedor .carrousel__indicadores .glider-dot:active,
+  .carrousel__contenedor .carrousel__indicadores .glider-dot:hover, .carrousel__contenedor .carrousel__indicadores .glider-dot.active {
+    filter: saturate(250%);
+    transform: translateY(-4.0625rem); }
+  .carrousel__contenedor .carrousel__indicadores .glider-dot:active,
+  .carrousel__contenedor .carrousel__indicadores .glider-dot:hover {
+    height: 1.25rem;
+    width: 1.25rem; }
+  .carrousel__contenedor .carrousel__indicadores .glider-dot.active {
+    height: 1.5625rem;
+    width: 1.5625rem; }
+
 /* fin estilos seccion find-us del index y find-us.html */
 .find-us .find-us__map .find-us__iframe {
   margin: 2rem auto;
@@ -693,86 +835,93 @@ body {
 /* fin estilos seccion find-us del index y find-us.html */
 /* seccion work-with-us */
 .work-with-us {
-  background: #ff4b5c;
-  clip-path: circle(6.4% at 0 48%);
-  height: 25rem;
-  width: 90%;
-  position: fixed;
-  top: 20%;
-  left: 0;
-  transition: all .5s;
-  z-index: 15; }
-  .work-with-us:hover, .work-with-us:active {
-    clip-path: circle(48.2% at 0 49%); }
-  .work-with-us:hover .work-with-us__box,
-  .work-with-us:active .work-with-us__box {
-    opacity: 1; }
-  .work-with-us .work-with-us__img,
-  .work-with-us .work-with-us__chevron {
-    height: 0.5rem;
-    width: 0.5rem;
-    vertical-align: middle; }
-  @media screen and (min-width: 62.5rem) {
+  display: none; }
+  @media screen and (min-width: 350px) {
+    .work-with-us {
+      display: block;
+      background: #ff4b5c;
+      clip-path: circle(6.4% at 0 48%);
+      height: 25rem;
+      width: 90%;
+      position: fixed;
+      top: 20%;
+      left: 0;
+      transition: all .5s;
+      z-index: 15; }
+      .work-with-us:hover, .work-with-us:active {
+        clip-path: circle(48.2% at 0 49%); }
+      .work-with-us:hover .work-with-us__box,
+      .work-with-us:active .work-with-us__box {
+        opacity: 1; }
+      .work-with-us .work-with-us__img,
+      .work-with-us .work-with-us__chevron {
+        height: 0.5rem;
+        width: 0.5rem;
+        vertical-align: middle; } }
+  @media screen and (min-width: 350px) and (min-width: 62.5rem) {
     .work-with-us {
       /* media querie 1000px */
       z-index: 4; } }
-  .work-with-us .work-with-us__img {
-    position: absolute;
-    top: 46%;
-    left: 1%;
-    margin-top: .25rem; }
-    @media screen and (min-width: 43.75rem) {
+  @media screen and (min-width: 350px) {
+      .work-with-us .work-with-us__img {
+        position: absolute;
+        top: 46%;
+        left: 1%;
+        margin-top: .25rem; } }
+    @media screen and (min-width: 350px) and (min-width: 43.75rem) {
       .work-with-us .work-with-us__img {
         /* media querie 700px */
         height: 1.1rem;
         width: 1.1rem;
         margin-top: 0; } }
-  .work-with-us:hover .work-with-us__img,
-  .work-with-us:active .work-with-us__img {
-    display: none; }
-  .work-with-us .work-with-us__box {
-    font-size: .5375rem;
-    margin: 3rem 5% 0;
-    opacity: 0;
-    position: relative;
-    transition: .5s;
-    width: 20%; }
-    .work-with-us .work-with-us__box .boton {
-      padding: .2rem; }
-    @media screen and (min-width: 25rem) {
+  @media screen and (min-width: 350px) {
+      .work-with-us:hover .work-with-us__img,
+      .work-with-us:active .work-with-us__img {
+        display: none; }
+      .work-with-us .work-with-us__box {
+        font-size: .5375rem;
+        margin: 3rem 5% 0;
+        opacity: 0;
+        position: relative;
+        transition: .5s;
+        width: 20%; }
+        .work-with-us .work-with-us__box .boton {
+          padding: .2rem; } }
+    @media screen and (min-width: 350px) and (min-width: 25rem) {
       .work-with-us .work-with-us__box {
         /* media querie 400px */
         font-size: .6375rem; } }
-    @media screen and (min-width: 28.125rem) {
+    @media screen and (min-width: 350px) and (min-width: 28.125rem) {
       .work-with-us .work-with-us__box {
         /* media querie 450px */
         font-size: .6375rem; } }
-    @media screen and (min-width: 36.25rem) {
+    @media screen and (min-width: 350px) and (min-width: 36.25rem) {
       .work-with-us .work-with-us__box {
         /* media querie 580px */
         font-size: .7375rem;
         margin: 3rem 5% 1rem; }
         .work-with-us .work-with-us__box .boton {
           padding: .5rem; } }
-    @media screen and (min-width: 43.75rem) {
+    @media screen and (min-width: 350px) and (min-width: 43.75rem) {
       .work-with-us .work-with-us__box {
         /* media querie 700px */
         font-size: .7875rem; }
         .work-with-us .work-with-us__box .boton {
           padding: .7rem; } }
-    @media screen and (min-width: 62.5rem) {
+    @media screen and (min-width: 350px) and (min-width: 62.5rem) {
       .work-with-us .work-with-us__box {
         /* media querie 1000px */
         font-size: .9175rem; }
         .work-with-us .work-with-us__box .boton {
           padding: 1rem; } }
-    .work-with-us .work-with-us__box .work-with-us__p {
-      padding: .5rem 0; }
-      @media screen and (min-width: 36.25rem) {
+  @media screen and (min-width: 350px) {
+        .work-with-us .work-with-us__box .work-with-us__p {
+          padding: .5rem 0; } }
+      @media screen and (min-width: 350px) and (min-width: 36.25rem) {
         .work-with-us .work-with-us__box .work-with-us__p {
           /* media querie 580px */
           padding: 1rem 0; } }
-      @media screen and (min-width: 62.5rem) {
+      @media screen and (min-width: 350px) and (min-width: 62.5rem) {
         .work-with-us .work-with-us__box .work-with-us__p {
           /* media querie 1000px */
           padding: 2rem 0 3rem; } }
@@ -872,8 +1021,8 @@ body {
 /*fin estilos seccion gallery */
 /* inicio estilos rooms.html */
 .carousel-item .carousel-item__img {
-  min-width: 249px;
-  max-width: 249px;
+  min-width: 195px;
+  max-width: 195px;
   flex-basis: fit-content;
   flex-grow: 1;
   height: 500px;
@@ -883,6 +1032,10 @@ body {
   /* media querie 580px */
   /* media querie 1000px */
   /* media querie 1300px */ }
+  @media screen and (min-width: 18.75rem) {
+    .carousel-item .carousel-item__img {
+      min-width: 249px;
+      max-width: 249px; } }
   @media screen and (min-width: 25rem) {
     .carousel-item .carousel-item__img {
       min-width: 339px;

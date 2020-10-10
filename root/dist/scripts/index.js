@@ -4,6 +4,20 @@ const links = document.querySelectorAll(".navbar__nav-links li");
 const contactOff = document.getElementById('contact-menu-off');
 const acordeon = document.getElementsByClassName('acordeon__box');
 
+
+/* glidr.js el carrousel del index.html */
+window.addEventListener('load', function() {
+    new Glider(document.querySelector('.carrousel__lista'), {
+        rewind: true,
+        dots: '.carrousel__indicadores',
+        arrows: {
+            prev: '.carrousel__anterior',
+            next: '.carrousel__siguiente'
+        },
+    });
+});
+
+
 /* menu responsive */
 hamburger.addEventListener("click", () => {
     navLinks.classList.toggle("open");
@@ -76,24 +90,3 @@ sr.reveal('.sections-scroll-bottom-3', {
     origin: 'bottom',
     distance: '500px',
 });
-
-var mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    // And if we need scrollbar
-    scrollbar: {
-        el: '.swiper-scrollbar',
-    },
-})

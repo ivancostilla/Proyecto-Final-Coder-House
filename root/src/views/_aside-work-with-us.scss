@@ -1,95 +1,99 @@
 /* seccion work-with-us */
 
 .work-with-us {
-    background: $pink-bg-color;
-    clip-path: circle(6.4% at 0 48%);
-    @include tamaños(25rem, 90%);
-    position: fixed;
-    top: 20%;
-    left: 0;
-    transition: all .5s;
-    z-index: 15;
-    &:hover,
-    &:active {
-        clip-path: circle(48.2% at 0 49%);
-    }
-    &:hover .work-with-us__box,
-    &:active .work-with-us__box {
-        opacity: 1;
-    }
-    .work-with-us__img,
-    .work-with-us__chevron {
-        @include tamaños(.5rem, .5rem);
-        vertical-align: middle;
-    }
-    @media screen and (min-width: 62.5rem) {
-        /* media querie 1000px */
-        z-index: 4
-    }
-    .work-with-us__img {
-        position: absolute;
-        top: 46%;
-        left: 1%;
-        margin-top: .25rem;
-        @media screen and (min-width: 43.75rem) {
-            /* media querie 700px */
-            @include tamaños(1.1rem, 1.1rem);
-            margin-top: 0;
+    display: none;
+    @media screen and (min-width: 350px) {
+        display: block;
+        background: $pink-bg-color;
+        clip-path: circle(6.4% at 0 48%);
+        @include tamaños(25rem, 90%);
+        position: fixed;
+        top: 20%;
+        left: 0;
+        transition: all .5s;
+        z-index: 15;
+        &:hover,
+        &:active {
+            clip-path: circle(48.2% at 0 49%);
         }
-    }
-    &:hover .work-with-us__img,
-    &:active .work-with-us__img {
-        display: none;
-    }
-    .work-with-us__box {
-        font-size: .5375rem;
-        margin: 3rem 5% 0;
-        opacity: 0;
-        position: relative;
-        transition: .5s;
-        width: 20%;
-        .boton {
-            padding: .2rem;
+        &:hover .work-with-us__box,
+        &:active .work-with-us__box {
+            opacity: 1;
         }
-        @media screen and (min-width: 25rem) {
-            /* media querie 400px */
-            font-size: .6375rem;
-        }
-        @media screen and (min-width: 28.125rem) {
-            /* media querie 450px */
-            font-size: .6375rem;
-        }
-        @media screen and (min-width: 36.25rem) {
-            /* media querie 580px */
-            font-size: .7375rem;
-            margin: 3rem 5% 1rem;
-            .boton {
-                padding: .5rem;
-            }
-        }
-        @media screen and (min-width: 43.75rem) {
-            /* media querie 700px */
-            font-size: .7875rem;
-            .boton {
-                padding: .7rem;
-            }
+        .work-with-us__img,
+        .work-with-us__chevron {
+            @include tamaños(.5rem, .5rem);
+            vertical-align: middle;
         }
         @media screen and (min-width: 62.5rem) {
             /* media querie 1000px */
-            font-size: .9175rem;
-            .boton {
-                padding: 1rem;
+            z-index: 4
+        }
+        .work-with-us__img {
+            position: absolute;
+            top: 46%;
+            left: 1%;
+            margin-top: .25rem;
+            @media screen and (min-width: 43.75rem) {
+                /* media querie 700px */
+                @include tamaños(1.1rem, 1.1rem);
+                margin-top: 0;
             }
         }
-        .work-with-us__p {
-            padding: .5rem 0;
+        &:hover .work-with-us__img,
+        &:active .work-with-us__img {
+            display: none;
+        }
+        .work-with-us__box {
+            font-size: .5375rem;
+            margin: 3rem 5% 0;
+            opacity: 0;
+            position: relative;
+            transition: .5s;
+            width: 20%;
+            .boton {
+                padding: .2rem;
+            }
+            @media screen and (min-width: 25rem) {
+                /* media querie 400px */
+                font-size: .6375rem;
+            }
+            @media screen and (min-width: 28.125rem) {
+                /* media querie 450px */
+                font-size: .6375rem;
+            }
             @media screen and (min-width: 36.25rem) {
                 /* media querie 580px */
-                padding: 1rem 0;
+                font-size: .7375rem;
+                margin: 3rem 5% 1rem;
+                .boton {
+                    padding: .5rem;
+                }
+            }
+            @media screen and (min-width: 43.75rem) {
+                /* media querie 700px */
+                font-size: .7875rem;
+                .boton {
+                    padding: .7rem;
+                }
             }
             @media screen and (min-width: 62.5rem) {
                 /* media querie 1000px */
-                padding: 2rem 0 3rem;
+                font-size: .9175rem;
+                .boton {
+                    padding: 1rem;
+                }
+            }
+            .work-with-us__p {
+                padding: .5rem 0;
+                @media screen and (min-width: 36.25rem) {
+                    /* media querie 580px */
+                    padding: 1rem 0;
+                }
+                @media screen and (min-width: 62.5rem) {
+                    /* media querie 1000px */
+                    padding: 2rem 0 3rem;
+                }
             }
         }
     }

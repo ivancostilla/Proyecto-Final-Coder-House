@@ -2,13 +2,17 @@
 
 .carousel-item {
     .carousel-item__img {
-        min-width: 249px;
-        max-width: 249px;
+        min-width: 195px;
+        max-width: 195px;
         flex-basis: fit-content;
         flex-grow: 1;
         height: 500px;
         min-height: 500px;
         object-fit: cover;
+        @media screen and (min-width: 18.75rem) {
+            min-width: 249px;
+            max-width: 249px;
+        }
         /* media querie 400px */
         @media screen and (min-width: 25rem) {
             min-width: 339px;
