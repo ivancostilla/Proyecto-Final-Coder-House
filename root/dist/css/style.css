@@ -682,13 +682,10 @@ body {
       position: absolute;
       transition: .5s;
       width: 70%; }
-    .rooms-lp .rooms-lp__container:active .rooms-lp__clip,
     .rooms-lp .rooms-lp__container:hover .rooms-lp__clip {
       clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%); }
-    .rooms-lp .rooms-lp__container .rooms-lp__clip:active,
     .rooms-lp .rooms-lp__container .rooms-lp__clip:hover {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); }
-    .rooms-lp .rooms-lp__container .rooms-lp__clip:active .rooms-lp__content,
     .rooms-lp .rooms-lp__container .rooms-lp__clip:hover .rooms-lp__content {
       bottom: 0;
       opacity: 1; }
