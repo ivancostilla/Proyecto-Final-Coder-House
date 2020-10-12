@@ -5,6 +5,14 @@
         background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/background-image.jpg) no-repeat 75% 75% / cover;
         z-index: 20;
         @extend .hero-general;
+        .img-hero__img {
+            width: 300px;
+            height: 300px;
+            @media screen and (min-width: 36.25rem) {
+                width: 500px;
+                height: 500px;
+            }
+        }
     }
     /* img hero de la seccion about-us del index.html */
     

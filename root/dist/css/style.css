@@ -352,6 +352,13 @@ body {
 .img-hero-header-index {
   background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/background-image.jpg) no-repeat 75% 75%/cover;
   z-index: 20; }
+  .img-hero-header-index .img-hero__img {
+    width: 300px;
+    height: 300px; }
+    @media screen and (min-width: 36.25rem) {
+      .img-hero-header-index .img-hero__img {
+        width: 500px;
+        height: 500px; } }
 
 /* img hero de la seccion about-us del index.html */
 .about-us-index {
