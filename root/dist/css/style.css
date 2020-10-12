@@ -699,20 +699,7 @@ body {
     @media screen and (min-width: 43.75rem) {
       .rooms-lp .rooms-lp__container {
         width: 43rem;
-        max-width: 43rem;
-        /*             &:hover .rooms-lp__clip,
-            &:active .rooms-lp__clip {
-                clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
-            }
-            .rooms-lp__clip:hover,
-            .rooms-lp__clip:active {
-                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-            }
-            .rooms-lp__clip:hover .rooms-lp__content,
-            .rooms-lp__clip:active .rooms-lp__content {
-                bottom: 0;
-                opacity: 1;
-            } */ } }
+        max-width: 43rem; } }
     @media screen and (min-width: 62.5rem) {
       .rooms-lp .rooms-lp__container {
         width: 50rem;
