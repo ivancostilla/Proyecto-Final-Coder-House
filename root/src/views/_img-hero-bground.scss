@@ -6,11 +6,15 @@
         z-index: 20;
         @extend .hero-general;
         .img-hero__img {
-            width: 300px;
-            height: 300px;
+            @include tamaños(12.5rem, 12.5rem);
+            @media screen and (min-width: 18.75rem) {
+                @include tamaños(18.75rem, 18.75rem);
+            }
             @media screen and (min-width: 36.25rem) {
-                width: 500px;
-                height: 500px;
+                @include tamaños(31.25rem, 31.25rem);
+            }
+            @media screen and (min-width: 62.5rem) {
+                @include tamaños(34.375rem, 34.375rem);
             }
         }
     }

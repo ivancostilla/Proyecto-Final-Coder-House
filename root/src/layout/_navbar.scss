@@ -71,10 +71,10 @@
             border-right: .125rem solid #fff;
         }
     }
-    @media screen and (min-width: 62.5rem) {
+    @media screen and (min-width: 43.75rem) {
         /* media querie 1000px */
         /* estilos desktop del nav */
-        font-size: 1rem;
+        font-size: .8rem;
         .navbar__hamburger {
             display: none;
         }
@@ -92,6 +92,12 @@
             }
         }
         /*fin estilos desktop del nav */
+    }
+    @media screen and (min-width: 50rem) {
+        font-size: .9rem;
+    }
+    @media screen and (min-width: 56.25rem) {
+        font-size: 1rem;
     }
     @media screen and (min-width: 75rem) {
         /* media querie 1200px */

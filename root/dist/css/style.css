@@ -192,12 +192,12 @@ body {
       margin-bottom: .3rem;
       border-left: .125rem solid #fff;
       border-right: .125rem solid #fff; } }
-  @media screen and (min-width: 62.5rem) {
+  @media screen and (min-width: 43.75rem) {
     .navbar,
     .navbar-rooms {
       /* media querie 1000px */
       /* estilos desktop del nav */
-      font-size: 1rem;
+      font-size: .8rem;
       /*fin estilos desktop del nav */ }
       .navbar .navbar__hamburger,
       .navbar-rooms .navbar__hamburger {
@@ -215,6 +215,14 @@ body {
         .navbar .navbar__nav-links .navbar__li,
         .navbar-rooms .navbar__nav-links .navbar__li {
           opacity: 1; } }
+  @media screen and (min-width: 50rem) {
+    .navbar,
+    .navbar-rooms {
+      font-size: .9rem; } }
+  @media screen and (min-width: 56.25rem) {
+    .navbar,
+    .navbar-rooms {
+      font-size: 1rem; } }
   @media screen and (min-width: 75rem) {
     .navbar,
     .navbar-rooms {
@@ -353,12 +361,20 @@ body {
   background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/background-image.webp) no-repeat 75% 75%/cover;
   z-index: 20; }
   .img-hero-header-index .img-hero__img {
-    width: 300px;
-    height: 300px; }
+    height: 12.5rem;
+    width: 12.5rem; }
+    @media screen and (min-width: 18.75rem) {
+      .img-hero-header-index .img-hero__img {
+        height: 18.75rem;
+        width: 18.75rem; } }
     @media screen and (min-width: 36.25rem) {
       .img-hero-header-index .img-hero__img {
-        width: 500px;
-        height: 500px; } }
+        height: 31.25rem;
+        width: 31.25rem; } }
+    @media screen and (min-width: 62.5rem) {
+      .img-hero-header-index .img-hero__img {
+        height: 34.375rem;
+        width: 34.375rem; } }
 
 /* img hero de la seccion about-us del index.html */
 .about-us-index {
