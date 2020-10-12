@@ -350,7 +350,7 @@ body {
 /* estilos para las imagenes hero que estan en background attachment fixed */
 /* img hero del header */
 .img-hero-header-index {
-  background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/background-image.jpg) no-repeat 75% 75%/cover;
+  background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/background-image.webp) no-repeat 75% 75%/cover;
   z-index: 20; }
   .img-hero-header-index .img-hero__img {
     width: 300px;
@@ -362,7 +362,7 @@ body {
 
 /* img hero de la seccion about-us del index.html */
 .about-us-index {
-  background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/hostel-recep-tres.jpg) no-repeat 15% 15%/cover;
+  background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/hostel-recep-tres.webp) no-repeat 15% 15%/cover;
   flex-direction: column;
   font-weight: 700; }
   .about-us-index .about-us-index__div {
@@ -392,7 +392,7 @@ body {
   z-index: 10; }
 
 .about-us-html-header {
-  background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15%/cover; }
+  background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.webp) no-repeat 15% 15%/cover; }
   .about-us-html-header .about-us-html-header__h1 {
     font-size: 2rem;
     font-weight: 800;
@@ -422,7 +422,7 @@ body {
 
 /* img hero de la 2da seccion de about-us.html*/
 .about-us-html-body {
-  background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15%/cover;
+  background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.webp) no-repeat 15% 15%/cover;
   font-style: italic;
   font-size: 1rem; }
   @media screen and (min-width: 400px) {
@@ -432,7 +432,7 @@ body {
 /* fin imgs hero de about-us.html */
 /* hero de rooms.html */
 .hero-rooms {
-  background: linear-gradient(120deg, rgba(126, 91, 126, 0.6) 0%, rgba(153, 96, 104, 0.6) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50%/cover;
+  background: linear-gradient(120deg, rgba(126, 91, 126, 0.6) 0%, rgba(153, 96, 104, 0.6) 100%), url(../images/hab-siete-uno.webp) no-repeat 50% 50%/cover;
   flex-wrap: wrap;
   z-index: 10; }
   .hero-rooms .hero-rooms__h1 {
@@ -603,54 +603,54 @@ body {
       height: 100%;
       width: 100%; }
     .rooms-lp .rooms-lp__container.rooms-lp__container-bg1 {
-      background-image: url(../images/hab-seis.jpg);
+      background-image: url(../images/hab-seis.webp);
       background-position: 0 50%; }
     .rooms-lp .rooms-lp__container.rooms-lp__container-bg3 {
-      background-image: url(../images/hab-cuatro-uno.jpg);
+      background-image: url(../images/hab-cuatro-uno.webp);
       background-position: 0 50%; }
     .rooms-lp .rooms-lp__container.rooms-lp__container-bg5 {
-      background-image: url(../images/sextuple-comp-uno.jpg);
+      background-image: url(../images/sextuple-comp-uno.webp);
       background-position: 0 50%; }
     .rooms-lp .rooms-lp__container.rooms-lp__container-bg7 {
-      background-image: url(../images/hab-fam-dos-min.jpg);
+      background-image: url(../images/hab-fam-dos-min.webp);
       background-position: 0 50%; }
     .rooms-lp .rooms-lp__container .rooms-lp__box1 {
-      background-image: url(../images/hab-seis.jpg);
+      background-image: url(../images/hab-seis.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box2 {
-      background-image: url(../images/hab-seis-cuatro.jpg);
+      background-image: url(../images/hab-seis-cuatro.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box3 {
-      background-image: url(../images/hab-cuatro-uno.jpg);
+      background-image: url(../images/hab-cuatro-uno.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box4 {
-      background-image: url(../images/hab-cuatro-seis-min.jpg);
+      background-image: url(../images/hab-cuatro-seis-min.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box5 {
-      background-image: url(../images/sextuple-comp-uno.jpg);
+      background-image: url(../images/sextuple-comp-uno.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box6 {
-      background-image: url(../images/sextuple-comp-cuatro.jpg);
+      background-image: url(../images/sextuple-comp-cuatro.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box7 {
-      background-image: url(../images/hab-fam-dos-min.jpg);
+      background-image: url(../images/hab-fam-dos-min.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__box8 {
-      background-image: url(../images/hab-fam-tres-min.jpg);
+      background-image: url(../images/hab-fam-tres-min.webp);
       background-size: cover;
       background-position: 0 50%;
       clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }

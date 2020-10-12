@@ -37,7 +37,7 @@
             @if $num==1 or $num==3 or $num==5 or $num==7 {
                 /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
                 &.rooms-lp__container-bg#{$num} {
-                    background-image: url(../images/#{$img}.jpg);
+                    background-image: url(../images/#{$img}.webp);
                     background-position: 0 50%;
                 }
             }
@@ -45,7 +45,7 @@
         @each $num,
         $img in $img-box {
             .rooms-lp__box#{$num} {
-                background-image: url(../images/#{$img}.jpg);
+                background-image: url(../images/#{$img}.webp);
                 background-size: cover;
                 background-position: 0 50%;
                 @if $num==1 or $num==3 or $num==5 or $num==7 {

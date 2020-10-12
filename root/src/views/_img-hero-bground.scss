@@ -2,7 +2,7 @@
     /* img hero del header */
     
     .img-hero-header-index {
-        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/background-image.jpg) no-repeat 75% 75% / cover;
+        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/background-image.webp) no-repeat 75% 75% / cover;
         z-index: 20;
         @extend .hero-general;
         .img-hero__img {
@@ -17,7 +17,7 @@
     /* img hero de la seccion about-us del index.html */
     
     .about-us-index {
-        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hostel-recep-tres.jpg) no-repeat 15% 15% / cover;
+        background: linear-gradient(120deg, rgba(245, 204, 245, .2) 0%, rgba(255, 164, 177, .2) 100%), url(../images/hostel-recep-tres.webp) no-repeat 15% 15% / cover;
         flex-direction: column;
         font-weight: 700;
         @extend .hero-general;
@@ -54,7 +54,7 @@
     }
     
     .about-us-html-header {
-        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.jpg) no-repeat 15% 15% / cover;
+        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-uno.webp) no-repeat 15% 15% / cover;
         @extend .img-hero-about-us;
         .about-us-html-header__h1 {
             font-size: 2rem;
@@ -98,7 +98,7 @@
     /* img hero de la 2da seccion de about-us.html*/
     
     .about-us-html-body {
-        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.jpg) no-repeat 15% 15% / cover;
+        background: linear-gradient(120deg, rgba(71, 114, 134, 0.4) 0%, rgba(59, 136, 123, 0.4) 100%), url(../images/hostel-recep-dos.webp) no-repeat 15% 15% / cover;
         @extend .img-hero-about-us;
         font-style: italic;
         font-size: 1rem;
@@ -112,7 +112,7 @@
     /* hero de rooms.html */
     
     .hero-rooms {
-        background: linear-gradient(120deg, rgba(126, 91, 126, .6) 0%, rgba(153, 96, 104, 0.6) 100%), url(../images/hab-siete-uno.jpg) no-repeat 50% 50% / cover;
+        background: linear-gradient(120deg, rgba(126, 91, 126, .6) 0%, rgba(153, 96, 104, 0.6) 100%), url(../images/hab-siete-uno.webp) no-repeat 50% 50% / cover;
         flex-wrap: wrap;
         z-index: 10;
         @extend .hero-general;
