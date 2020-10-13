@@ -1,112 +1,115 @@
-/* estilos seccion rooms */
-
-.rooms-lp {
-    @include tamaños(49rem, 100%);
-    .rooms-lp__container-general {
-        background-size: cover;
-        border: 1px solid #50949e;
-        border-radius: 1%;
-        box-shadow: .3125rem .4375rem .75rem -0.125rem rgba(0, 0, 0, .75);
-        margin: 3rem;
-        position: relative;
-        @include tamaños(31.25rem, 15rem);
-        min-width: 90%;
-        cursor: pointer;
-    }
-    .rooms-lp__container {
-        /* esta img la repito tmb en el .box1 porq si no la coloco, al hacer hover quedan desfasadas las img, y tengo que buscar la solucion para que el bg-size no se repita tanto */
-        background-size: cover;
-        border: 1px solid #50949e;
-        border-radius: 1%;
-        box-shadow: .3125rem .4375rem .75rem -0.125rem rgba(0, 0, 0, .75);
-        margin: 3rem;
-        position: relative;
-        @include tamaños(31.25rem, 15rem);
-        min-width: 90%;
-        cursor: pointer;
-        .rooms-lp__clip {
-            position: absolute;
-            left: 0;
-            top: 0;
-            transition: .5s;
-            @include tamaños(100%, 100%);
+    /* estilos seccion rooms */
+    
+    .rooms-lp {
+        @include tamaños(49rem, 100%);
+        .rooms-lp__container-general {
+            background-size: cover;
+            border: 1px solid #50949e;
+            border-radius: 1%;
+            box-shadow: .3125rem .4375rem .75rem -0.125rem rgba(0, 0, 0, .75);
+            margin: 3rem;
+            position: relative;
+            @include tamaños(31.25rem, 15rem);
+            min-width: 90%;
+            cursor: pointer;
         }
-        $img-box: (1:hab-seis, 2:hab-seis-cuatro, 3:hab-cuatro-uno, 4:hab-cuatro-seis-min, 5:sextuple-comp-uno, 6:sextuple-comp-cuatro, 7:hab-fam-dos-min, 8:hab-fam-tres-min);
-        @each $num,
-        $img in $img-box {
-            @if $num==1 or $num==3 or $num==5 or $num==7 {
-                /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
-                &.rooms-lp__container-bg#{$num} {
-                    background-image: url(../images/#{$img}.webp);
-                    background-position: 0 50%;
-                }
+        .rooms-lp__container {
+            /* esta img la repito tmb en el .box1 porq si no la coloco, al hacer hover quedan desfasadas las img, y tengo que buscar la solucion para que el bg-size no se repita tanto */
+            background-size: cover;
+            border: 1px solid #50949e;
+            border-radius: 1%;
+            box-shadow: .3125rem .4375rem .75rem -0.125rem rgba(0, 0, 0, .75);
+            margin: 3rem;
+            position: relative;
+            @include tamaños(31.25rem, 15rem);
+            min-width: 90%;
+            cursor: pointer;
+            .rooms-lp__clip {
+                position: absolute;
+                left: 0;
+                top: 0;
+                transition: .5s;
+                @include tamaños(100%, 100%);
             }
-        }
-        @each $num,
-        $img in $img-box {
-            .rooms-lp__box#{$num} {
-                background-image: url(../images/#{$img}.webp);
-                background-size: cover;
-                background-position: 0 50%;
+            $img-box: (1:hab-seis, 2:hab-seis-cuatro, 3:hab-cuatro-uno, 4:hab-cuatro-seis-min, 5:sextuple-comp-uno, 6:sextuple-comp-cuatro, 7:hab-fam-dos-min, 8:hab-fam-tres-min);
+            @each $num,
+            $img in $img-box {
                 @if $num==1 or $num==3 or $num==5 or $num==7 {
-                    clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%);
-                }
-                @else if $num==2 or $num==4 or $num==6 or $num==8 {
-                    clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%);
+                    /* dejo la clase con estos numeros para acordarme cuales son las imagenes que se deben repetir */
+                    &.rooms-lp__container-bg#{$num} {
+                        background-image: url(../images/#{$img}.webp);
+                        background-position: 0 50%;
+                    }
                 }
             }
-        }
-        @each $num,
-        $img in $img-box {}
-        .rooms-lp__content {
-            background-color: #ffffffb3;
-            bottom: -100%;
-            border-radius: .3125rem;
-            font-size: .8rem;
-            left: 0;
-            margin: .1875rem;
-            opacity: 0;
-            padding: .9375rem;
-            position: absolute;
-            transition: .5s;
-            width: 70%;
-        }
-        &:hover .rooms-lp__clip {
-            clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
-        }
-        .rooms-lp__clip:hover {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        }
-        .rooms-lp__clip:hover .rooms-lp__content {
-            bottom: 0;
-            opacity: 1;
-        }
-        /* media querie 400px */
-        @media screen and (min-width: 25rem) {
-            width: 23rem;
-        }
-        /* media querie 580px */
-        @media screen and (min-width: 36.25rem) {
-            width: 34rem;
-            /* media querie 700px */
-        }
-        /* mdiq querie 700px */
-        @media screen and (min-width: 43.75rem) {
-            width: 43rem;
-            max-width: 43rem;
+            @each $num,
+            $img in $img-box {
+                .rooms-lp__box#{$num} {
+                    background-image: url(../images/#{$img}.webp);
+                    background-size: cover;
+                    background-position: 0 50%;
+                    @media screen and (min-width: 700px) {
+                        @if $num==1 or $num==3 or $num==5 or $num==7 {
+                            clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%);
+                        }
+                        @else if $num==2 or $num==4 or $num==6 or $num==8 {
+                            clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%);
+                        }
+                    }
+                }
+            }
+            .rooms-lp__content {
+                background-color: #ffffffb3;
+                bottom: 0;
+                border-radius: .3125rem;
+                font-size: .8rem;
+                left: 0;
+                margin: .1875rem;
+                padding: .9375rem;
+                position: absolute;
+                transition: .5s;
+                width: 70%;
+            }
+            .rooms-lp__box1 .rooms-lp__content {
+                opacity: 1;
+            }
+            &:hover .rooms-lp__clip {
+                clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%);
+            }
+            .rooms-lp__clip:hover {
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            }
+            .rooms-lp__clip:hover .rooms-lp__content {
+                bottom: 0;
+                opacity: 1;
+            }
+            /* media querie 400px */
+            @media screen and (min-width: 25rem) {
+                width: 23rem;
+            }
+            /* media querie 580px */
+            @media screen and (min-width: 36.25rem) {
+                width: 34rem;
+            }
+            /* mdiq querie 700px */
+            @media screen and (min-width: 43.75rem) {
+                width: 43rem;
+                max-width: 43rem;
+                .rooms-lp__content {
+                    bottom: -100%;
+                    opacity: 0;
+                }
+            }
+            /* media querie 1000px */
+            @media screen and (min-width: 62.5rem) {
+                width: 50rem;
+                min-width: 80%;
+                height: 31.25rem;
+            }
         }
         /* media querie 1000px */
         @media screen and (min-width: 62.5rem) {
-            width: 50rem;
-            min-width: 80%;
-            height: 31.25rem;
+            height: 51.5rem;
         }
     }
-    /* media querie 1000px */
-    @media screen and (min-width: 62.5rem) {
-        height: 51.5rem;
-    }
-}
-
-
-/* fin estilos seccion rooms */
+    /* fin estilos seccion rooms */

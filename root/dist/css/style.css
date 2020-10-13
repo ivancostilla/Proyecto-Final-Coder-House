@@ -633,55 +633,72 @@ body {
     .rooms-lp .rooms-lp__container .rooms-lp__box1 {
       background-image: url(../images/hab-seis.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box1 {
+          clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box2 {
       background-image: url(../images/hab-seis-cuatro.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box2 {
+          clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box3 {
       background-image: url(../images/hab-cuatro-uno.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box3 {
+          clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box4 {
       background-image: url(../images/hab-cuatro-seis-min.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box4 {
+          clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box5 {
       background-image: url(../images/sextuple-comp-uno.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box5 {
+          clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box6 {
       background-image: url(../images/sextuple-comp-cuatro.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box6 {
+          clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box7 {
       background-image: url(../images/hab-fam-dos-min.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box7 {
+          clip-path: polygon(52% 46%, 100% 0, 100% 100%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__box8 {
       background-image: url(../images/hab-fam-tres-min.webp);
       background-size: cover;
-      background-position: 0 50%;
-      clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); }
+      background-position: 0 50%; }
+      @media screen and (min-width: 700px) {
+        .rooms-lp .rooms-lp__container .rooms-lp__box8 {
+          clip-path: polygon(0 0, 100% 0, 50% 48%, 0% 100%); } }
     .rooms-lp .rooms-lp__container .rooms-lp__content {
       background-color: #ffffffb3;
-      bottom: -100%;
+      bottom: 0;
       border-radius: .3125rem;
       font-size: .8rem;
       left: 0;
       margin: .1875rem;
-      opacity: 0;
       padding: .9375rem;
       position: absolute;
       transition: .5s;
       width: 70%; }
+    .rooms-lp .rooms-lp__container .rooms-lp__box1 .rooms-lp__content {
+      opacity: 1; }
     .rooms-lp .rooms-lp__container:hover .rooms-lp__clip {
       clip-path: polygon(0 0, 100% 0, 0 0, 0% 100%); }
     .rooms-lp .rooms-lp__container .rooms-lp__clip:hover {
@@ -694,12 +711,14 @@ body {
         width: 23rem; } }
     @media screen and (min-width: 36.25rem) {
       .rooms-lp .rooms-lp__container {
-        width: 34rem;
-        /* media querie 700px */ } }
+        width: 34rem; } }
     @media screen and (min-width: 43.75rem) {
       .rooms-lp .rooms-lp__container {
         width: 43rem;
-        max-width: 43rem; } }
+        max-width: 43rem; }
+        .rooms-lp .rooms-lp__container .rooms-lp__content {
+          bottom: -100%;
+          opacity: 0; } }
     @media screen and (min-width: 62.5rem) {
       .rooms-lp .rooms-lp__container {
         width: 50rem;
