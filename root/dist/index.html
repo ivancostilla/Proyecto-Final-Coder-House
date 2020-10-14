@@ -33,7 +33,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
 
 </head>
-
 <!-- por alguna razon si no agrego esta clase el scrollreveal me tapa las nimaciones de esta pagina en particular,
 en el reto funciona bien -->
 
@@ -439,14 +438,14 @@ en el reto funciona bien -->
             <h2 class="h-center titulos scroll-r-group">Contactanos</h2>
             <div class="contact-us__form-contenedor">
                 <!-- formulario de contacto -->
-                <form class="contact-us__form" action="mailto:ivan20punto88@gmail.com" class="" method="post">
+                <form class="contact-us__form" action="#" class="" method="post" data-netlify="true">
                     <!-- no se como aplicar correctamente los patterns xd -->
-                    <input class="contact-us__input" type="text" name="" placeholder="nombre" required>
-                    <input class="contact-us__input" type="text" name="" placeholder="apellido" required>
-                    <input class="contact-us__input" type="email" name="" placeholder="email" required>
-                    <input class="contact-us__input" type="tel" name="" placeholder="télefono" required>
-                    <textarea class="contact-us__input cantact-us__txt-area" name="message" id="" cols="30" rows="10" placeholder="escriba su mensaje"></textarea>
-                    <input class="contact-us__input" type="submit" name="" value="Enviar">
+                    <input class="contact-us__input nombre" type="text" name="nombre" placeholder="nombre" required>
+                    <input class="contact-us__input apellido" type="text" name="apellido" placeholder="apellido" required>
+                    <input class="contact-us__input email" type="email" name="email" placeholder="email" required>
+                    <input class="contact-us__input tel" type="tel" name="tel" placeholder="télefono" required>
+                    <textarea class="contact-us__input cantact-us__txt-area mensaje" name="mensaje" id="" cols="30" rows="10" placeholder="escriba su mensaje"></textarea>
+                    <input class="contact-us__input enviar" type="submit" name="enviar" value="Enviar" onclick="sendEmail()">
                 </form>
             </div>
             <div class="">
