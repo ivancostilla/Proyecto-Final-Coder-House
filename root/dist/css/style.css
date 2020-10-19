@@ -975,7 +975,6 @@ body {
     border-radius: 1%;
     box-shadow: .0625rem .0625rem .3125rem 0 #000;
     height: 25rem;
-    height: 25rem;
     width: calc(100% - 1rem);
     font-size: 1.1rem;
     overflow: hidden;
@@ -984,11 +983,11 @@ body {
     .testimonials .testimonials__card .testimonials__bg-gradient {
       background: linear-gradient(#fb7482, #fa5a6f, #ff254e);
       height: 100%;
+      width: 100%;
       position: absolute;
       top: calc(100% - 2%);
       left: 0;
       transition: 0.5s;
-      width: 100%;
       z-index: 10; }
     .testimonials .testimonials__card:active .testimonials__bg-gradient {
       top: 0; }
@@ -999,7 +998,7 @@ body {
         font-style: italic;
         line-height: 1.5rem;
         margin-bottom: 1.25rem; }
-      .testimonials .testimonials__card .testimonials__content .testimonials__h3 .testimonials_span {
+      .testimonials .testimonials__card .testimonials__content .testimonials__h3 .testimonials__span {
         color: #fa2c41;
         font-size: .875rem;
         transition: 0.5s; }
@@ -1008,19 +1007,20 @@ body {
       border: .1875rem solid #fff;
       box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
       height: 6.25rem;
-      margin: 0 auto .625rem;
-      overflow: hidden;
-      width: 6.25rem; }
+      width: 6.25rem;
+      margin: 2rem auto;
+      overflow: hidden; }
     .testimonials .testimonials__card:active .testimonials__content .testimonials__h3 .testimonials__span {
       color: #fff; }
+    @media screen and (min-width: 43.75rem) {
+      .testimonials .testimonials__card:hover .testimonials__content .testimonials__h3 .testimonials__span {
+        color: #fff; } }
   @media screen and (min-width: 43.75rem) {
     .testimonials .testimonials__card {
       width: calc(45% - 1rem);
       cursor: pointer; }
     .testimonials .testimonials__card:hover .testimonials__bg-gradient {
-      top: 0; }
-    .testimonials .testimonials_card:hover .testimonials__content .testimonials__h3 .testimonials__span {
-      color: #fff; } }
+      top: 0; } }
   @media screen and (min-width: 62.5rem) {
     .testimonials {
       height: 31.25rem; }
