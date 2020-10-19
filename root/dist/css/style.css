@@ -989,7 +989,8 @@ body {
       left: 0;
       transition: 0.5s;
       z-index: 10; }
-    .testimonials .testimonials__card:active .testimonials__bg-gradient {
+    .testimonials .testimonials__card:active .testimonials__bg-gradient,
+    .testimonials .testimonials__card:hover .testimonials__bg-gradient {
       top: 0; }
     .testimonials .testimonials__card .testimonials__content {
       position: relative;
@@ -1010,17 +1011,13 @@ body {
       width: 6.25rem;
       margin: 2rem auto;
       overflow: hidden; }
-    .testimonials .testimonials__card:active .testimonials__content .testimonials__h3 .testimonials__span {
+    .testimonials .testimonials__card:active .testimonials__content .testimonials__h3 .testimonials__span,
+    .testimonials .testimonials__card:hover .testimonials__content .testimonials__h3 .testimonials__span {
       color: #fff; }
-    @media screen and (min-width: 43.75rem) {
-      .testimonials .testimonials__card:hover .testimonials__content .testimonials__h3 .testimonials__span {
-        color: #fff; } }
   @media screen and (min-width: 43.75rem) {
     .testimonials .testimonials__card {
       width: calc(45% - 1rem);
-      cursor: pointer; }
-    .testimonials .testimonials__card:hover .testimonials__bg-gradient {
-      top: 0; } }
+      cursor: pointer; } }
   @media screen and (min-width: 62.5rem) {
     .testimonials {
       height: 31.25rem; }
