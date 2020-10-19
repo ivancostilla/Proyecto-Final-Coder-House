@@ -862,6 +862,7 @@ body {
   font-weight: 700;
   font-size: 1.25rem;
   margin: 10px 0;
+  width: 85vmin;
   box-shadow: 0.1125rem 0.3375rem 0.75rem -0.125rem rgba(0, 0, 0, 0.75); }
 
 /* fin estilos seccion find-us del index y find-us.html */
