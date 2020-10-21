@@ -13,11 +13,11 @@
 	subcarpetas separando los componentes como los botones por un lado,
 	mixins y variabels por otro, etc, en la carpeta sass se encuentra el archivo principal, el cual contiene todos los imports que van a pasar al arhivo css.
 	* La carpeta dist contiene los archivos que se usan en el sitio el index.html es su página principal.
-	 La carpeta glider.js contiene los archivos que se usaron para crear el carousel en el index.html. 
-	 La carpeta bootstrap contiene los archivos del framework con el cual creamos la pagina rooms.html. 
-	 La arpeta scripts contiene los archivos dee javascript, en el cual usamos scrollreveal y generamos el index.js que contiene el javascript creado para el navbar, el acordeon e inicializamos el scrollreveal.
-	 La carpeta images contiene todas las imagenes webp y los iconos svg utilizados en el sitio.
-	 La carpeta css contiene el archivo con los estilos utilizados en el sitio
+	 	- La carpeta glider.js contiene los archivos que se usaron para crear el carousel en el index.html. 
+	 	- La carpeta bootstrap contiene los archivos del framework con el cual creamos la pagina rooms.html. 
+	 	- La arpeta scripts contiene los archivos dee javascript, en el cual usamos scrollreveal y generamos el index.js que contiene el javascript creado para el navbar, el acordeon e inicializamos el scrollreveal.
+	 	- La carpeta images contiene todas las imagenes webp y los iconos svg utilizados en el sitio.
+	 	- La carpeta css contiene el archivo con los estilos utilizados en el sitio
 	 
 - #### La rama publics contiene los mismos archivos de la carpeta dist que se encuentra en la rama master, esta rama la utilizo exclusivamente para subir el sitio a Github Pages.
 
