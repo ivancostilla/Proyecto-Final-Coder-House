@@ -7,9 +7,9 @@
 - #### En la rama master van a encontrar los archivos principales con los que está onstruido el sitio:
 
 1.  La carpeta sketches contiene los wireframes de la idea original del sitio.
-2.  en el packages.jason van a encontrar las dependencias del proyecto    	como asi también una breve descripción dell mismo.
+2.  en el packages.jason van a encontrar las dependencias del proyecto como asi también una breve descripción del mismo.
 3. Dentro de la carpeta root se encuantran:
-	* La carpeta src, la ccual contiene todos los archivos scss, divididas en
+	* La carpeta src, la cual contiene todos los archivos scss, divididas en
 	subcarpetas separando los componentes como los botones por un lado,
 	mixins y variabels por otro, etc, en la carpeta sass se encuentra el archivo principal, el cual contiene todos los imports que van a pasar al arhivo css.
 	* La carpeta dist contiene los archivos que se usan en el sitio el index.html es su página principal.
