@@ -11,7 +11,7 @@
 3. Dentro de la carpeta root se encuantran:
 	* La carpeta src, la cual contiene todos los archivos scss, divididas en
 	subcarpetas separando los componentes como los botones por un lado,
-	mixins y variabels por otro, etc, en la carpeta sass se encuentra el archivo principal, el cual contiene todos los imports que van a pasar al arhivo css.
+	mixins y variables por otro, etc, en la carpeta sass se encuentra el archivo principal, el cual contiene todos los imports que van a pasar al archivo css.
 	* La carpeta dist contiene los archivos que se usan en el sitio: 
 		- El index.html es su página principal.
 	 	- La carpeta glider.js contiene los archivos que se usaron para crear el carousel en el index.html. 
