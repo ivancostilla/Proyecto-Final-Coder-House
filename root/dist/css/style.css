@@ -1391,3 +1391,40 @@ body {
       grid-template-columns: repeat(3, 1fr); } }
 
 /* fin estilos about-us.html */
+/* estilos de la pagina error 404 */
+.body-404 {
+  background-image: linear-gradient(-225deg, #473B7B 0%, #3584A7 51%, #29bdac 100%); }
+  .body-404 .error-msj {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%; }
+    .body-404 .error-msj .error-msj__contenedor {
+      font-size: 2rem;
+      font-weight: 700;
+      border-bottom: 1px solid #fff;
+      padding-bottom: 20px; }
+      .body-404 .error-msj .error-msj__contenedor .error-msj__titulo {
+        font-size: 7rem;
+        font-weight: 800;
+        animation: error-404 2.5s both infinite; }
+
+@keyframes error-404 {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0); }
+  40% {
+    transform: translateY(-30px); }
+  60% {
+    transform: translateY(-15px); } }
+      .body-404 .error-msj .error-msj__contenedor .error-msj__volver {
+        margin: 1rem 0 0; }
+      .body-404 .error-msj .error-msj__contenedor .boton {
+        font-size: 1rem; }
+  .body-404 .contact-us .contact-us__h2 {
+    font-size: 9.5vmin;
+    line-height: 1.9; }
