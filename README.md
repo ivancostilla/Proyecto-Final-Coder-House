@@ -19,6 +19,8 @@
 	 	- La arpeta scripts contiene los archivos dee javascript, en el cual usamos scrollreveal y generamos el index.js que contiene el javascript creado para el navbar, el acordeon e inicializamos el scrollreveal.
 	 	- La carpeta images contiene todas las imagenes webp y los iconos svg utilizados en el sitio.
 	 	- La carpeta css contiene el archivo con los estilos utilizados en el sitio
+		- La carpeta pages contiene las paginas del sitio.
+		- Agregué la pagina error 404, que esta habilitada en el host done subí mi sitio(000webhost), modifiqué el archivo .htaccess colocandole al mismo la linea de codigo siguiente: ErrorDocument 404 /pages/404.html
 	 
 - #### La rama publics contiene los mismos archivos de la carpeta dist que se encuentra en la rama master, esta rama la utilizo exclusivamente para subir el sitio a Github Pages.
 
