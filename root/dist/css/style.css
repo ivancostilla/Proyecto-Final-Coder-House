@@ -827,7 +827,7 @@ body {
       width: 30vmax; } }
   @media screen and (min-width: 56.25rem) {
     .find-us .find-us__map .find-us__iframe {
-      width: 85vmax; } }
+      width: 30vmax; } }
 
 .find-us .find-us__p {
   border: 0.0625rem solid #ff4b5c;
