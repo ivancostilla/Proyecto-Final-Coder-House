@@ -822,12 +822,15 @@ body {
   margin: 2rem auto;
   width: 95vmin;
   box-shadow: .0625rem .0625rem .3125rem 0 #000; }
-  @media screen and (min-width: 32.125rem) {
+  @media screen and (min-width: 514px) {
     .find-us .find-us__map .find-us__iframe {
-      width: 30vmax; } }
+      width: 80vmax; } }
   @media screen and (min-width: 56.25rem) {
     .find-us .find-us__map .find-us__iframe {
-      width: 30vmax; } }
+      width: 55vmax; } }
+  @media screen and (min-width: 68.75rem) {
+    .find-us .find-us__map .find-us__iframe {
+      width: 85vmax; } }
 
 .find-us .find-us__p {
   border: 0.0625rem solid #ff4b5c;
