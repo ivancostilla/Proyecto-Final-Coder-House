@@ -4,33 +4,19 @@
     .find-us__map {
         .find-us__iframe {
             margin: 2rem auto;
-            width: 16.5625rem;
+            width: 95vmin;
             box-shadow: .0625rem .0625rem .3125rem 0 #000;
-            @media screen and (min-width: 25rem) {
-                /* media querie 400px */
-                width: 22.9375rem;
-            }
-            @media screen and (min-width: 28.125rem) {
-                /* media querie 450px */
-                width: 26.0625rem;
-            }
-            @media screen and (min-width: 36.25rem) {
-                /* media querie 580px */
-                width: 35.1875rem;
-            }
-            @media screen and (min-width: 43.75rem) {
-                /* media querie 700px */
-                width: 41.6875rem;
-            }
-            @media screen and (min-width: 62.5rem) {
-                /* media querie 1000px */
-                width: 60.5rem;
-            }
-            @media screen and (min-width: 81.25rem) {
-                /* media querie 1300px */
-                width: 70.5rem;
+            @media screen and (min-width: 514px) {
+                width: 85vmax;
             }
         }
+    }
+    .find-us__p {
+        border: .0625rem solid $color-txt-pink;
+        padding: 1.25rem;
+        width: 95vmin;
+        margin: 1.25rem auto;
+        border-radius: .3125rem;
     }
     .find-us__address {
         border: .125rem solid #056674;

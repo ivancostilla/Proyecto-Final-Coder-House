@@ -6,16 +6,7 @@
         z-index: 20;
         @extend .hero-general;
         .img-hero__img {
-            @include tamaños(12.5rem, 12.5rem);
-            @media screen and (min-width: 18.75rem) {
-                @include tamaños(18.75rem, 18.75rem);
-            }
-            @media screen and (min-width: 36.25rem) {
-                @include tamaños(31.25rem, 31.25rem);
-            }
-            @media screen and (min-width: 62.5rem) {
-                @include tamaños(34.375rem, 34.375rem);
-            }
+            @include tamaños(75vmin, 75vmin);
         }
     }
     /* img hero de la seccion about-us del index.html */
@@ -144,7 +135,7 @@
     
     .hero-general {
         background-attachment: fixed;
-        @include tamaños(40.850rem, 100%);
+        @include tamaños(100vh, 100%);
         @include flex(flex, center, center);
         overflow: hidden;
         position: relative;

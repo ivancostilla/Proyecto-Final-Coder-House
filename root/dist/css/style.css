@@ -358,7 +358,7 @@ body {
   color: #ff4b5c; }
 
 .contact-us .grey {
-  padding: 0 0 10px; }
+  padding: 0 0 .625rem; }
 
 /* fin de estilos del footer */
 /* estilos para las imagenes hero que estan en background attachment fixed */
@@ -367,20 +367,8 @@ body {
   background: linear-gradient(120deg, rgba(245, 204, 245, 0.2) 0%, rgba(255, 164, 177, 0.2) 100%), url(../images/background-image.webp) no-repeat 75% 75%/cover;
   z-index: 20; }
   .img-hero-header-index .img-hero__img {
-    height: 12.5rem;
-    width: 12.5rem; }
-    @media screen and (min-width: 18.75rem) {
-      .img-hero-header-index .img-hero__img {
-        height: 18.75rem;
-        width: 18.75rem; } }
-    @media screen and (min-width: 36.25rem) {
-      .img-hero-header-index .img-hero__img {
-        height: 31.25rem;
-        width: 31.25rem; } }
-    @media screen and (min-width: 62.5rem) {
-      .img-hero-header-index .img-hero__img {
-        height: 34.375rem;
-        width: 34.375rem; } }
+    height: 75vmin;
+    width: 75vmin; }
 
 /* img hero de la seccion about-us del index.html */
 .about-us-index {
@@ -478,7 +466,7 @@ body {
 /* estilos generales para todos los hero */
 .hero-general, .img-hero-header-index, .about-us-index, .img-hero-about-us, .about-us-html-header, .about-us-html-body, .hero-rooms {
   background-attachment: fixed;
-  height: 40.85rem;
+  height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
@@ -832,32 +820,18 @@ body {
 /* fin estilos seccion find-us del index y find-us.html */
 .find-us .find-us__map .find-us__iframe {
   margin: 2rem auto;
-  width: 16.5625rem;
+  width: 95vmin;
   box-shadow: .0625rem .0625rem .3125rem 0 #000; }
-  @media screen and (min-width: 25rem) {
+  @media screen and (min-width: 514px) {
     .find-us .find-us__map .find-us__iframe {
-      /* media querie 400px */
-      width: 22.9375rem; } }
-  @media screen and (min-width: 28.125rem) {
-    .find-us .find-us__map .find-us__iframe {
-      /* media querie 450px */
-      width: 26.0625rem; } }
-  @media screen and (min-width: 36.25rem) {
-    .find-us .find-us__map .find-us__iframe {
-      /* media querie 580px */
-      width: 35.1875rem; } }
-  @media screen and (min-width: 43.75rem) {
-    .find-us .find-us__map .find-us__iframe {
-      /* media querie 700px */
-      width: 41.6875rem; } }
-  @media screen and (min-width: 62.5rem) {
-    .find-us .find-us__map .find-us__iframe {
-      /* media querie 1000px */
-      width: 60.5rem; } }
-  @media screen and (min-width: 81.25rem) {
-    .find-us .find-us__map .find-us__iframe {
-      /* media querie 1300px */
-      width: 70.5rem; } }
+      width: 85vmax; } }
+
+.find-us .find-us__p {
+  border: 0.0625rem solid #ff4b5c;
+  padding: 1.25rem;
+  width: 95vmin;
+  margin: 1.25rem auto;
+  border-radius: .3125rem; }
 
 .find-us .find-us__address {
   border: .125rem solid #056674;
