@@ -828,7 +828,7 @@ body {
   @media screen and (min-width: 56.25rem) {
     .find-us .find-us__map .find-us__iframe {
       width: 55vmax; } }
-  @media screen and (min-width: 68.75rem) {
+  @media screen and (min-width: 1000px) {
     .find-us .find-us__map .find-us__iframe {
       width: 85vmax; } }
 
