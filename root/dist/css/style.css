@@ -824,7 +824,7 @@ body {
   box-shadow: .0625rem .0625rem .3125rem 0 #000; }
   @media screen and (min-width: 514px) {
     .find-us .find-us__map .find-us__iframe {
-      width: 85vmax; } }
+      width: 75vmax; } }
 
 .find-us .find-us__p {
   border: 0.0625rem solid #ff4b5c;
