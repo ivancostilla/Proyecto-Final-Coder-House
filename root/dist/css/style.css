@@ -825,10 +825,10 @@ body {
   @media screen and (min-width: 514px) {
     .find-us .find-us__map .find-us__iframe {
       width: 80vmax; } }
-  @media screen and (min-width: 56.25rem) {
+  @media screen and (min-width: 59.375rem) {
     .find-us .find-us__map .find-us__iframe {
       width: 55vmax; } }
-  @media screen and (min-width: 950px) {
+  @media screen and (min-width: 62.5rem) {
     .find-us .find-us__map .find-us__iframe {
       width: 85vmax; } }
 
