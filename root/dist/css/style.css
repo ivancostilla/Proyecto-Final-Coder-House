@@ -253,11 +253,14 @@ body {
 .grey {
   background: #e0ece4; }
 
+.pink {
+  background: #ff4b5c; }
+
 /* fin estilos de los contenedores */
 /* estilos del footer */
 .contact-us .contact-us__address {
   display: inline-block;
-  border: 1px solid #fff;
+  border: 1px solid #056674;
   border-radius: .3125rem;
   padding: 1rem;
   line-height: 1.5;
@@ -343,7 +346,7 @@ body {
 
 .contact-us .contact-us__terms .contact-us__terms-a {
   text-decoration: none;
-  color: #fff;
+  color: #056674;
   line-height: 2; }
 
 .contact-us .contact-us__terms .contact-us__terms-p {
@@ -353,6 +356,9 @@ body {
 .contact-us .contact-us__terms .contact-us__terms-a:active {
   border-bottom: 0.125rem solid #ff4b5c;
   color: #ff4b5c; }
+
+.contact-us .grey {
+  padding: 0 0 10px; }
 
 /* fin de estilos del footer */
 /* estilos para las imagenes hero que estan en background attachment fixed */
