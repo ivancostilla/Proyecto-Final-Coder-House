@@ -84,60 +84,21 @@
         <section class="booking txt-white contenedor-general blue txt-center m-top-3" id="booking">
             <article>
                 <h1 class="h-center titulos">Reservas</h1>
-                <!-- formulario para reservar en el hostel -->
-                <form class="form-reserva booking__form-reserva" action="#" method="post">
-                    <input class="booking__input" type="text" id="in" onfocus="(this.type='date')" placeholder="check-in" name="check-in" aria-label="Use the arrows keys to pick a date">
-                    <input class="booking__input" type="text" id="out" onfocus="(this.type='date')" placeholder="check-out">
-                    <div class="form-reserva__select">
-                        <label for="adultos">Adultos:</label>
-                        <select name="adultos" id="">
-                            <option value="1">1 adulto</option>
-                            <option value="2">2 adultos</option>
-                            <option value="3">3 adultos</option>
-                            <option value="4">4 adultos</option>
-                            <option value="5">5 adultos</option>
-                            <option value="6">6 adultos</option>
-                            <option value="7">7 adultos</option>
-                            <option value="8">8 adultos</option>
-                            <option value="9">9 adultos</option>
-                            <option value="10">10 adultos</option>
-                            <option value="11">11 adultos</option>
-                            <option value="12">12 adultos</option>
-                            <option value="13">13 adultos</option>
-                            <option value="14">14 adultos</option>
-                            <option value="15">15 adultos</option>
-                            <option value="16">16 adultos</option>
-                            <option value="17">17 adultos</option>
-                            <option value="18">18 adultos</option>
-                            <option value="19">19 adultos</option>
-                            <option value="20">20 adultos</option>
-                            <option value="21">21 adultos</option>
-                            <option value="22">22 adultos</option>
-                            <option value="23">23 adultos</option>
-                            <option value="24">24 adultos</option>
-                            <option value="25">25 adultos</option>
-                            <option value="26">26 adultos</option>
-                            <option value="27">27 adultos</option>
-                            <option value="28">28 adultos</option>
-                            <option value="29">29 adultos</option>
-                            <option value="30">30 adultos</option>
-                        </select>
-                        <label for="ninos">Niños:</label>
-                        <select class="" name="ninos" id="">
-                            <option value="0">0 niños</option>
-                            <option value="1">1 niño</option>
-                            <option value="2">2 niños</option>
-                            <option value="3">3 niños</option>
-                            <option value="4">4 niños</option>
-                            <option value="5">5 niños</option>
-                            <option value="6">6 niños</option>
-                            <option value="7">7 niños</option>
-                            <option value="8">8 niños</option>
-                            <option value="9">9 niños</option>
-                            <option value="10">10 niños</option>
-                            </select>
+                <form action="https://bananahostels.com/booking-engine/hostel-like-quijote/" target="_blank" method="GET">
+                    <p class="sections-scroll-bottom booking__p">Queres Hacer una reserva? Te contamos como es la reapertura de Bariloche como destino seguro: <br> 1- Primero tenés que coordinar con nosotros la disponibilidad. <br> 2- Una vez confirmada la disponibilidad de habitaciones, debemos
+                        consultar en el municipio si hay cupo de ingreso turista para la fecha que nos solicitaste, ya que es limitado. <br> 3- De tener cupo disponible, confirmamos la reserva y ya procederás a contratar el seguro COVID-19 para poder
+                        viajar(el seguro debe ser para vos y todo el grupo de viaje). Cuando tengamos la confirmación de los tres pasos anteriores(Reserva con Like Quijote, cupo disponible para el ingrso a la ciudad y seguro COVID-19), procederemos a
+                        enviarte el permiso de circulación. Todo esto deberás tenerlo impreso en el viaje. Es muy importante ya que en todos los controles, tendrás que presentar esta documentación vigente. De lo contrario no podrás llegar a destino. Cuando
+                        llegues al hostel, además de esta documentación, llenarás una DDJJ de síntomas compatibles con COVID-19. La ciudad de San Carlos de Bariloche no esta pidiendo el hisopado negativo para el ingreso. Por el momento el máximo de estadía
+                        permitida será de 6 NOCHES, 7 DÍAS.
+                    </p>
+                    <div class="booking__check-box">
+                        <label for="aceptar">Acepto haber leido las condiciones para reservar</label>
+                        <input type="checkbox" name="aceptar" value="1" required>
                     </div>
-                    <input class="boton boton--submit form-reserva__a booking__input" type="submit" value="Reservar">
+                    <div class="booking__a-box sections-scroll-left">
+                        <button type="submit" class="boton boton--submit">Reservar Ahora <i class="boton__i"><img class="boton__img" src="../images/chevron-derecho.svg" alt="chevron-derecha" title="chevron-derecha"></i></button>
+                    </div>
                 </form>
             </article>
         </section>
@@ -239,11 +200,11 @@
                     <h3 class="h-center txt-color sections-scroll-bottom-1">Información Importante sobre la política aplicable en caso de reserva para grupos</h3>
                     <p class="sections-scroll-bottom-1">Si su reserva incluye más de 8 personas, entonces se aplican las condiciones de cancelación para Grupos. Esto significa que si cancela (o reduce) su estadía dentro de los 15 días posteriores a la fecha de check-in, se deberá abonar
                         el monto total de la estadía. <br> Gracias por su comprensión.</p>
-                    <h3 class="h-center txt-color sections-scroll-bottom-1">Política de menores</h3>
+                    <h3 class="h-center txt-color sections-scroll-bottom-1" id="terms">Política de menores</h3>
                     <p class="sections-scroll-bottom-1">Se pueden hospedar niños de todas las edades. En esta propiedad, los niños de 7 años o más se consideran adultos. No se pueden agregar cunas en este alojamiento. No se pueden agregar camas adicionales en este alojamiento</p>
                     <h3 class="h-center txt-color sections-scroll-bottom-1">Política de fumadores</h3>
                     <p class="sections-scroll-bottom-1">está estrictamente prohibido fumar dentro de la casa, contamos con un jardín para aquellos que deseen fumar</p>
-                    <h3 class="h-center txt-color sections-scroll-bottom-1" id="terms">Terminos y Condiciones</h3>
+                    <h3 class="h-center txt-color sections-scroll-bottom-1">Terminos y Condiciones</h3>
                     <p class="sections-scroll-bottom-1">De conformidad con la legislación fiscal nacional, todos los ciudadanos argentinos (y los extranjeros residentes en el país) están obligados a abonar un adicional del 21% en concepto de IVA. Solo los extranjeros que paguen la estadía
                         con tarjetas de crédito o débito extranjeras o mediante transferencia bancaria están exentos de abonar este adicional del 21% de IVA por el alojamiento y el desayuno. Para ello, tienen que presentar un pasaporte o documento de
                         identidad extranjero, junto con un documento expedido por las autoridades nacionales de inmigración, si procede. Además, se cobrará un adicional financiero del 17% sobre el importe total (IVA no incluido y teniendo en cuenta la
@@ -280,20 +241,10 @@
 
     <footer class="contact-us txt-white blue txt-center" id="contact-us">
         <h2 class="h-center titulos scroll-r-group">Contactanos</h2>
-        <div class="contact-us__form-contenedor">
-            <!-- formulario de contacto -->
-            <form class="contact-us__form" action="#" class="" method="post">
-                <!-- no se como aplicar correctamente los patterns xd -->
-                <input class="contact-us__input" type="text" name="" placeholder="nombre" required>
-                <input class="contact-us__input" type="text" name="" placeholder="apellido" required>
-                <input class="contact-us__input" type="email" name="" placeholder="email" required>
-                <input class="contact-us__input" type="tel" name="" placeholder="télefono" required>
-                <textarea class="contact-us__input cantact-us__txt-area" name="message" id="" cols="30" rows="10" placeholder="escriba su mensaje"></textarea>
-                <input class="contact-us__input" type="submit" name="" value="Enviar">
-            </form>
-        </div>
         <div class="grey txt-color-blue">
-            <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill:#056674 ;"></path></svg></div>
+            <div class="svg-smooth">
+                <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C150.00,150.00 271.49,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill:#056674 ;"></path></svg></div>
+            </div>
             <address class="contact-us__address">
                 <p>+54 294 446-4273</p>
                 <p>likequijote@hotmail.com</p>
@@ -311,7 +262,10 @@
                 <div class="spin"><a class="wsp" href="https://api.whatsapp.com/send?phone=5492944246553" target="_blank"><svg fill="#0566#056674xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="50px" height="50px"><path fill="none" stroke="#056674" stroke-miterlimit="10" stroke-width="2" d="M19.102,15.022c-0.479-1.137-0.966-0.983-1.329-1.001C17.429,14.005,17.036,14,16.642,14c-0.394,0-1.033,0.146-1.575,0.73S13,16.724,13,19.594s2.116,5.641,2.411,6.031c0.296,0.389,4.164,6.278,10.087,8.804c1.409,0.6,2.509,0.959,3.366,1.228c1.414,0.444,2.702,0.381,3.72,0.231c1.134-0.167,3.494-1.411,3.986-2.772c0.492-1.362,0.492-2.529,0.344-2.772c-0.148-0.243-0.542-0.389-1.132-0.681c-0.59-0.292-3.494-1.703-4.036-1.896c-0.542-0.195-0.935-0.292-1.329,0.292c-0.394,0.584-1.525,1.896-1.869,2.286c-0.344,0.389-0.689,0.438-1.279,0.146c-0.59-0.292-2.494-0.907-4.748-2.894c-1.756-1.546-2.941-3.455-3.285-4.039s-0.037-0.899,0.259-1.19c0.266-0.262,0.59-0.681,0.886-1.022c0.296-0.341,0.394-0.584,0.59-0.973s0.098-0.73-0.05-1.022C20.775,19.059,19.594,16.19,19.102,15.022z"/><path fill="none" stroke="#056674" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="2" d="M25,3C12.85,3,3,12.85,3,25c0,4.072,1.111,7.884,3.04,11.155L3,47l11.274-2.793C17.448,45.983,21.104,47,25,47c12.15,0,22-9.85,22-22S37.15,3,25,3z"/></svg></a></div>
             </div>
             <div class="txt-center contact-us__terms">
-                <a class="contact-us__terms-a" href="booking.html#terms ">Ver Terminos y Condiciones</a>
+                <a class="contact-us__ir-arriba" href="#booking"><svg height="512pt" viewBox="0 0 512 512" width="512pt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><linearGradient id="a" gradientUnits="userSpaceOnUse" x1="256" x2="256" y1="0" y2="512"><stop offset="0" stop-color="#056674"/><stop offset="1" stop-color="#056674"/></linearGradient><path d="m256 512c-68.378906 0-132.667969-26.628906-181.019531-74.980469-48.351563-48.351562-74.980469-112.640625-74.980469-181.019531s26.628906-132.667969 74.980469-181.019531c48.351562-48.351563 112.640625-74.980469 181.019531-74.980469s132.667969 26.628906 181.019531 74.980469c48.351563 48.351562 74.980469 112.640625 74.980469 181.019531s-26.628906 132.667969-74.980469 181.019531c-48.351562 48.351563-112.640625 74.980469-181.019531 74.980469zm0-472c-119.101562 0-216 96.898438-216 216s96.898438 216 216 216 216-96.898438 216-216-96.898438-216-216-216zm138.285156 250-138.285156-138.285156-138.285156 138.285156 28.285156 28.285156 110-110 110 110zm0 0" fill="url(#a)"/></svg></a>
+                <div class="dspl-i-block">
+                    <a class="contact-us__terms-a" href="booking.html#terms ">Ver Terminos y Condiciones</a>
+                </div>
                 <p class="contact-us__terms-p">Like Quijote Hostel&copy;. Todos los derechos reservados.</p>
             </div>
         </div>
